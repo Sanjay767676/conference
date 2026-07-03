@@ -1,0 +1,105 @@
+SNS COLLEGE OF TECHNOLOGY
+(AN AUTONOMOUS INSTITUTION)
+COIMBATORE – 641 035
+IN ASSOCIATION WITH 
+YORKVILLE UNIVERSITY, CANADA
+
+FINAL YEAR COMPUTER SCIENCE STREAM CLUSTER
+SNS AI CAMPUS
+International Conference on 
+AI-Driven Innovation in Engineering and Technology 
+ICAIDIET'26 
+20th and 21st November 2026 
+
+
+
+
+About the Conference
+The International Conference on AI-Driven Innovations in Engineering and Technology (ICAIDIET’26), conducted in hybrid mode, serves as a dynamic platform that brings together researchers, academicians, and industry professionals from across the globe to explore the transformative potential of Artificial Intelligence. The conference aims to foster innovation, collaboration, and knowledge exchange across diverse domains of engineering and technology. It emphasizes cutting-edge research, emerging trends, and practical applications of AI, encouraging the development of intelligent solutions to address real-world challenges. ICAIDIET’26 aspires to inspire forward-thinking ideas and promote interdisciplinary approaches that will shape the future of smart and sustainable technologies.
+Hosted by SNS College of Technology, a leading institution known for quality engineering education, innovation, and research, the conference reflects its commitment to academic excellence and technological advancement. In collaboration with Yorkville University, Canada, a renowned university recognized for its global outlook and career-focused education, ICAIDIET’26 encourages international collaboration and knowledge sharing in emerging technologies.
+
+
+Track 1: Artificial Intelligence & Intelligent Systems
+•	Generative AI and Large Language Models 
+•	Multimodal and Foundation Model Architectures 
+•	Reinforcement Learning for Autonomous Systems 
+•	Explainable and Trustworthy AI 
+•	Efficient AI Models and Computational Optimization 
+________________________________________
+Track 2: Machine Learning & Advanced Analytics
+•	Supervised and Unsupervised Learning Techniques 
+•	Transfer Learning and Domain Adaptation 
+•	Automated Machine Learning (AutoML) 
+•	Time-Series Analysis and Forecasting 
+•	Feature Engineering and Model Evaluation 
+________________________________________
+Track 3: Data Science & Decision Intelligence
+•	Real-Time and Streaming Data Analytics 
+•	Data Visualization and Storytelling 
+•	Decision Intelligence Systems 
+•	Data Governance and Privacy Frameworks 
+•	AI for Business Intelligence and Insights 
+________________________________________
+Track 4: IoT, Edge Computing & Embedded Systems
+•	AI-Enabled Internet of Things (IoT) 
+•	Edge AI and TinyML Applications 
+•	Sensor Networks and Smart Devices 
+•	Embedded Systems with Real-Time Processing 
+•	Edge–Cloud Collaborative Architectures 
+________________________________________
+Track 5: Communication Systems & Network Technologies
+•	5G/6G and Next-Generation Networks 
+•	Wireless Communication and Signal Processing 
+•	Optical and High-Speed Communication Systems 
+•	RF and Microwave Engineering 
+•	Satellite and Space Communication Technologies 
+________________________________________
+Track 6: Cybersecurity & Secure Computing
+•	AI-Driven Cybersecurity and Threat Detection 
+•	Network Security and Intrusion Detection Systems 
+•	Digital Forensics and Cyber Investigation 
+•	Privacy-Preserving and Zero-Trust Architectures 
+•	Secure Cloud and Distributed Computing 
+________________________________________
+Track 7: Robotics, Automation & Smart Industry
+•	Autonomous Robots and Intelligent Systems 
+•	Robotics Vision and Perception 
+•	Motion Planning and Control Systems 
+•	Smart Manufacturing and Industry 4.0 
+•	Digital Twins and Industrial Automation 
+________________________________________
+Track 8: Emerging Technologies, Sustainability & AI-Driven Management
+•	Quantum Computing and Quantum Machine Learning 
+•	Blockchain and Decentralized Technologies 
+•	Metaverse, AR/VR, and Immersive Systems 
+•	AI for Sustainable Energy and Smart Infrastructure 
+•	AI-Driven Innovation Management and Digital Transformation
+
+Publication
+All the accepted and presented papers will be published as Scopus-indexed conference proceedings. Assigned ISBN and DOI (as per publisher norms).
+
+IMPORTANT DATES
+•	Submission Deadline: 16th October 2026 
+•	Acceptance Notification: 20th October 2026 
+•	Early Bird Registration: 22nd October 2026 
+•	Late Registration: From 23rd to 28th October 2026 
+•	Final Manuscript Notification: 2nd November 2026 
+•	Conference Dates: 20th & 21st November 2026 
+________________________________________
+REGISTRATION FEES
+Author (Indian)
+•	Early Bird: ₹2,000 (Conference alone) , ₹10,000 (With Scopus-indexed conference book proceedings)
+•	Late Fee: ₹2,500 (Conference alone) , ₹11,000 (With Scopus-indexed conference book proceedings)
+Author (Foreign)
+•	Early Bird: $350 
+•	Late Fee: $400 
+Industry Delegates
+•	Early Bird: ₹11,000 
+•	Late Fee: ₹12,000
+
+ADDRESS FOR COMMUNICATION:
+Convenor-ICAIDIET’26 
+SNS College of Technology, sathy main road, SNS Kalvi Nagar, 
+Saravanampatti [PO], Coimbatore-641 035, Tamil Nadu 
+PH: 8903444955
+

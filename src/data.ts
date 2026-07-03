@@ -3,103 +3,103 @@ import { ConferenceTrack, TimelineEvent, PricingTier } from "./types";
 export const CONFERENCE_TRACKS: ConferenceTrack[] = [
   {
     id: "track-1",
-    title: "Generative AI & LLMs",
-    description: "Explore custom architectures, Retrieval-Augmented Generation (RAG) systems, parameter-efficient fine-tuning, and robust prompt engineering frameworks.",
+    title: "Artificial Intelligence & Intelligent Systems",
+    description: "Generative AI, Large Language Models, Multimodal Architectures, Reinforcement Learning, Explainable AI, and Computational Optimization.",
     iconName: "BrainCircuit",
-    details: ["Large Language Models", "Diffusion & Image Synthesis", "RAG & Knowledge Graphs", "Reinforcement Learning (RLHF)"]
+    details: ["Generative AI & LLMs", "Multimodal Architectures", "Reinforcement Learning", "Explainable & Trustworthy AI"]
   },
   {
     id: "track-2",
-    title: "Deep Learning Systems",
-    description: "Focus on multi-layer transformer optimizations, neural ordinary differential equations (ODEs), and scale-up training infrastructures.",
+    title: "Machine Learning & Advanced Analytics",
+    description: "Supervised & Unsupervised Learning, Transfer Learning, AutoML, Time-Series Analysis, and Feature Engineering.",
     iconName: "Cpu",
-    details: ["Transformer Optimizations", "Graph Neural Networks", "Optimization Algorithms", "Federated Learning"]
+    details: ["Supervised & Unsupervised Learning", "Transfer Learning", "AutoML", "Time-Series Analysis"]
   },
   {
     id: "track-3",
-    title: "Pattern Recognition & Vision",
-    description: "Investigate modern computer vision frameworks, high-precision biometrics, multi-modal semantic search, and object parsing algorithms.",
-    iconName: "Eye",
-    details: ["Image & Video Segmentation", "Multi-modal Scene Parsing", "Object Detection & Tracking", "Biometrics & Face Recognition"]
+    title: "Data Science & Decision Intelligence",
+    description: "Real-Time Streaming Analytics, Data Visualization, Decision Intelligence Systems, Privacy Frameworks, and AI for Business.",
+    iconName: "BarChart",
+    details: ["Streaming Data Analytics", "Data Visualization", "Decision Intelligence", "AI for Business"]
   },
   {
     id: "track-4",
-    title: "Edge AI & Distributed Systems",
-    description: "Design ultra-lightweight neural models, on-device training, low-latency pruning techniques, and specialized hardware compiler stacks.",
+    title: "IoT, Edge Computing & Embedded Systems",
+    description: "AI-Enabled IoT, Edge AI, TinyML, Sensor Networks, Embedded Systems, and Collaborative Architectures.",
     iconName: "Network",
-    details: ["Model Pruning & Quantization", "On-device Inference", "Mobile & Wearable Sensing", "Decentralized Edge Stacks"]
+    details: ["AI-Enabled IoT", "Edge AI & TinyML", "Sensor Networks", "Embedded Systems"]
   },
   {
     id: "track-5",
-    title: "Smart Infrastructure & IoT",
-    description: "Apply machine learning to critical power systems, microgrids, adaptive traffic systems, and resilient smart city sensor fabrics.",
-    iconName: "Server",
-    details: ["Smart City Orchestration", "Intelligent Power Grids", "Automated Fleet Routing", "Sensing Networks & GIS"]
+    title: "Communication Systems & Network Technologies",
+    description: "5G/6G Networks, Wireless Communication, Optical Systems, RF Microwave Engineering, and Satellite Technologies.",
+    iconName: "Wifi",
+    details: ["5G/6G Networks", "Wireless Communication", "Optical Systems", "Satellite Technologies"]
   },
   {
     id: "track-6",
-    title: "Autonomous Systems & Robotics",
-    description: "Examine robust navigation, visual SLAM, collaborative multi-agent reinforcement learning, and safety-critical control laws.",
-    iconName: "Navigation",
-    details: ["Visual SLAM & LiDAR Maps", "Multi-Agent Coordination", "Human-Robot Interaction", "Drone Flight Kinematics"]
+    title: "Cybersecurity & Secure Computing",
+    description: "AI-Driven Threat Detection, Intrusion Detection, Digital Forensics, Zero-Trust Architectures, and Secure Cloud Computing.",
+    iconName: "Shield",
+    details: ["AI-Driven Cybersecurity", "Intrusion Detection", "Digital Forensics", "Zero-Trust Architectures"]
   },
   {
     id: "track-7",
-    title: "Neuromorphic Design & Hardware",
-    description: "Optimize neuromorphic computing architectures, in-memory compute blocks, analog accelerators, and quantum-assisted learning engines.",
-    iconName: "Microchip",
-    details: ["Silicon Neuromorphic Chips", "In-Memory Compute Blocks", "TPU & GPU Compilation", "Quantum Machine Learning"]
+    title: "Robotics, Automation & Smart Industry",
+    description: "Autonomous Robots, Robotics Vision, Motion Planning, Smart Manufacturing (Industry 4.0), and Digital Twins.",
+    iconName: "Bot",
+    details: ["Autonomous Robots", "Robotics Vision", "Smart Manufacturing", "Digital Twins"]
   },
   {
     id: "track-8",
-    title: "Explainable AI & Ethics",
-    description: "Establish mathematical framework interpretability, bias mitigation strategies, data compliance, and human-in-the-loop validation.",
-    iconName: "ShieldAlert",
-    details: ["Shapley Value Interpretations", "Algorithmic Bias Auditing", "AI Policy & EU Compliance", "Human-in-the-Loop Safeguards"]
+    title: "Emerging Technologies, Sustainability & AI Management",
+    description: "Quantum Computing, Blockchain, Metaverse, AI for Sustainable Energy, and Digital Transformation.",
+    iconName: "Globe",
+    details: ["Quantum Computing", "Blockchain Technologies", "Metaverse & AR/VR", "AI for Sustainable Energy"]
   }
 ];
 
 export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-1",
-    title: "Paper Submission Portal Opens",
-    date: "June 15, 2026",
-    description: "Authors are invited to submit original, unpublished research papers via our EasyChair portal.",
-    isCompleted: true
+    title: "Paper Submission Deadline",
+    date: "October 16, 2026",
+    description: "Strictly enforced final date for original research submissions.",
+    isCompleted: false
   },
   {
     id: "time-2",
-    title: "Full Paper Submission Deadline",
-    date: "August 30, 2026",
-    description: "Strictly enforced final date for original research submissions. No extensions will be granted.",
+    title: "Acceptance Notification",
+    date: "October 20, 2026",
+    description: "Acceptance notifications and detailed reviewer feedback dispatched.",
     isCompleted: false
   },
   {
     id: "time-3",
-    title: "Peer-Review Decisions Dispatched",
-    date: "September 25, 2026",
-    description: "Acceptance notifications, detailed reviewer feedback, and camera-ready templates emailed.",
+    title: "Early Bird Registration",
+    date: "October 22, 2026",
+    description: "Deadline to avail the discounted registration rates.",
     isCompleted: false
   },
   {
     id: "time-4",
-    title: "Early Bird Registration Gate Closes",
-    date: "October 15, 2026",
-    description: "Heavily discounted registration rates end. All authors must register by this date to guarantee indexing.",
+    title: "Late Registration",
+    date: "October 23-28, 2026",
+    description: "Standard late registration period.",
     isCompleted: false
   },
   {
     id: "time-5",
-    title: "Final Registration Gates Close",
-    date: "November 05, 2026",
-    description: "Late registrations close for session layout planning, badge printing, and dinner bookings.",
+    title: "Final Manuscript Notification",
+    date: "November 02, 2026",
+    description: "Notification for final camera-ready manuscript acceptance.",
     isCompleted: false
   },
   {
     id: "time-6",
-    title: "Conference Proceedings (AIET 2026)",
+    title: "Conference Dates (ICAIDIET'26)",
     date: "November 20-21, 2026",
-    description: "Opening keynote, 8 presentation tracks, panel debates, and the grand networking gala.",
+    description: "Opening keynote, presentation tracks, and networking.",
     isCompleted: false
   }
 ];
@@ -107,62 +107,47 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
 export const PRICING_TIERS: PricingTier[] = [
   {
     id: "fee-1",
-    title: "Student Author",
+    title: "Author (Indian)",
     category: "author",
-    audience: "Undergraduate / Postgraduate / PhD presenting authors",
-    priceInternational: "$150",
-    priceNational: "₹12,000",
+    audience: "Indian authors presenting approved research papers",
+    priceInternational: "-",
+    priceNational: "₹2,000 - ₹11,000",
     features: [
-      "Present up to 1 approved paper",
-      "Full access to all 8 conference tracks",
-      "Digital proceedings indexing & DOI issuance",
+      "Early Bird (Conference alone): ₹2,000",
+      "Early Bird (With Scopus proceedings): ₹10,000",
+      "Late Fee (Conference alone): ₹2,500",
+      "Late Fee (With Scopus proceedings): ₹11,000",
       "Official presentation certificate",
       "Networking dinner & tea breaks included"
     ]
   },
   {
     id: "fee-2",
-    title: "Regular Author",
+    title: "Author (Foreign)",
     category: "author",
-    audience: "Academic researchers, faculty, and industry scientists presenting authors",
-    priceInternational: "$250",
-    priceNational: "₹18,000",
+    audience: "International authors presenting approved research papers",
+    priceInternational: "$350 - $400",
+    priceNational: "-",
     features: [
-      "Present up to 2 approved papers",
-      "Full access to all 8 conference tracks",
-      "Digital proceedings indexing & DOI issuance",
+      "Early Bird: $350",
+      "Late Fee: $400",
+      "Scopus-indexed conference book proceedings",
       "Official presentation certificate",
-      "Premium printed conference kit",
       "Networking dinner & tea breaks included"
     ]
   },
   {
     id: "fee-3",
-    title: "Student Participant",
+    title: "Industry Delegates",
     category: "attendee",
-    audience: "Undergrad/Grad students attending for knowledge & workshops",
-    priceInternational: "$80",
-    priceNational: "₹5,000",
+    audience: "Industry professionals attending the conference",
+    priceInternational: "-",
+    priceNational: "₹11,000 - ₹12,000",
     features: [
-      "Full attendee access to all sessions",
-      "Interactive workshop sessions admission",
-      "Official attendance certificate",
-      "Digital conference folder materials",
-      "Daily lunch & high tea"
-    ]
-  },
-  {
-    id: "fee-4",
-    title: "Professional Participant",
-    category: "attendee",
-    audience: "Academic faculty, general delegates, and industry attendees",
-    priceInternational: "$120",
-    priceNational: "₹9,500",
-    features: [
-      "Full attendee access to all sessions",
+      "Early Bird: ₹11,000",
+      "Late Fee: ₹12,000",
       "Keynote panels & roundtables admission",
       "Official participation certificate",
-      "Premium printed conference kit",
       "Gala networking dinner entry",
       "Daily lunch & high tea"
     ]

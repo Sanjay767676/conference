@@ -90,14 +90,11 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 5 }}
                           transition={{ duration: 0.15 }}
-                          className="text-4xl font-extrabold text-brand-dark tracking-tight"
+                          className="text-2xl lg:text-3xl font-extrabold text-brand-dark tracking-tight"
                         >
                           {isInternational ? tier.priceInternational : tier.priceNational}
                         </motion.span>
                       </AnimatePresence>
-                      <span className="text-xs text-slate-400 font-mono ml-1.5 uppercase font-semibold">
-                        / Paper
-                      </span>
                     </div>
 
                     {/* Features list */}
@@ -147,14 +144,11 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 5 }}
                           transition={{ duration: 0.15 }}
-                          className="text-4xl font-extrabold text-brand-dark tracking-tight"
+                          className="text-2xl lg:text-3xl font-extrabold text-brand-dark tracking-tight"
                         >
                           {isInternational ? tier.priceInternational : tier.priceNational}
                         </motion.span>
                       </AnimatePresence>
-                      <span className="text-xs text-slate-400 font-mono ml-1.5 uppercase font-semibold">
-                        / Person
-                      </span>
                     </div>
 
                     {/* Features list */}

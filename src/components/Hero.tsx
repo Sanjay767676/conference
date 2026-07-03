@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import { ArrowRight, Sparkles, FileText, Globe2, Calendar } from "lucide-react";
-import { PARTNERS } from "../data";
-
+import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
+import wileyLogo from "../../assets/images/wiley.png";
+import yorkLogo from "../../assets/images/york.jpg";
 interface HeroProps {
   onRegisterClick: () => void;
 }
@@ -21,7 +21,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-32 pb-16 md:pt-40 md:pb-24 flex flex-col justify-between overflow-hidden gradient-bg"
+      className="relative min-h-screen pt-32 pb-8 md:pt-40 md:pb-12 flex flex-col justify-between overflow-hidden gradient-bg"
     >
       {/* Dynamic Background Elements */}
       <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
@@ -138,8 +138,23 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             </div>
           </div>
         </motion.div>
-      </div>
 
+        {/* Publication & Academic Partners */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="w-full max-w-4xl flex flex-col items-center justify-center mt-4"
+        >
+          <span className="text-xs tracking-[0.15em] font-mono text-slate-500 font-semibold mb-8 uppercase text-center">
+            Publication & Academic Partners
+          </span>
+          <div className="flex flex-wrap items-center justify-center gap-16 md:gap-24">
+            <img src={wileyLogo} alt="Wiley" className="h-12 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+            <img src={yorkLogo} alt="Yorkville University" className="h-12 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+          </div>
+        </motion.div>
+      </div>
 
     </section>
   );
