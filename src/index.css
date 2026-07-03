@@ -11,17 +11,6 @@
   --color-primary-light: #E6F0FF;
   --color-brand-dark: #0B0F19;
   --color-brand-slate: #475569;
-
-  --animate-aurora: aurora 60s linear infinite;
-
-  @keyframes aurora {
-    from {
-      background-position: 50% 50%, 50% 50%;
-    }
-    to {
-      background-position: 350% 50%, 350% 50%;
-    }
-  }
 }
 
 @layer base {

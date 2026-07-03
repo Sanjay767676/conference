@@ -13,15 +13,15 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
       {/* Dynamic Navigation Header */}
-      <Header onRegisterClick={() => setIsModalOpen(true)} />
+      <Header onRegisterClick={() => alert("Registration will open soon!")} />
       
       {/* Main Sections */}
       <main>
-        <Hero onRegisterClick={() => setIsModalOpen(true)} />
+        <Hero onRegisterClick={() => alert("Registration will open soon!")} />
         <About />
         <Tracks />
         <Timeline />
-        <Registration onRegisterClick={() => setIsModalOpen(true)} />
+        <Registration onRegisterClick={() => alert("Registration will open soon!")} />
       </main>
 
       {/* Interactive multi-step Registration Wizard Modal */}

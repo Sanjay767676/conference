@@ -68,29 +68,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Left Side: Logo & Buttons */}
-          <div className="flex items-center gap-6">
+          {/* Logo */}
+          <div className="flex items-center">
             <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="flex items-center">
               <img src={snsctLogo} alt="SNSCT Logo" className="h-10 w-auto object-contain" />
             </a>
-
-            {/* Desktop Button */}
-            <button
-              id="desktop-nav-cta"
-              onClick={onRegisterClick}
-              className="hidden lg:flex items-center gap-1.5 px-5 py-2.5 bg-brand-dark text-white font-semibold rounded-lg text-sm hover:bg-opacity-90 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm"
-            >
-              Register Now
-              <ArrowRight className="w-4 h-4" />
-            </button>
-
-            {/* Mobile Button */}
-            <button
-              onClick={onRegisterClick}
-              className="lg:hidden px-4 py-2 bg-brand-dark text-white font-semibold rounded-lg text-xs hover:bg-opacity-90 transition-all duration-200"
-            >
-              Register
-            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -119,10 +101,27 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                 </li>
               ))}
             </ul>
+
+            <div className="h-4 w-px bg-slate-200" />
+
+            <button
+              id="desktop-nav-cta"
+              onClick={onRegisterClick}
+              className="flex items-center gap-1.5 px-5 py-2.5 bg-brand-dark text-white font-semibold rounded-lg text-sm hover:bg-opacity-90 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm"
+            >
+              Register Now
+              <ArrowRight className="w-4 h-4" />
+            </button>
           </nav>
 
           {/* Mobile Menu Toggle */}
-          <div className="flex items-center lg:hidden">
+          <div className="flex items-center gap-4 lg:hidden">
+            <button
+              onClick={onRegisterClick}
+              className="px-4 py-2 bg-brand-dark text-white font-semibold rounded-lg text-xs hover:bg-opacity-90 transition-all duration-200"
+            >
+              Register
+            </button>
             <button
               id="mobile-menu-toggle"
               onClick={() => setIsOpen(!isOpen)}
