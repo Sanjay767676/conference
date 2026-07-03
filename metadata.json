@@ -1,0 +1,6 @@
+{
+  "name": "AIET 2026 Conference",
+  "description": "Official responsive portal for the International Conference on AI-Driven Innovation in Engineering and Technology (AIET 2026), featuring interactive schedule, track explorations, pricing tiers, and a seamless multi-step registration system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

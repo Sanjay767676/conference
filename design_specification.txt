@@ -1,0 +1,153 @@
+Here is a comprehensive developer specification to build a pixel-perfect, highly polished, and responsive landing page based on the provided design.
+
+---
+
+# Design Specification: AI-Driven Innovation in Engineering and Technology Landing Page
+
+This landing page is designed for an international hybrid conference focusing on AI integration in engineering fields. The overall aesthetic is clean, academic, modern, and trustworthy, featuring soft cool gradients, sharp modern typography, and structured content sections.
+
+---
+
+## 1. Global Styles & Visual Design System
+
+### 1.1 Color Palette
+*   **Primary Accent Blue:** `#1A68FF` (Used for key brand elements, active states, and focal typography)
+*   **Neutral Dark (Text/Headings):** `#0F172A` (Slate-900 - clean and highly readable)
+*   **Neutral Medium (Body Text):** `#475569` (Slate-600 - softer contrast for descriptions)
+*   **Background Base:** `#FFFFFF`
+*   **Background Soft Blue Tints:**
+    *   `#F8FAFC` (Slate-50 - section backgrounds)
+    *   `#EEF2F6` (Light grey-blue for borders/dividers)
+*   **Special Dark Highlight:** `#0B0F19` (Used for primary high-contrast CTA buttons and key timeline callouts)
+*   **Yellow/Gold Accent (Logo/Branding):** `#FBBF24` (Amber-400 - used sparingly in the top logo icon)
+
+### 1.2 Typography
+*   **Primary Font Family:** "Inter", "Plus Jakarta Sans", or "DM Sans" (sans-serif)
+*   **Headings (`h1`, `h2`, `h3`):**
+    *   `h1` (Hero): `3.5rem` (56px) | Bold (700) | Line-height: `1.2` | Letter-spacing: `-0.02em`
+    *   `h2` (Section Headers): `2.25rem` (36px) | Bold (700) | Line-height: `1.3`
+    *   `h3` (Card Titles): `1.125rem` (18px) | SemiBold (600) | Line-height: `1.4`
+*   **Body Text:** `1rem` (16px) or `0.875rem` (14px) for secondary metadata | Regular (400) | Line-height: `1.6`
+*   **Interactive/Button Text:** `0.875rem` (14px) | SemiBold (600) | Letter-spacing: `0.02em`
+
+### 1.3 Layout & Spacing
+*   **Container Max Width:** `1200px` (Centred with `px-4` or `px-6` padding on mobile/tablet)
+*   **Vertical Section Spacing (`py`):** `5rem` to `6.5rem` (80px to 104px) on desktop to create a clean, breathing layout.
+*   **Card Border Radius:** `12px` to `16px` for a modern, soft-edged UI.
+*   **Global Transitions:** `all 0.2s ease-in-out` for hover and focus states.
+
+---
+
+## 2. Layout & Detailed Section Breakdown
+
+### 2.1 Navigation Header (Sticky)
+*   **Height:** `80px`
+*   **Visual Elements:**
+    *   **Logo (Left):** Yellow/Gold abstract circular geometric icon next to clear brand text.
+    *   **Navigation Menu (Center):**
+        *   Links: *Home*, *About*, *Tracks*, *Timeline*, *Registration*
+        *   Default state: Color `#475569` (Slate-600). Hover state: Color `#1A68FF`.
+    *   **CTA Button (Right):** "Register Now" (Small dark button, `#0B0F19` background, white text, rounded corners).
+*   **Responsive Behavior:** Collapses into a standard hamburger menu on screens `< 1024px`.
+
+### 2.2 Hero Section (AI-Driven Innovation)
+*   **Background:** Clean white with a subtle, soft radial background glow (`#EEF2F6` or light-blue gradient) centered behind the content.
+*   **Content (Centered):**
+    *   **Tagline/Title:** "AI-Driven Innovation in" <span style="color: #1A68FF">Engineering</span> "and Technology"
+    *   **Subtext:** "Join leading global researchers, practitioners, and educators to explore the latest trends and breakthroughs at the intersection of AI, Engineering, and modern technology frameworks."
+    *   **CTAs (Horizontal Row):**
+        1.  **Primary Button:** "Register Now" (Black background, white text, rounded-md, `px-6 py-3`).
+        2.  **Secondary Button:** "Submission Guidelines" (Ghost button style with an inline right-pointing arrow icon).
+*   **Sponsor/Partner Row (Bottom of Hero):**
+    *   Header: "TRUSTED BY LEADING INSTITUTIONS" (Small, uppercase, tracked-out, light gray text).
+    *   Logos: Clean monochrome/grayscale logos of "WILEY", "YORKVILLE UNIVERSITY", and other partners spaced out horizontally with a soft opacity (`opacity-60`).
+
+### 2.3 About / Introduction Section ("Bridging Global Research")
+*   **Layout:** Two-column grid (1:1 ratio on desktop, stacks vertically on mobile).
+*   **Left Column (Text Content):**
+    *   Section Label: "ABOUT THE CONFERENCE" (Small, `#1A68FF`, uppercase, bold).
+    *   Heading: "Bridging Global Research with Next Gen Intelligence"
+    *   Paragraphs: Two body-text paragraphs detailing the conference objectives, hybrid nature, and target audience.
+*   **Right Column (Visual Feature):**
+    *   Modern architectural glass-paneled building image.
+    *   **Overlay Badge (Bottom-Left Corner):** A dark high-contrast pill shape containing the text:
+        *   "Hybrid" (Large white text)
+        *   "In-person & Online" (Smaller light grey text beneath)
+
+### 2.4 Conference Tracks Section
+*   **Layout:** Grid with 4 columns (`grid-cols-1 md:grid-cols-2 lg:grid-cols-4`).
+*   **Heading:** "Conference Tracks" (Centered, with a brief explanatory paragraph beneath).
+*   **Track Cards (8 visible):**
+    *   **Style:** White solid background, thin gray border (`1px solid #EEF2F6`), subtle box-shadow on hover.
+    *   **Card Contents:**
+        1.  **Icon (Top Left):** Soft blue background circle with a dark blue vector icon representing the track category.
+        2.  **Title:** Bold, clear text (e.g., "Deep Learning System", "Pattern Recognition", "Edge Computing", "Neural Networks", "Generative AI", etc.).
+        3.  **Description:** 2-3 lines of light gray body text specifying subtopics covered.
+
+### 2.5 Submission Timeline Section
+*   **Layout:** 2-column layout.
+    *   **Left Column (35% width):**
+        *   Heading: "Submission Timeline"
+        *   Subtext: "Please keep track of these important milestones to ensure your papers and registrations are processed in time."
+        *   **Visual Date Badge:** A black solid block displaying the main conference date ("Nov 20-21" in large bold text, with "Conference Dates" written smaller below).
+    *   **Right Column (65% width):**
+        *   A vertical list of timeline events.
+        *   Each event row contains:
+            *   Left: Event Name (e.g., "Submission Deadline", "Acceptance Notification", "Early Bird Registration", "Late Registration").
+            *   Right: Clear calendar date with a tiny decorative horizontal line or arrow indicating progress.
+            *   Rows are separated by thin horizontal borders (`#EEF2F6`).
+
+### 2.6 Registration Fees Section
+*   **Layout:** Centered block.
+    *   Heading: "Registration Fees"
+    *   **Segmented Tab Controller:** Rounded toggle button bar with "International" and "National" tabs (active tab styled in dark background or primary blue, inactive tab light grey background).
+    *   **Pricing Grid (2 Columns):**
+        *   **Left Column (Authors):** Pricing table for regular and presenting authors (e.g., "Student Author", "Regular Author").
+        *   **Right Column (Attendees/Participants):** Pricing table for general attendees and delegates.
+    *   **Primary CTA (Centered below tables):** Bold blue button ("Register Now ➔").
+
+### 2.7 Footer Section
+*   **Layout:** 4-column structured footer with a dark text tone, separated by a clean top border line.
+*   **Column 1:** Brand logo, contact email, and office address.
+*   **Column 2:** "Quick Links" (Home, About, Tracks, Timeline).
+*   **Column 3:** "Resources" (Guidelines, Templates, Fees, FAQs).
+*   **Column 4:** Social media links (LinkedIn, Twitter, Facebook icons) and copyright statement.
+
+---
+
+## 3. UI Components & CSS Code Implementation (Tailwind Reference)
+
+### 3.1 Primary Buttons
+```html
+<!-- Black Accent Button (Hero / Nav) -->
+<button class="px-6 py-3 bg-[#0B0F19] text-white font-semibold rounded-lg text-sm hover:bg-opacity-90 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-[#0B0F19]">
+  Register Now
+</button>
+
+<!-- Blue Accent Button (Registration CTAs) -->
+<button class="px-8 py-3.5 bg-[#1A68FF] text-white font-semibold rounded-lg text-sm hover:bg-[#0051E0] transform hover:-translate-y-0.5 transition-all duration-200 shadow-md shadow-blue-500/10">
+  Register Now →
+</button>
+```
+
+### 3.2 Conference Track Card
+```html
+<div class="p-6 bg-white border border-[#EEF2F6] rounded-2xl hover:shadow-xl hover:shadow-slate-100/80 transition-all duration-300 flex flex-col items-start gap-4">
+  <div class="w-12 h-12 rounded-xl bg-[#E6F0FF] flex items-center justify-center text-[#1A68FF]">
+    <!-- Track Icon SVG -->
+  </div>
+  <h3 class="text-lg font-semibold text-[#0F172A]">Track Title</h3>
+  <p class="text-sm text-[#475569] leading-relaxed">Brief descriptive text detailing track themes, methods, and topics.</p>
+</div>
+```
+
+---
+
+## 4. Interactive & Stateful Behaviors
+
+1.  **Sticky Header Transition:**
+    *   When page is scrolled $> 50\text{px}$, add a subtle background blur (`backdrop-blur-md bg-white/90`) and a thin bottom border shadow to the header.
+2.  **Navigation Hover States:**
+    *   Active section links should show a clean primary blue bottom underline or simple text color shift to `#1A68FF`.
+3.  **Pricing Tabs Switcher:**
+    *   Clicking between "International" and "National" tabs must dynamically swap currency symbol and price metrics in the registration tables with a smooth fade-in transition.
