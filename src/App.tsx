@@ -9,6 +9,7 @@ import Submission from "./components/Submission";
 import Registration from "./components/Registration";
 import RegisterModal from "./components/RegisterModal";
 import Aurora from "./components/ui/Aurora";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,6 +44,9 @@ export default function App() {
 
       {/* Interactive multi-step Registration Wizard Modal */}
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

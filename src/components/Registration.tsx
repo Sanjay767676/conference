@@ -8,7 +8,7 @@ interface RegistrationProps {
 }
 
 export default function Registration({ onRegisterClick }: RegistrationProps) {
-  const [isInternational, setIsInternational] = useState(true);
+  const [isInternational, setIsInternational] = useState(false);
 
   const authorTiers = PRICING_TIERS.filter((t) => t.category === "author");
   const attendeeTiers = PRICING_TIERS.filter((t) => t.category === "attendee");
@@ -33,16 +33,6 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
           {/* Segmented Tab Controller */}
           <div className="inline-flex p-1 bg-slate-200/80 backdrop-blur-sm rounded-xl mt-10 shadow-inner border border-slate-200" id="pricing-currency-toggle">
             <button
-              onClick={() => setIsInternational(true)}
-              className={`relative px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 ${
-                isInternational
-                  ? "bg-brand-dark text-white shadow-md"
-                  : "text-slate-600 hover:text-brand-dark"
-              }`}
-            >
-              International ($ USD)
-            </button>
-            <button
               onClick={() => setIsInternational(false)}
               className={`relative px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 ${
                 !isInternational
@@ -51,6 +41,16 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
               }`}
             >
               National (₹ INR)
+            </button>
+            <button
+              onClick={() => setIsInternational(true)}
+              className={`relative px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 ${
+                isInternational
+                  ? "bg-brand-dark text-white shadow-md"
+                  : "text-slate-600 hover:text-brand-dark"
+              }`}
+            >
+              International ($ USD)
             </button>
           </div>
         </div>

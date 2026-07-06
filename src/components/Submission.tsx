@@ -1,4 +1,4 @@
-import { FileText, Upload, CheckCircle2, Link as LinkIcon, ArrowRight } from 'lucide-react';
+import { FileText, Upload, CheckCircle2, Link as LinkIcon, ArrowRight, BookOpen } from 'lucide-react';
 
 export default function Submission() {
   return (
@@ -62,6 +62,16 @@ export default function Submission() {
           </div>
         </div>
 
+        {/* Publication Info */}
+        <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <BookOpen className="w-6 h-6 text-primary" />
+            <h3 className="text-2xl font-bold text-slate-900">Publication</h3>
+          </div>
+          <p className="text-slate-600 font-medium text-lg">
+            All the accepted and presented papers will be published as Scopus-indexed conference proceedings. Assigned ISBN and DOI (as per publisher norms).
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Where to Submit */}
           <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
