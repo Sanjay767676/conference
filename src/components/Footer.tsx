@@ -40,13 +40,20 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-col gap-2.5 mt-4 text-xs text-slate-400">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>Executive Plaza Tower, New Delhi, India</span>
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span>
+                  SNS College of Technology, Sathy Main Road, SNS Kalvi Nagar, <br />
+                  Saravanampatti [PO], Coimbatore-641 035, Tamil Nadu
+                </span>
               </div>
               <div className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:registry@aiet2026.org">registry@aiet2026.org</a>
+                <a href="mailto:icaidiet26@gmail.com">icaidiet26@gmail.com</a>
+              </div>
+              <div className="flex items-center gap-2 hover:text-white transition-colors mt-1">
+                <MessageSquare className="w-4 h-4 text-primary flex-shrink-0" />
+                <a href="tel:+918903444955">+91 8903444955</a>
               </div>
             </div>
           </div>

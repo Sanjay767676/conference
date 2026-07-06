@@ -13,11 +13,43 @@ ICAIDIET'26
 
 
 
+Publishing Partner 
+ 
 
 About the Conference
 The International Conference on AI-Driven Innovations in Engineering and Technology (ICAIDIET’26), conducted in hybrid mode, serves as a dynamic platform that brings together researchers, academicians, and industry professionals from across the globe to explore the transformative potential of Artificial Intelligence. The conference aims to foster innovation, collaboration, and knowledge exchange across diverse domains of engineering and technology. It emphasizes cutting-edge research, emerging trends, and practical applications of AI, encouraging the development of intelligent solutions to address real-world challenges. ICAIDIET’26 aspires to inspire forward-thinking ideas and promote interdisciplinary approaches that will shape the future of smart and sustainable technologies.
 Hosted by SNS College of Technology, a leading institution known for quality engineering education, innovation, and research, the conference reflects its commitment to academic excellence and technological advancement. In collaboration with Yorkville University, Canada, a renowned university recognized for its global outlook and career-focused education, ICAIDIET’26 encourages international collaboration and knowledge sharing in emerging technologies.
 
+
+ORGANIZING COMMITTEE 
+CHIEF PATRONS 
+Deiva Thiru Dr.S.N. Subbramanian, Founder Chairman, SNS Group. 
+Dr.S. Rajalakshmi, Correspondent, SNS Group.
+Dr.Nalin.SNS, Secretary / Trustee, SNS Group.
+
+PATRONS 
+Dr.V.P. Arunachalam, Director, SNS Technical Institutions. 
+Dr.S. Chenthur Pandian, Executive Director, SNS Technical Campus. 
+Dr.S. Charles, Principal, SNS College of Technology.
+Dr.P. Tamilselvam, VP-Admin., SNS College of Technology.
+Dr.P. Vivekanandan, VP-Academics, SNS College of Technology.
+Dr.L.M. Nithya, Head IQAC, SNS College of Technology.
+
+CONVENORS
+Dr.R. Sudhakaran, Vice Principal, SNS College of Technology - AI Campus. 
+Dr.M.Sudha, HoD, IV CSE-CT.
+
+ORGANIZING SECRETARIES
+Dr.S.Narayanan HoD, IV IT, AIML-CT.
+Dr.K.M.Eazhil, HoD, IV CST, IT, AIDS-CE.
+Dr.K.Sangeetha, HoD, IV CSE, CSD, IOT-CE.
+
+Co-ordinators
+Mr.K.Karthikeyan, AP, CSE 
+Ms.M.Saranya, AP, CSE
+Ms.N. Vijayalakshmi, AP, CSE
+Ms.G. Swathi,AP, CSE 
+Ms.R. Nirmala, AP, CSE
 
 Track 1: Artificial Intelligence & Intelligent Systems
 •	Generative AI and Large Language Models 
@@ -97,9 +129,12 @@ Industry Delegates
 •	Early Bird: ₹11,000 
 •	Late Fee: ₹12,000
 
+Registration Link:
+https://tinyurl.com/3sfr5uae
+
 ADDRESS FOR COMMUNICATION:
 Convenor-ICAIDIET’26 
 SNS College of Technology, sathy main road, SNS Kalvi Nagar, 
 Saravanampatti [PO], Coimbatore-641 035, Tamil Nadu 
 PH: 8903444955
-
+Email: icaidiet26@gmail.com

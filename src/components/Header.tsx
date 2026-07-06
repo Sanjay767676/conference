@@ -16,7 +16,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
       setIsScrolled(window.scrollY > 40);
 
       // Simple scroll spy
-      const sections = ["home", "about", "tracks", "timeline", "pricing"];
+      const sections = ["home", "about", "tracks", "committee", "submission", "timeline", "pricing"];
       const scrollPosition = window.scrollY + 120;
 
       for (const section of sections) {
@@ -40,6 +40,8 @@ export default function Header({ onRegisterClick }: HeaderProps) {
     { name: "Home", href: "#home", id: "home" },
     { name: "About", href: "#about", id: "about" },
     { name: "Tracks", href: "#tracks", id: "tracks" },
+    { name: "Committee", href: "#committee", id: "committee" },
+    { name: "Submission", href: "#submission", id: "submission" },
     { name: "Timeline", href: "#timeline", id: "timeline" },
     { name: "Fee", href: "#pricing", id: "pricing" },
   ];
