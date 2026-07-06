@@ -30,7 +30,7 @@ export default function Tracks() {
             Conference Tracks
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            ICAIDIET'26 welcomes original research papers, reviews, and case study submissions covering technical frameworks and foundational theory across eight core tracks.
+            <span className="font-gambetta tracking-wide font-semibold text-primary">ICAIDIET'26</span> welcomes original research papers, reviews, and case study submissions covering technical frameworks and foundational theory across eight core tracks.
           </p>
         </div>
 

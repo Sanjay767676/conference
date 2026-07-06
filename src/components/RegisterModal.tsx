@@ -142,7 +142,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
               </div>
               <div>
                 <h3 className="font-display font-bold text-slate-800 leading-tight">
-                  ICAIDIET'26 Registration
+                  <span className="font-gambetta tracking-wide">ICAIDIET'26</span> Registration
                 </h3>
                 <span className="text-[10px] text-slate-400 font-mono tracking-wider uppercase">
                   Step {step === 4 ? "Complete" : `${step} of 3`}
@@ -521,7 +521,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                       required
                     />
                     <label htmlFor="agree-checkbox" className="text-[10px] text-slate-500 leading-relaxed cursor-pointer select-none">
-                      I authorize the secure submission of this credential simulator. I agree to receive official ICAIDIET'26 scheduling updates, and permit double-blind academic evaluation procedures.
+                      I authorize the secure submission of this credential simulator. I agree to receive official <span className="font-gambetta tracking-wide">ICAIDIET'26</span> scheduling updates, and permit double-blind academic evaluation procedures.
                     </label>
                   </div>
                 </div>
@@ -540,7 +540,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                     Registration Confirmed!
                   </h4>
                   <p className="text-sm text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Welcome to ICAIDIET'26. A secure confirmation invoice, receipts, and instructions have been sent to <strong className="text-slate-700">{formData.email}</strong>.
+                    Welcome to <span className="font-gambetta tracking-wide font-semibold text-primary">ICAIDIET'26</span>. A secure confirmation invoice, receipts, and instructions have been sent to <strong className="text-slate-700">{formData.email}</strong>.
                   </p>
                 </div>
 

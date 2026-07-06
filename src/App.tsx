@@ -28,18 +28,18 @@ export default function App() {
 
       {/* Dynamic Navigation Header */}
       <div className="relative z-50">
-        <Header onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
+        <Header onRegisterClick={() => alert("Registration Opening Soon")} />
       </div>
 
       {/* Main Sections */}
       <main className="relative z-10">
-        <Hero onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
+        <Hero onRegisterClick={() => alert("Registration Opening Soon")} />
         <About />
         <Tracks />
         <Committee />
         <Submission />
         <Timeline />
-        <Registration onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
+        <Registration onRegisterClick={() => alert("Registration Opening Soon")} />
       </main>
 
       {/* Interactive multi-step Registration Wizard Modal */}

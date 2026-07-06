@@ -2,7 +2,6 @@ import { motion } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
 import wileyLogo from "../../assets/images/wiley.png";
 import yorkLogo from "../../assets/images/york.jpg";
-import SplitText from "./ui/SplitText";
 import CircularText from "./ui/CircularText";
 import { AuroraText } from "./ui/AuroraText";
 interface HeroProps {
@@ -42,6 +41,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             text="ICAIDIET'26*CONFERENCE*"
             onHover="speedUp"
             spinDuration={20}
+            className="text-primary font-gambetta tracking-wider"
           />
         </div>
 
@@ -53,7 +53,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="mb-4 text-5xl md:text-6xl font-display font-black tracking-widest uppercase"
         >
-          <AuroraText className="font-black">ICAIDIET'26</AuroraText>
+          <AuroraText className="font-black font-gambetta tracking-wider">ICAIDIET'26</AuroraText>
         </motion.div>
 
         {/* Hero Headline */}

@@ -175,7 +175,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   }}
                   className="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white font-semibold rounded-xl text-sm shadow-md hover:bg-primary-dark transition-colors"
                 >
-                  Register for ICAIDIET'26
+                  Register for <span className="font-gambetta tracking-wide">ICAIDIET'26</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>

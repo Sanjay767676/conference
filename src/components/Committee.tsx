@@ -13,7 +13,7 @@ export default function Committee() {
             Organizing Committee
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Meet the dedicated individuals organizing ICAIDIET'26.
+            Meet the dedicated individuals organizing <span className="font-gambetta tracking-wide font-semibold text-primary">ICAIDIET'26</span>.
           </p>
         </div>
 

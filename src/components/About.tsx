@@ -38,7 +38,7 @@ export default function About() {
             </h2>
             
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6 max-w-3xl">
-              The International Conference on <strong>AI-Driven Innovation in Engineering and Technology (ICAIDIET'26)</strong> is the premier global forum for sharing pioneering breakthroughs at the intersection of neural networks, cyber-physical architectures, and distributed systems.
+              The International Conference on <strong>AI-Driven Innovation in Engineering and Technology (<span className="font-gambetta tracking-wide">ICAIDIET'26</span>)</strong> is the premier global forum for sharing pioneering breakthroughs at the intersection of neural networks, cyber-physical architectures, and distributed systems.
             </p>
             
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-10 max-w-3xl">

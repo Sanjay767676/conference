@@ -13,7 +13,7 @@ export default function Submission() {
             Paper Submission
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Guidelines and instructions for submitting your paper to ICAIDIET'26.
+            Guidelines and instructions for submitting your paper to <span className="font-gambetta tracking-wide font-semibold text-primary">ICAIDIET'26</span>.
           </p>
         </div>
 

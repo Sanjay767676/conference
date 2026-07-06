@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           
           <div className="flex flex-col gap-2">
-            <h3 className="font-display font-bold text-lg text-[#F4F9FF] mb-1">ICAIDIET'26</h3>
+            <h3 className="font-display font-bold text-lg text-[#F4F9FF] mb-1"><span className="font-gambetta tracking-wide">ICAIDIET'26</span></h3>
             <div className="flex items-start gap-2 text-[#F4F9FF]">
               <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
               <p className="text-xs leading-relaxed">
-                <strong>Convenor-ICAIDIET'26</strong><br/>
+                <strong>Convenor-<span className="font-gambetta tracking-wide">ICAIDIET'26</span></strong><br/>
                 SNS College of Technology, Sathy Main Road, SNS Kalvi Nagar,<br/>
                 Saravanampatti [PO], Coimbatore-641 035, Tamil Nadu
               </p>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-slate-800 mt-5 pt-5 text-center text-[10px] text-[#F4F9FF] opacity-70">
-          <p>© 2026 ICAIDIET'26 Conference. All rights reserved.</p>
+          <p>© 2026 <span className="font-gambetta tracking-wide">ICAIDIET'26</span> Conference. All rights reserved.</p>
         </div>
       </div>
     </footer>
