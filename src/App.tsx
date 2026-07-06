@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
       {/* Full Website Aurora Background */}
-      <div className="fixed inset-0 z-0 opacity-40">
+      <div className="fixed inset-0 z-0 opacity-40 pointer-events-none">
         <Aurora
           colorStops={["#7cff67", "#B497CF", "#5227FF"]}
           blend={0.5}

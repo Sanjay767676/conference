@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
 import wileyLogo from "../../assets/images/wiley.png";
 import yorkLogo from "../../assets/images/york.jpg";
+import SplitText from "./ui/SplitText";
+import CircularText from "./ui/CircularText";
 import { AuroraText } from "./ui/AuroraText";
 interface HeroProps {
   onRegisterClick: () => void;
@@ -34,18 +36,36 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center items-center">
         {/* Main Badge */}
 
+        {/* Circular Text Decoration */}
+        <div className="hidden lg:flex absolute -right-[260px] top-[10px] z-20 items-center justify-center pointer-events-auto opacity-70 hover:opacity-100 transition-opacity">
+          <CircularText
+            text="ICAIDIET'26*CONFERENCE*"
+            onHover="speedUp"
+            spinDuration={20}
+          />
+        </div>
+
+
+        {/* Event Name */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+          className="mb-4 text-5xl md:text-6xl font-display font-black tracking-widest uppercase"
+        >
+          <AuroraText className="font-black">ICAIDIET'26</AuroraText>
+        </motion.div>
 
         {/* Hero Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
-          className="font-display font-bold text-center tracking-tight text-brand-dark leading-tight max-w-4xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6"
+          className="font-display font-bold text-center tracking-tight text-brand-dark leading-[1.1] max-w-5xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8"
           id="hero-title"
         >
-          AI-Driven Innovation in{" "}
-          <AuroraText className="font-bold">Engineering</AuroraText>{" "}
-          and Technology
+          <span className="block mb-0">AI-Driven Innovation in</span>
+          <span className="block text-brand-dark">Engineering and Technology</span>
         </motion.h1>
 
         {/* Subtext */}

@@ -131,7 +131,8 @@ export default function Aurora(props: AuroraProps) {
     const renderer = new Renderer({
       alpha: true,
       premultipliedAlpha: true,
-      antialias: true
+      antialias: false,
+      dpr: 1
     });
     const gl = renderer.gl;
     gl.clearColor(0, 0, 0, 0);
