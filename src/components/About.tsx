@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Check, Cpu, Globe2, Sparkles, Trophy } from "lucide-react";
-import SpotlightCard from "./ui/SpotlightCard";
+import GlassSurface from "./ui/GlassSurface";
 
 export default function About() {
   const highlights = [
@@ -48,15 +48,17 @@ export default function About() {
             {/* Structured benefits */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full text-left" id="about-highlights-grid">
               {highlights.map((item, idx) => (
-                <SpotlightCard key={idx} className="p-0 border-0 bg-transparent rounded-xl flex flex-col h-full shadow-sm">
-                  <div className="flex flex-col items-start p-6 bg-slate-50/70 backdrop-blur-sm border border-slate-100 hover:border-slate-200 transition-colors h-full rounded-xl">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-                      <item.icon className="w-5 h-5" />
+                <div key={idx} className="h-full">
+                  <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+                    <div className="flex flex-col items-start p-6 w-full h-full">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 shrink-0">
+                        <item.icon className="w-5 h-5" />
+                      </div>
+                      <h4 className="font-semibold text-base text-brand-dark mb-2 text-left">{item.title}</h4>
+                      <p className="text-slate-500 text-sm leading-relaxed text-left">{item.desc}</p>
                     </div>
-                    <h4 className="font-semibold text-base text-brand-dark mb-2">{item.title}</h4>
-                    <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                </SpotlightCard>
+                  </GlassSurface>
+                </div>
               ))}
             </div>
           </div>

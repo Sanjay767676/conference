@@ -17,7 +17,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
       {/* Full Website Aurora Background */}
-      <div className="fixed inset-0 z-0 opacity-40 pointer-events-none">
+      <div className="fixed inset-0 z-0 opacity-60 pointer-events-none">
         <Aurora
           colorStops={["#7cff67", "#B497CF", "#5227FF"]}
           blend={0.5}
@@ -30,7 +30,7 @@ export default function App() {
       <div className="relative z-50">
         <Header onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
       </div>
-      
+
       {/* Main Sections */}
       <main className="relative z-10">
         <Hero onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
@@ -44,7 +44,7 @@ export default function App() {
 
       {/* Interactive multi-step Registration Wizard Modal */}
       <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      
+
       {/* Footer */}
       <Footer />
     </div>

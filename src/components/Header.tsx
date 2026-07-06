@@ -74,6 +74,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
           <div className="flex items-center">
             <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="flex items-center gap-4">
               <img src={snsctLogo} alt="SNSCT Logo" className="h-10 md:h-12 w-auto object-contain" />
+              <div className="w-px h-8 md:h-10 bg-slate-300" />
               <img src={snsdtLogo} alt="SNS-DT Logo" className="h-10 md:h-12 w-auto object-contain" />
             </a>
           </div>
