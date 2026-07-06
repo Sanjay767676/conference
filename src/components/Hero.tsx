@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
 import wileyLogo from "../../assets/images/wiley.png";
 import yorkLogo from "../../assets/images/york.jpg";
+import { AuroraText } from "./ui/AuroraText";
 interface HeroProps {
   onRegisterClick: () => void;
 }
@@ -21,16 +22,16 @@ export default function Hero({ onRegisterClick }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-32 pb-8 md:pt-40 md:pb-12 flex flex-col justify-between overflow-hidden gradient-bg"
+      className="relative min-h-screen pt-32 pb-8 md:pt-40 md:pb-12 flex flex-col justify-between overflow-hidden"
     >
       {/* Dynamic Background Elements */}
       <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/10 w-120 h-120 bg-amber-400/5 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       {/* Grid Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a05_1px,transparent_1px),linear-gradient(to_bottom,#0f172a05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] -z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a05_1px,transparent_1px),linear-gradient(to_bottom,#0f172a05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-0 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center items-center">
         {/* Main Badge */}
 
 
@@ -43,10 +44,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           id="hero-title"
         >
           AI-Driven Innovation in{" "}
-          <span className="relative inline-block text-primary">
-            Engineering
-            <span className="absolute left-0 right-0 bottom-1 h-1.5 bg-primary/10 -z-10 rounded-full" />
-          </span>{" "}
+          <AuroraText className="font-bold">Engineering</AuroraText>{" "}
           and Technology
         </motion.h1>
 
@@ -155,7 +153,6 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           </div>
         </motion.div>
       </div>
-
     </section>
   );
 }

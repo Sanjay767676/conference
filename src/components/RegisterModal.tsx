@@ -98,7 +98,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
     // Simulate API delay
     setTimeout(() => {
       setIsSubmitting(false);
-      const generatedTicket = "AIET-" + Math.floor(100000 + Math.random() * 900000);
+      const generatedTicket = "ICAIDIET-" + Math.floor(100000 + Math.random() * 900000);
       setTicketId(generatedTicket);
       setStep(4);
     }, 1800);
@@ -142,7 +142,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
               </div>
               <div>
                 <h3 className="font-display font-bold text-slate-800 leading-tight">
-                  AIET 2026 Registration
+                  ICAIDIET'26 Registration
                 </h3>
                 <span className="text-[10px] text-slate-400 font-mono tracking-wider uppercase">
                   Step {step === 4 ? "Complete" : `${step} of 3`}
@@ -521,7 +521,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                       required
                     />
                     <label htmlFor="agree-checkbox" className="text-[10px] text-slate-500 leading-relaxed cursor-pointer select-none">
-                      I authorize the secure submission of this credential simulator. I agree to receive official AIET 2026 scheduling updates, and permit double-blind academic evaluation procedures.
+                      I authorize the secure submission of this credential simulator. I agree to receive official ICAIDIET'26 scheduling updates, and permit double-blind academic evaluation procedures.
                     </label>
                   </div>
                 </div>
@@ -540,7 +540,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
                     Registration Confirmed!
                   </h4>
                   <p className="text-sm text-slate-500 max-w-sm mx-auto leading-relaxed">
-                    Welcome to AIET 2026. A secure confirmation invoice, receipts, and instructions have been sent to <strong className="text-slate-700">{formData.email}</strong>.
+                    Welcome to ICAIDIET'26. A secure confirmation invoice, receipts, and instructions have been sent to <strong className="text-slate-700">{formData.email}</strong>.
                   </p>
                 </div>
 

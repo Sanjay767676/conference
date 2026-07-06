@@ -31,7 +31,7 @@ export default function Footer() {
                 </div>
               </div>
               <span className="font-display font-bold text-base text-white tracking-tight">
-                AIET <span className="text-primary">2026</span>
+                ICAIDIET <span className="text-primary">'26</span>
               </span>
             </div>
             
@@ -166,7 +166,7 @@ export default function Footer() {
         {/* Bottom divider and Copyright statement */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <span>
-            © 2026 AIET Conference. Organized under academic advisory boards. All rights reserved.
+            © 2026 ICAIDIET'26 Conference. Organized under academic advisory boards. All rights reserved.
           </span>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

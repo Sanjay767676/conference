@@ -8,17 +8,30 @@ import Committee from "./components/Committee";
 import Submission from "./components/Submission";
 import Registration from "./components/Registration";
 import RegisterModal from "./components/RegisterModal";
+import Aurora from "./components/ui/Aurora";
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
+      {/* Full Website Aurora Background */}
+      <div className="fixed inset-0 z-0 opacity-40">
+        <Aurora
+          colorStops={["#7cff67", "#B497CF", "#5227FF"]}
+          blend={0.5}
+          amplitude={1.0}
+          speed={0.5}
+        />
+      </div>
+
       {/* Dynamic Navigation Header */}
-      <Header onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
+      <div className="relative z-50">
+        <Header onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
+      </div>
       
       {/* Main Sections */}
-      <main>
+      <main className="relative z-10">
         <Hero onRegisterClick={() => window.open("https://tinyurl.com/3sfr5uae", "_blank")} />
         <About />
         <Tracks />

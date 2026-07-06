@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, ArrowRight, BrainCircuit } from "lucide-react";
 import snsctLogo from "../../assets/images/SNSCT.png";
+import snsdtLogo from "../../assets/SNS-DT Logo.png";
 interface HeaderProps {
   onRegisterClick: () => void;
 }
@@ -62,18 +63,18 @@ export default function Header({ onRegisterClick }: HeaderProps) {
   return (
     <header
       id="header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 py-3"
           : "bg-transparent py-5"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="flex items-center">
-              <img src={snsctLogo} alt="SNSCT Logo" className="h-10 w-auto object-contain" />
+            <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="flex items-center gap-4">
+              <img src={snsctLogo} alt="SNSCT Logo" className="h-10 md:h-12 w-auto object-contain" />
+              <img src={snsdtLogo} alt="SNS-DT Logo" className="h-10 md:h-12 w-auto object-contain" />
             </a>
           </div>
 
@@ -85,11 +86,10 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`relative text-sm font-medium transition-colors py-2 ${
-                      activeSection === link.id
+                    className={`relative text-sm font-medium transition-colors py-2 ${activeSection === link.id
                         ? "text-primary font-semibold"
                         : "text-slate-600 hover:text-primary"
-                    }`}
+                      }`}
                   >
                     {link.name}
                     {activeSection === link.id && (
@@ -154,11 +154,10 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     <a
                       href={link.href}
                       onClick={(e) => handleLinkClick(e, link.href)}
-                      className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
-                        activeSection === link.id
+                      className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${activeSection === link.id
                           ? "bg-primary-light text-primary font-semibold"
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                      }`}
+                        }`}
                     >
                       {link.name}
                     </a>
@@ -175,7 +174,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   }}
                   className="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white font-semibold rounded-xl text-sm shadow-md hover:bg-primary-dark transition-colors"
                 >
-                  Register for AIET 2026
+                  Register for ICAIDIET'26
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </div>

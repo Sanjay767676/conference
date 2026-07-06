@@ -2,7 +2,7 @@ import { FileText, Upload, CheckCircle2, Link as LinkIcon, ArrowRight } from 'lu
 
 export default function Submission() {
   return (
-    <section id="submission" className="py-24 bg-slate-50">
+    <section id="submission" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-xl mb-4">

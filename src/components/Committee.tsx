@@ -2,7 +2,7 @@ import { Users } from 'lucide-react';
 
 export default function Committee() {
   return (
-    <section id="committee" className="py-24 bg-white">
+    <section id="committee" className="py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-xl mb-4">

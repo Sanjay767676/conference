@@ -4,7 +4,7 @@ import { TIMELINE_EVENTS } from "../data";
 
 export default function Timeline() {
   return (
-    <section id="timeline" className="py-24 bg-white relative overflow-hidden">
+    <section id="timeline" className="py-24 bg-transparent relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
