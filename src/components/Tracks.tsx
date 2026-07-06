@@ -17,7 +17,7 @@ export default function Tracks() {
   };
 
   return (
-    <section id="tracks" className="py-24 bg-transparent">
+    <section id="tracks" className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -26,7 +26,7 @@ export default function Tracks() {
             <Icons.Cpu className="w-3.5 h-3.5 text-primary" />
             <span>Academic Frontiers</span>
           </div>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-dark tracking-tight leading-tight mb-4">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
             Conference Tracks
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

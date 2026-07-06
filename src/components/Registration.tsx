@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, ArrowRight, CreditCard, HelpCircle, AlertCircle } from "lucide-react";
 import { PRICING_TIERS } from "../data";
@@ -8,13 +8,11 @@ interface RegistrationProps {
 }
 
 export default function Registration({ onRegisterClick }: RegistrationProps) {
-  const [isInternational, setIsInternational] = useState(false);
-
   const authorTiers = PRICING_TIERS.filter((t) => t.category === "author");
   const attendeeTiers = PRICING_TIERS.filter((t) => t.category === "attendee");
 
   return (
-    <section id="pricing" className="py-24 bg-transparent">
+    <section id="pricing" className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -23,36 +21,13 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
             <CreditCard className="w-3.5 h-3.5 text-primary" />
             <span>Registration & Fees</span>
           </div>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-brand-dark tracking-tight leading-tight mb-4">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
             Flexible Pricing Options
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Register as an Author to publish your research, or as a general Delegate/Student to attend keynotes, workshops, and network with global peers.
           </p>
 
-          {/* Segmented Tab Controller */}
-          <div className="inline-flex p-1 bg-slate-200/80 backdrop-blur-sm rounded-xl mt-10 shadow-inner border border-slate-200" id="pricing-currency-toggle">
-            <button
-              onClick={() => setIsInternational(false)}
-              className={`relative px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 ${
-                !isInternational
-                  ? "bg-brand-dark text-white shadow-md"
-                  : "text-slate-600 hover:text-brand-dark"
-              }`}
-            >
-              National (₹ INR)
-            </button>
-            <button
-              onClick={() => setIsInternational(true)}
-              className={`relative px-6 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center gap-2 ${
-                isInternational
-                  ? "bg-brand-dark text-white shadow-md"
-                  : "text-slate-600 hover:text-brand-dark"
-              }`}
-            >
-              International ($ USD)
-            </button>
-          </div>
         </div>
 
         {/* Pricing Layout */}
@@ -80,22 +55,6 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                     <p className="text-xs text-slate-500 mb-6 leading-relaxed min-h-[32px]">
                       {tier.audience}
                     </p>
-
-                    {/* Price with smooth transition */}
-                    <div className="mb-6">
-                      <AnimatePresence mode="wait">
-                        <motion.span
-                          key={isInternational ? "intl" : "nat"}
-                          initial={{ opacity: 0, y: -5 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 5 }}
-                          transition={{ duration: 0.15 }}
-                          className="text-2xl lg:text-3xl font-extrabold text-brand-dark tracking-tight"
-                        >
-                          {isInternational ? tier.priceInternational : tier.priceNational}
-                        </motion.span>
-                      </AnimatePresence>
-                    </div>
 
                     {/* Features list */}
                     <ul className="space-y-3 pt-6 border-t border-slate-50">
@@ -134,22 +93,6 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                     <p className="text-xs text-slate-500 mb-6 leading-relaxed min-h-[32px]">
                       {tier.audience}
                     </p>
-
-                    {/* Price with smooth transition */}
-                    <div className="mb-6">
-                      <AnimatePresence mode="wait">
-                        <motion.span
-                          key={isInternational ? "intl" : "nat"}
-                          initial={{ opacity: 0, y: -5 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 5 }}
-                          transition={{ duration: 0.15 }}
-                          className="text-2xl lg:text-3xl font-extrabold text-brand-dark tracking-tight"
-                        >
-                          {isInternational ? tier.priceInternational : tier.priceNational}
-                        </motion.span>
-                      </AnimatePresence>
-                    </div>
 
                     {/* Features list */}
                     <ul className="space-y-3 pt-6 border-t border-slate-50">

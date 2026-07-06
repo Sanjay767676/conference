@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, FileText } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,11 +19,22 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2 text-[#F4F9FF] hover:text-white transition-colors">
               <Mail className="w-4 h-4 text-primary shrink-0" />
               <a href="mailto:icaidiet26@gmail.com" className="text-xs">
                 icaidiet26@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2 text-[#F4F9FF] hover:text-white transition-colors">
+              <FileText className="w-4 h-4 text-primary shrink-0" />
+              <a 
+                href="https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xs underline underline-offset-2 opacity-90 hover:opacity-100"
+              >
+                Wiley Format Template
               </a>
             </div>
           </div>
