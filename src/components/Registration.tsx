@@ -14,7 +14,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
   return (
     <section id="pricing" className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="pricing-header">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary font-semibold text-xs rounded-full uppercase tracking-wider mb-4">
@@ -32,13 +32,9 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
 
         {/* Pricing Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-14" id="pricing-tables-grid">
-          
+
           {/* LEFT PANEL - AUTHOR TIERS */}
           <div className="flex flex-col gap-6" id="author-pricing-panel">
-            <h3 className="text-lg font-bold text-brand-dark flex items-center gap-2 px-1">
-              <span className="w-2.5 h-2.5 bg-primary rounded-full" />
-              For Presenting Authors
-            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-full">
               {authorTiers.map((tier) => (
                 <div
@@ -50,7 +46,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                     <span className="inline-block px-2.5 py-1 bg-primary/10 text-primary font-semibold text-[10px] uppercase tracking-wider rounded-md mb-4">
                       Presenter
                     </span>
-                    
+
                     <h4 className="text-lg font-bold text-brand-dark mb-1">{tier.title}</h4>
                     <p className="text-xs text-slate-500 mb-6 leading-relaxed min-h-[32px]">
                       {tier.audience}
@@ -73,10 +69,6 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
 
           {/* RIGHT PANEL - ATTENDEE TIERS */}
           <div className="flex flex-col gap-6" id="attendee-pricing-panel">
-            <h3 className="text-lg font-bold text-brand-dark flex items-center gap-2 px-1">
-              <span className="w-2.5 h-2.5 bg-amber-400 rounded-full" />
-              For Delegates & Attendees
-            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-full">
               {attendeeTiers.map((tier) => (
                 <div
@@ -86,9 +78,9 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                   <div>
                     {/* Badge */}
                     <span className="inline-block px-2.5 py-1 bg-amber-400/15 text-amber-600 font-semibold text-[10px] uppercase tracking-wider rounded-md mb-4">
-                      Attendee / Guest
+                      PRESENTER
                     </span>
-                    
+
                     <h4 className="text-lg font-bold text-brand-dark mb-1">{tier.title}</h4>
                     <p className="text-xs text-slate-500 mb-6 leading-relaxed min-h-[32px]">
                       {tier.audience}

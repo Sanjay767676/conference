@@ -36,12 +36,12 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         {/* Main Badge */}
 
         {/* Circular Text Decoration */}
-        <div className="hidden lg:flex absolute -right-[260px] top-[10px] z-20 items-center justify-center pointer-events-auto opacity-70 hover:opacity-100 transition-opacity">
+        <div className="hidden lg:flex absolute -right-[260px] top-[10px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
           <CircularText
             text="ICAIDIET'26*CONFERENCE*"
             onHover="speedUp"
             spinDuration={20}
-            className="text-primary font-gambetta tracking-wider"
+            className="text-black font-bold font-gambetta tracking-wider"
           />
         </div>
 

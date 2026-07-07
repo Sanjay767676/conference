@@ -5,7 +5,7 @@ import { TIMELINE_EVENTS } from "../data";
 export default function Timeline() {
   const currentDate = new Date();
 
-  // Helper to parse dates like "October 16, 2026" or "October 23-28, 2026"
+  // Helper to parse dates like "October 16th, 2026" or "October 23rd-28th, 2026"
   const parseEventDate = (dateStr: string) => {
     let normalizedDate = dateStr;
     if (dateStr.includes("-")) {
@@ -14,6 +14,8 @@ export default function Timeline() {
       const yearPart = dateStr.substring(dateStr.length - 4); 
       normalizedDate = `${monthAndStartDay}, ${yearPart}`;
     }
+    // Remove ordinal suffixes for standard JS Date parsing
+    normalizedDate = normalizedDate.replace(/(st|nd|rd|th)/gi, "");
     const d = new Date(normalizedDate);
     d.setHours(23, 59, 59, 999); // End of the day
     return d;
@@ -115,7 +117,11 @@ export default function Timeline() {
                       <div className="flex items-center gap-2 md:self-center bg-white px-4 py-2.5 rounded-xl border border-slate-100 flex-shrink-0 shadow-sm">
                         <Clock className={`w-4 h-4 ${event.isActive ? "text-primary animate-pulse" : "text-slate-400"}`} />
                         <span className={`text-xs font-mono font-semibold ${event.isActive ? "text-primary" : "text-brand-dark"}`}>
-                          {event.date}
+                          {event.date.split(/(st|nd|rd|th)/i).map((part, index) => 
+                            part.toLowerCase().match(/^(st|nd|rd|th)$/) ? (
+                              <sup key={index} className="text-[0.8em] -top-[0.2em] relative">{part.toLowerCase()}</sup>
+                            ) : part
+                          )}
                         </span>
                       </div>
                     </div>

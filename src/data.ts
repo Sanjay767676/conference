@@ -63,42 +63,42 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-1",
     title: "Paper Submission Deadline",
-    date: "October 16, 2026",
+    date: "October 16TH, 2026",
     description: "Strictly enforced final date for original research submissions.",
     isCompleted: false
   },
   {
     id: "time-2",
     title: "Acceptance Notification",
-    date: "October 20, 2026",
+    date: "October 20TH, 2026",
     description: "Acceptance notifications and detailed reviewer feedback dispatched.",
     isCompleted: false
   },
   {
     id: "time-3",
     title: "Early Bird Registration",
-    date: "October 22, 2026",
+    date: "October 22ND, 2026",
     description: "Deadline to avail the discounted registration rates.",
     isCompleted: false
   },
   {
     id: "time-4",
     title: "Late Registration",
-    date: "October 23-28, 2026",
+    date: "October 23RD-28TH, 2026",
     description: "Standard late registration period.",
     isCompleted: false
   },
   {
     id: "time-5",
     title: "Final Manuscript Notification",
-    date: "November 02, 2026",
+    date: "November 2ND, 2026",
     description: "Notification for final camera-ready manuscript acceptance.",
     isCompleted: false
   },
   {
     id: "time-6",
     title: "Conference Dates (ICAIDIET'26)",
-    date: "November 20-21, 2026",
+    date: "November 20TH-21ST, 2026",
     description: "Opening keynote, presentation tracks, and networking.",
     isCompleted: false
   }
