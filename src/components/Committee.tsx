@@ -184,6 +184,22 @@ export default function Committee() {
                   <p className="font-semibold text-slate-900">Dr.M.Santhoshkumar</p>
                   <p className="text-sm text-slate-600">Senoir Research Engineer,<br/>CEWiT IITM, Chennai.</p>
                 </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Moovarkku Mudhalvan</p>
+                  <p className="text-sm text-slate-600">OCI ExaCS Senior Software Development Manager,<br/>Oracle - Japan</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Anand Kumaravel</p>
+                  <p className="text-sm text-slate-600">Software Development Manager,<br/>Amazon - Texas, United States</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
+                  <p className="text-sm text-slate-600">Professor,<br/>Yorkville University, Canada</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Meena Ramanathan</p>
+                  <p className="text-sm text-slate-600">Configuration Management,<br/>Qualcomm, Bengaluru</p>
+                </li>
               </ul>
             </div>
           </GlassSurface>

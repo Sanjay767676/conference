@@ -56,7 +56,7 @@ export default function Submission() {
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">Follow the standard IEEE conference template for paper formatting.</span>
+                  <span className="text-left">Follow the standard WILEY conference template for paper formatting.</span>
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
@@ -95,7 +95,7 @@ export default function Submission() {
               <p className="text-slate-600 mb-4 text-sm text-left">
                 All submissions will be handled electronically via the Microsoft CMT platform once the portal is open.
               </p>
-              <button 
+              <button
                 disabled
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-slate-400 cursor-not-allowed w-full sm:w-auto mt-auto"
               >

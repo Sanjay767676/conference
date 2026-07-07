@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -7,13 +6,10 @@ import Timeline from "./components/Timeline";
 import Committee from "./components/Committee";
 import Submission from "./components/Submission";
 import Registration from "./components/Registration";
-import RegisterModal from "./components/RegisterModal";
 import Aurora from "./components/ui/Aurora";
 import Footer from "./components/Footer";
 
 export default function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
       {/* Full Website Aurora Background */}
@@ -41,9 +37,6 @@ export default function App() {
         <Timeline />
         <Registration onRegisterClick={() => alert("Registration Opening Soon")} />
       </main>
-
-      {/* Interactive multi-step Registration Wizard Modal */}
-      <RegisterModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       {/* Footer */}
       <Footer />

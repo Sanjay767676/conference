@@ -86,12 +86,12 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16"
+          className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 w-full px-4 sm:px-8 md:w-auto mb-16 mx-auto"
           id="hero-actions"
         >
           <button
             onClick={onRegisterClick}
-            className="w-full sm:w-auto px-8 py-4 bg-brand-dark text-white font-semibold rounded-xl text-sm hover:bg-opacity-95 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-900/15 flex items-center justify-center gap-2 group"
+            className="w-full md:w-auto px-8 py-4 bg-brand-dark text-white font-semibold rounded-xl text-sm hover:bg-opacity-95 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-900/15 flex items-center justify-center gap-2 group"
           >
             Register Now
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -99,7 +99,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
 
           <button
             onClick={handleScrollToTimeline}
-            className="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 hover:text-brand-dark font-semibold rounded-xl text-sm border border-slate-200 hover:border-slate-300 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm flex items-center justify-center gap-2 group"
+            className="w-full md:w-auto px-8 py-4 bg-white text-slate-700 hover:text-brand-dark font-semibold rounded-xl text-sm border border-slate-200 hover:border-slate-300 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm flex items-center justify-center gap-2 group"
           >
             <FileText className="w-4 h-4 text-slate-400 group-hover:text-slate-600 transition-colors" />
             Submission Guidelines
