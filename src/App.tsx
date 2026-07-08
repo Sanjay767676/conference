@@ -8,7 +8,7 @@ import Submission from "./components/Submission";
 import Registration from "./components/Registration";
 import Aurora from "./components/ui/Aurora";
 import Footer from "./components/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
 export default function App() {
   return (
     <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
@@ -40,6 +40,7 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+      <Analytics />
     </div>
   );
 }
