@@ -150,12 +150,24 @@ export default function Committee() {
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Advisory Committee</h3>
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 <li>
-                  <p className="font-semibold text-slate-900">Dr.A.Johnson Santhosh</p>
-                  <p className="text-sm text-slate-600">Associate Professor, Department of Mechanical Engineering,<br />Jimma University, Ethiopia.</p>
+                  <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
+                  <p className="text-sm text-slate-600">Professor,<br />Yorkville University, Canada</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Moovarkku Mudhalvan</p>
+                  <p className="text-sm text-slate-600">OCI ExaCS Senior Software Development Manager,<br />Oracle - Japan</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Anand Kumaravel</p>
+                  <p className="text-sm text-slate-600">Software Development Manager,<br />Amazon - Texas, United States</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Srinivas Konda</p>
-                  <p className="text-sm text-slate-600">Professor of CSE & Dean,<br />School of Engineering & Technology ,Kaveri University Gowraram, Hyderabad.</p>
+                  <p className="text-sm text-slate-600">Professor & Dean of CSE ,<br />School of Engineering & Technology ,Kaveri University Gowraram, Hyderabad.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr.A.Johnson Santhosh</p>
+                  <p className="text-sm text-slate-600">Associate Professor, Department of Mechanical Engineering,<br />Jimma University, Ethiopia.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Abhinoy Singh </p>
@@ -204,18 +216,6 @@ export default function Committee() {
                 <li>
                   <p className="font-semibold text-slate-900">Dr.M.Santhoshkumar</p>
                   <p className="text-sm text-slate-600">Senoir Research Engineer,<br />CEWiT IITM, Chennai.</p>
-                </li>
-                <li>
-                  <p className="font-semibold text-slate-900">Moovarkku Mudhalvan</p>
-                  <p className="text-sm text-slate-600">OCI ExaCS Senior Software Development Manager,<br />Oracle - Japan</p>
-                </li>
-                <li>
-                  <p className="font-semibold text-slate-900">Anand Kumaravel</p>
-                  <p className="text-sm text-slate-600">Software Development Manager,<br />Amazon - Texas, United States</p>
-                </li>
-                <li>
-                  <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
-                  <p className="text-sm text-slate-600">Professor,<br />Yorkville University, Canada</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Meena Ramanathan</p>
