@@ -155,9 +155,8 @@ export const PRICING_TIERS: PricingTier[] = [
     priceInternational: "$150",
     priceNational: "₹3,000",
     features: [
-      "Early Bird: ₹3,000 / $150",
-      "Late Fee: ₹4,000 / $200",
-      "Official participation certificate"
+      "Fee : ₹1000/$10",
+      "Official Attendee certificate"
     ]
   }
 ];

@@ -154,8 +154,24 @@ export default function Committee() {
                   <p className="text-sm text-slate-600">Associate Professor, Department of Mechanical Engineering,<br />Jimma University, Ethiopia.</p>
                 </li>
                 <li>
+                  <p className="font-semibold text-slate-900">Dr. Srinivas Konda</p>
+                  <p className="text-sm text-slate-600">Professor of CSE & Dean,<br />School of Engineering & Technology ,Kaveri University Gowraram, Hyderabad.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. Abhinoy Singh </p>
+                  <p className="text-sm text-slate-600">Assistant Professor,<br />IIT Patna</p>
+                </li>
+                <li>
                   <p className="font-semibold text-slate-900">Dr.Sudip Roy</p>
                   <p className="text-sm text-slate-600">Associate Professor, CSE,<br />IIT, Roorkee.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. A. Bhuvaneswari </p>
+                  <p className="text-sm text-slate-600">Professor ,IT,<br />Adhiparasakthi Engineering College ,Melmaruvathur </p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. Somasekar J </p>
+                  <p className="text-sm text-slate-600">Professor, CSE<br /> JAIN University, Bengaluru</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Hitesh Shrimali</p>
