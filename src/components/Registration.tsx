@@ -1,6 +1,5 @@
-import React from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { Check, ArrowRight, CreditCard, HelpCircle, AlertCircle } from "lucide-react";
+import { motion } from "motion/react";
+import { Check, CreditCard } from "lucide-react";
 import { PRICING_TIERS } from "../data";
 
 interface RegistrationProps {
@@ -39,7 +38,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
               {authorTiers.map((tier) => (
                 <div
                   key={tier.id}
-                  className="bg-white border border-slate-100 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all relative overflow-hidden"
+                  className="bg-white/60 backdrop-blur-md border border-slate-100/50 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all relative overflow-hidden"
                 >
                   <div>
                     {/* Badge */}
@@ -73,7 +72,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
               {attendeeTiers.map((tier) => (
                 <div
                   key={tier.id}
-                  className="bg-white border border-slate-100 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all relative overflow-hidden"
+                  className="bg-white/60 backdrop-blur-md border border-slate-100/50 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all relative overflow-hidden"
                 >
                   <div>
                     {/* Badge */}

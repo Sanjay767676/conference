@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, ArrowRight, BrainCircuit } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import snsctLogo from "../../assets/images/SNSCT.png";
 import snsdtLogo from "../../assets/SNS-DT Logo.png";
 interface HeaderProps {
@@ -47,7 +47,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
     { name: "Fee", href: "#pricing", id: "pricing" },
   ];
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsOpen(false);
     const target = document.querySelector(href);

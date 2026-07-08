@@ -17,9 +17,9 @@ export default function Committee() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8 items-start">
           {/* Chief Patrons */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <GlassSurface width="100%" height="auto" borderRadius={16} className="w-full">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Chief Patrons</h3>
               <ul className="space-y-4">
@@ -41,7 +41,7 @@ export default function Committee() {
           </GlassSurface>
 
           {/* Patrons */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <GlassSurface width="100%" height="auto" borderRadius={16} className="w-full">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Patrons</h3>
               <ul className="space-y-4">
@@ -74,9 +74,9 @@ export default function Committee() {
           </GlassSurface>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8 items-start">
           {/* Convenors */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <GlassSurface width="100%" height="auto" borderRadius={16} className="w-full">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Convenors</h3>
               <ul className="space-y-4">
@@ -93,7 +93,7 @@ export default function Committee() {
           </GlassSurface>
 
           {/* Organizing Secretaries */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <GlassSurface width="100%" height="auto" borderRadius={16} className="w-full">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Organizing Secretaries</h3>
               <ul className="space-y-4">
@@ -114,7 +114,7 @@ export default function Committee() {
           </GlassSurface>
 
           {/* Co-ordinators */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <GlassSurface width="100%" height="auto" borderRadius={16} className="w-full">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Co-ordinators</h3>
               <ul className="space-y-4">
@@ -143,9 +143,9 @@ export default function Committee() {
           </GlassSurface>
         </div>
 
-        <div className="grid md:grid-cols-1 gap-8">
+        <div className="grid md:grid-cols-1 gap-8 items-start">
           {/* Advisory Committee */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full">
+          <GlassSurface width="100%" height="auto" borderRadius={16} className="w-full">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Advisory Committee</h3>
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">

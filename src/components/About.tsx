@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Check, Cpu, Globe2, Sparkles, Trophy } from "lucide-react";
+import { Cpu, Globe2, Sparkles, Trophy } from "lucide-react";
 import GlassSurface from "./ui/GlassSurface";
 
 export default function About() {

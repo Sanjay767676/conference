@@ -117,8 +117,7 @@ export const PRICING_TIERS: PricingTier[] = [
       "Early Bird (With Scopus proceedings): ₹10,000",
       "Late Fee (Conference alone): ₹2,500",
       "Late Fee (With Scopus proceedings): ₹11,000",
-      "Official presentation certificate",
-      "Networking dinner & tea breaks included"
+      "Official presentation certificate"
     ]
   },
   {
@@ -132,32 +131,34 @@ export const PRICING_TIERS: PricingTier[] = [
       "Early Bird: $350",
       "Late Fee: $400",
       "Scopus-indexed conference book proceedings",
-      "Official presentation certificate",
-      "Networking dinner & tea breaks included"
+      "Official presentation certificate"
     ]
   },
   {
     id: "fee-3",
     title: "Industry Delegates",
     category: "attendee",
-    audience: "Industry professionals attending the conference",
+    audience: "Industry professionals presenting approved research papers",
     priceInternational: "-",
     priceNational: "₹11,000 - ₹12,000",
     features: [
       "Early Bird: ₹11,000",
       "Late Fee: ₹12,000",
-      "Keynote panels & roundtables admission",
-      "Official participation certificate",
-      "Gala networking dinner entry",
-      "Daily lunch & high tea"
+      "Official participation certificate"
+    ]
+  },
+  {
+    id: "fee-4",
+    title: "Attendees / Delegates",
+    category: "attendee",
+    audience: "General attendees and academic delegates",
+    priceInternational: "$150",
+    priceNational: "₹3,000",
+    features: [
+      "Early Bird: ₹3,000 / $150",
+      "Late Fee: ₹4,000 / $200",
+      "Official participation certificate"
     ]
   }
 ];
 
-export const PARTNERS = [
-  { name: "WILEY", logoUrl: "https://api.iconify.design/logos:wiley.svg?height=28" },
-  { name: "YORKVILLE UNIVERSITY", logoUrl: "https://api.iconify.design/academicons:crossref.svg?height=32&color=64748b" },
-  { name: "IEEE", logoUrl: "https://api.iconify.design/simple-icons:ieee.svg?height=30&color=006699" },
-  { name: "SPRINGER", logoUrl: "https://api.iconify.design/simple-icons:springer.svg?height=28&color=001c3d" },
-  { name: "ACADEMY OF SCIENCES", logoUrl: "https://api.iconify.design/academicons:open-access.svg?height=30&color=64748b" }
-];
