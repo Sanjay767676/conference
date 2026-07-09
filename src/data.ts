@@ -151,7 +151,7 @@ export const PRICING_TIERS: PricingTier[] = [
     id: "fee-4",
     title: "Attendees / Listener",
     category: "attendee",
-    audience: "General attendees , academicions and Industry delegates",
+    audience: "General attendees, Academia, and industry delegates",
     priceInternational: "$150",
     priceNational: "₹3,000",
     features: [
