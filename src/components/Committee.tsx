@@ -162,12 +162,12 @@ export default function Committee() {
                   <p className="text-sm text-slate-600">Software Development Manager,<br />Amazon - Texas, United States</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900">Dr. Srinivas Konda</p>
-                  <p className="text-sm text-slate-600">Professor & Dean of CSE ,<br />School of Engineering & Technology ,Kaveri University Gowraram, Hyderabad.</p>
-                </li>
-                <li>
                   <p className="font-semibold text-slate-900">Dr.A.Johnson Santhosh</p>
                   <p className="text-sm text-slate-600">Associate Professor, Department of Mechanical Engineering,<br />Jimma University, Ethiopia.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. Srinivas Konda</p>
+                  <p className="text-sm text-slate-600">Professor & Dean of CSE ,<br />School of Engineering & Technology ,Kaveri University Gowraram, Hyderabad.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Abhinoy Singh </p>
@@ -179,7 +179,7 @@ export default function Committee() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A. Bhuvaneswari </p>
-                  <p className="text-sm text-slate-600">Professor ,IT,<br />Adhiparasakthi Engineering College ,Melmaruvathur </p>
+                  <p className="text-sm text-slate-600">Professor ,IT,<br />Adhiparasakthi Engineering College , <br /> Chengalpattu </p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Somasekar J </p>

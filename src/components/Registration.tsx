@@ -77,7 +77,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                   <div>
                     {/* Badge */}
                     <span className="inline-block px-2.5 py-1 bg-amber-400/15 text-amber-600 font-semibold text-[10px] uppercase tracking-wider rounded-md mb-4">
-                      PRESENTER
+                      {tier.id === 'fee-3' ? 'PRESENTER' : 'LISTENER'}
                     </span>
 
                     <h4 className="text-lg font-bold text-brand-dark mb-1">{tier.title}</h4>
