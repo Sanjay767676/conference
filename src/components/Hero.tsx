@@ -4,6 +4,7 @@ import wileyLogo from "../../assets/images/wiley.png";
 import yorkLogo from "../../assets/images/york.jpg";
 import CircularText from "./ui/CircularText";
 import { AuroraText } from "./ui/AuroraText";
+
 interface HeroProps {
   onRegisterClick: () => void;
 }
@@ -36,7 +37,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         {/* Main Badge */}
 
         {/* Circular Text Decoration */}
-        <div className="hidden lg:flex absolute -right-[260px] top-[10px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
+        <div className="hidden lg:flex absolute -right-[180px] top-[10px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
           <CircularText
             text="ICAIDIET'26*CONFERENCE*"
             onHover="speedUp"
@@ -51,9 +52,9 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="mb-4 text-5xl md:text-6xl font-display font-black tracking-widest uppercase"
+          className="mb-6 text-7xl sm:text-8xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark"
         >
-          <AuroraText className="font-black font-gambetta tracking-wider">ICAIDIET'26</AuroraText>
+          <AuroraText className="inline-block font-bold" speed={2}>ICAIDIET'26</AuroraText>
         </motion.div>
 
         {/* Hero Headline */}
@@ -61,11 +62,18 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
-          className="font-display font-bold text-center tracking-tight text-brand-dark leading-[1.1] max-w-5xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-8"
+          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center gap-1"
           id="hero-title"
         >
-          <span className="block mb-0">AI-Driven Innovation in</span>
-          <span className="block text-brand-dark">Engineering and Technology</span>
+          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre">
+            International Conference on <span className="font-bold">AI-Driven</span> Innovation
+          </span>
+          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal -mb-2" style={{ fontFamily: '"Mr Bedfort", cursive' }}>
+            in
+          </span>
+          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre -mt-2">
+            Engineering and Technology
+          </span>
         </motion.h1>
 
         {/* Subtext */}
@@ -73,7 +81,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center text-slate-600 max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed mb-10"
+          className="text-center text-slate-600 max-w-2xl text-sm sm:text-base md:text-base leading-relaxed mb-10"
           id="hero-description"
         >
           Join leading global researchers, practitioners, and educators to explore the
