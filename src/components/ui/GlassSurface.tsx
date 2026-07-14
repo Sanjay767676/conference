@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState, useId } from 'react';
-import './GlassSurface.css';
 
 export interface GlassSurfaceProps {
   children?: React.ReactNode;
@@ -199,7 +198,7 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
   }, [width, height]);
 
   const supportsSVGFilters = () => {
-    return false; // Force CSS fallback for 120hz performance across 20+ cards
+    return false; // Force CSS fallback for performance
   };
 
   const supportsBackdropFilter = () => {

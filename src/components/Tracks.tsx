@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import * as Icons from "lucide-react";
 import { CONFERENCE_TRACKS } from "../data";
-import GlassSurface from "./ui/GlassSurface";
 
 export default function Tracks() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -42,7 +41,7 @@ export default function Tracks() {
 
             return (
               <div key={track.id} className="h-full">
-                <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+                <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm transition-transform hover:-translate-y-1">
                   <motion.div
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
@@ -98,7 +97,7 @@ export default function Tracks() {
                       </AnimatePresence>
                     </div>
                   </motion.div>
-                </GlassSurface>
+                </div>
               </div>
             );
           })}

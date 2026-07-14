@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react"
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-slate-50 selection:bg-primary selection:text-white">
+    <div className="relative min-h-screen selection:bg-primary selection:text-white bg-transparent">
       {/* Dynamic Navigation Header */}
       <div className="relative z-50">
         <Header onRegisterClick={() => alert("Registration Opening Soon")} />

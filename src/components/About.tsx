@@ -49,15 +49,15 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full text-left" id="about-highlights-grid">
               {highlights.map((item, idx) => (
                 <div key={idx} className="h-full">
-                  <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+                  <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm transition-transform hover:-translate-y-1">
                     <div className="flex flex-col items-start p-6 w-full h-full">
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4 shrink-0">
+                      <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-4 shrink-0">
                         <item.icon className="w-5 h-5" />
                       </div>
                       <h4 className="font-semibold text-base text-brand-dark mb-2 text-left">{item.title}</h4>
-                      <p className="text-slate-500 text-sm leading-relaxed text-left">{item.desc}</p>
+                      <p className="text-slate-600 text-sm leading-relaxed text-left">{item.desc}</p>
                     </div>
-                  </GlassSurface>
+                  </div>
                 </div>
               ))}
             </div>

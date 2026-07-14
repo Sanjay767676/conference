@@ -1,5 +1,5 @@
 import { FileText, Upload, CheckCircle2, Link as LinkIcon, ArrowRight, BookOpen } from 'lucide-react';
-import GlassSurface from './ui/GlassSurface';
+
 
 export default function Submission() {
   return (
@@ -19,7 +19,7 @@ export default function Submission() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Author Guidelines */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
@@ -40,10 +40,10 @@ export default function Submission() {
                 </li>
               </ul>
             </div>
-          </GlassSurface>
+          </div>
 
           {/* Submission Guidelines */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <Upload className="w-6 h-6 text-primary" />
@@ -64,12 +64,12 @@ export default function Submission() {
                 </li>
               </ul>
             </div>
-          </GlassSurface>
+          </div>
         </div>
 
         {/* Publication Info */}
         <div className="mb-12">
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full">
+          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <BookOpen className="w-6 h-6 text-primary" />
@@ -79,11 +79,11 @@ export default function Submission() {
                 All the accepted and presented papers will be published as Scopus-indexed conference proceedings. Assigned ISBN and DOI (as per publisher norms).
               </p>
             </div>
-          </GlassSurface>
+          </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Where to Submit */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <LinkIcon className="w-6 h-6 text-primary" />
@@ -102,10 +102,10 @@ export default function Submission() {
                 Portal Opening Soon
               </button>
             </div>
-          </GlassSurface>
+          </div>
 
           {/* How to Submit */}
-          <GlassSurface width="100%" height="100%" borderRadius={16} className="w-full h-full">
+          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
@@ -129,7 +129,7 @@ export default function Submission() {
                 </li>
               </ul>
             </div>
-          </GlassSurface>
+          </div>
         </div>
       </div>
     </section>

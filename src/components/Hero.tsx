@@ -22,6 +22,17 @@ export default function Hero({ onRegisterClick }: HeroProps) {
     }
   };
 
+  const handleScrollToSubmission = () => {
+    const target = document.querySelector("#submission");
+    if (target) {
+      const offsetTop = (target as HTMLElement).offsetTop - 80;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -30,16 +41,16 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       {/* Announcement Banner */}
       <div className="absolute top-[80px] md:top-[96px] left-0 w-full bg-slate-100/90 border-y border-slate-200 py-2.5 overflow-hidden backdrop-blur-md shadow-sm z-40">
         <div className="flex w-max animate-marquee items-center gap-12 px-4">
-           {[...Array(4)].map((_, i) => (
-             <div key={i} className="flex items-center gap-12 whitespace-nowrap">
-               <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publication Partner</span>
-               <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
-               <span className="text-slate-300">|</span>
-               <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexing Partner</span>
-               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
-               <span className="text-slate-300">|</span>
-             </div>
-           ))}
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="flex items-center gap-12 whitespace-nowrap">
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publication Partner</span>
+              <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
+              <span className="text-slate-300">|</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexing Partner</span>
+              <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
+              <span className="text-slate-300">|</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -70,7 +81,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="mb-6 text-7xl sm:text-8xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark"
+          className="mb-6 text-5xl sm:text-7xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2"
         >
           <AuroraText className="inline-block font-bold" speed={2}>ICAIDIET'26</AuroraText>
         </motion.div>
@@ -80,16 +91,16 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
-          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center"
+          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center px-4"
           id="hero-title"
         >
-          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
             International Conference on <span className="font-bold">AI-Driven</span> Innovation
           </span>
-          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal -mt-4 -mb-3 z-0" style={{ fontFamily: '"Mr Bedfort", cursive' }}>
-            in
+          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal py-1 md:py-2 z-0" style={{ fontFamily: '"Brittany Signature", "Great Vibes", "Dancing Script", cursive' }}>
+            In
           </span>
-          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
             Engineering and Technology
           </span>
         </motion.h1>
@@ -102,9 +113,6 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           className="text-center text-slate-600 max-w-2xl text-sm sm:text-base md:text-base leading-relaxed mb-10"
           id="hero-description"
         >
-          Join leading global researchers, practitioners, and educators to explore the
-          latest trends and breakthroughs at the intersection of AI, Engineering,
-          and modern technology frameworks.
         </motion.p>
 
         {/* CTAs */}
@@ -124,7 +132,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           </button>
 
           <button
-            onClick={handleScrollToTimeline}
+            onClick={handleScrollToSubmission}
             className="w-full md:w-auto px-8 py-4 bg-white text-slate-700 hover:text-brand-dark font-semibold rounded-xl text-sm border border-slate-200 hover:border-slate-300 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm flex items-center justify-center gap-2 group"
           >
             <FileText className="w-4 h-4 text-slate-400 group-hover:text-slate-600 transition-colors" />
@@ -186,6 +194,6 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         </motion.div>
       </div>
 
-    </section>
+    </section >
   );
 }
