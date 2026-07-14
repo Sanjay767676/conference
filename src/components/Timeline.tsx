@@ -42,9 +42,8 @@ export default function Timeline() {
           
           {/* Left Column (35% / 4 cols) - Header & Static Badge */}
           <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-28" id="timeline-header-col">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary font-semibold text-xs rounded-full uppercase tracking-wider mb-4">
-              <Calendar className="w-3.5 h-3.5 text-primary" />
-              <span>Deadlines & Dates</span>
+            <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
+              Deadlines & Dates
             </div>
             
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">

@@ -88,15 +88,15 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
                     className={`relative text-sm font-medium transition-colors py-2 ${activeSection === link.id
-                        ? "text-primary font-semibold"
-                        : "text-slate-600 hover:text-primary"
+                        ? "text-brand-dark font-semibold"
+                        : "text-brand-dark hover:opacity-80"
                       }`}
                   >
                     {link.name}
                     {activeSection === link.id && (
                       <motion.div
                         layoutId="activeUnderline"
-                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full"
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-dark rounded-full"
                         transition={{ type: "spring", stiffness: 380, damping: 30 }}
                       />
                     )}

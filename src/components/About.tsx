@@ -28,20 +28,19 @@ export default function About() {
           
           {/* Text Details */}
           <div className="flex flex-col items-center" id="about-info-col">
-            <div className="flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary font-semibold text-xs rounded-full uppercase tracking-wider mb-4">
-              <Sparkles className="w-3.5 h-3.5 text-primary" />
-              <span>About the Conference</span>
+            <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
+              About The Conference
             </div>
             
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4" id="about-title">
               Bridging Global Research with Next-Gen Intelligence
             </h2>
             
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-6 max-w-3xl">
+            <p className="text-brand-dark text-base sm:text-lg leading-relaxed mb-6 max-w-3xl">
               The International Conference on <strong>AI-Driven Innovation in Engineering and Technology (<span className="font-gambetta tracking-wide">ICAIDIET'26</span>)</strong> is the premier global forum for sharing pioneering breakthroughs at the intersection of neural networks, cyber-physical architectures, and distributed systems.
             </p>
             
-            <p className="text-slate-500 text-sm sm:text-base leading-relaxed mb-10 max-w-3xl">
+            <p className="text-brand-dark text-sm sm:text-base leading-relaxed mb-10 max-w-3xl">
               We bring together world-class researchers, academic professors, and leading industry engineers to discuss deep learning, edge systems, smart grids, and computer vision. Our agenda includes curated peer presentations, keynotes, and high-energy developer panels designed to fast-track research collaboration.
             </p>
 

@@ -21,15 +21,12 @@ export default function Tracks() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="tracks-header">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary font-semibold text-xs rounded-full uppercase tracking-wider mb-4">
-            <Icons.Cpu className="w-3.5 h-3.5 text-primary" />
-            <span>Academic Frontiers</span>
-          </div>
+
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
             Conference Tracks
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            <span className="font-gambetta tracking-wide font-semibold text-primary">ICAIDIET'26</span> welcomes original research papers, reviews, and case study submissions covering technical frameworks and foundational theory across eight core tracks.
+          <p className="text-lg text-brand-dark max-w-2xl mx-auto">
+            <span className="font-gambetta tracking-wide font-semibold text-brand-dark">ICAIDIET'26</span> welcomes original research papers, reviews, and case study submissions covering technical frameworks and foundational theory across eight core tracks.
           </p>
         </div>
 

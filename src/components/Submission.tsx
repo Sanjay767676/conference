@@ -12,8 +12,8 @@ export default function Submission() {
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
             Paper Submission
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Guidelines and instructions for submitting your paper to <span className="font-gambetta tracking-wide font-semibold text-primary">ICAIDIET'26</span>.
+          <p className="text-lg text-brand-dark max-w-2xl mx-auto">
+            Guidelines and instructions for submitting your paper to <span className="font-gambetta tracking-wide font-semibold text-brand-dark">ICAIDIET'26</span>.
           </p>
         </div>
 

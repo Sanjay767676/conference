@@ -97,13 +97,50 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
             International Conference on <span className="font-bold">AI-Driven</span> Innovation
           </span>
-          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal py-1 md:py-2 z-0" style={{ fontFamily: '"Brittany Signature", "Great Vibes", "Dancing Script", cursive' }}>
-            In
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre py-1 md:py-2 z-0">
+            in
           </span>
           <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
             Engineering and Technology
           </span>
         </motion.h1>
+
+        {/* Highlighted quick badges */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="flex flex-row justify-between items-center max-w-2xl w-full bg-[#fdf08a] p-4 sm:p-6 rounded-2xl shadow-sm mb-12"
+          id="hero-quick-facts"
+        >
+          <div className="flex flex-1 items-center gap-3.5 pl-2 border-r border-white/60">
+            <div className="w-10 h-10 rounded-lg bg-white/40 flex items-center justify-center text-primary flex-shrink-0">
+              <Calendar className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-500 font-semibold">
+                When
+              </span>
+              <span className="text-sm sm:text-base font-semibold text-brand-dark">
+                Nov 20-21, 2026
+              </span>
+            </div>
+          </div>
+
+          <div className="flex flex-1 items-center gap-3.5 pl-4 sm:pl-8">
+            <div className="w-10 h-10 rounded-lg bg-white/40 flex items-center justify-center text-amber-500 flex-shrink-0">
+              <Globe2 className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-500 font-semibold">
+                Format
+              </span>
+              <span className="text-sm sm:text-base font-semibold text-brand-dark">
+                Hybrid Mode
+              </span>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Subtext */}
         <motion.p
@@ -140,42 +177,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           </button>
         </motion.div>
 
-        {/* Highlighted quick badges */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="grid grid-cols-2 gap-6 max-w-2xl w-full border border-slate-100 bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-sm mb-16"
-          id="hero-quick-facts"
-        >
-          <div className="flex items-center gap-3.5 pl-2 border-r border-slate-100">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
-              <Calendar className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-400 font-semibold">
-                When
-              </span>
-              <span className="text-sm font-semibold text-brand-dark">
-                Nov 20-21, 2026
-              </span>
-            </div>
-          </div>
 
-          <div className="flex items-center gap-3.5 pl-2 md:pl-4">
-            <div className="w-10 h-10 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-500 flex-shrink-0">
-              <Globe2 className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-400 font-semibold">
-                Format
-              </span>
-              <span className="text-sm font-semibold text-brand-dark">
-                Hybrid Mode
-              </span>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Publication & Academic Partners */}
         <motion.div

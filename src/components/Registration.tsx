@@ -16,14 +16,13 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="pricing-header">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary font-semibold text-xs rounded-full uppercase tracking-wider mb-4">
-            <CreditCard className="w-3.5 h-3.5 text-primary" />
-            <span>Registration & Fees</span>
+          <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
+            Registration & Fees
           </div>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
             Flexible Pricing Options
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-brand-dark text-sm sm:text-base leading-relaxed">
             Register as an Author to publish your research, or as a general Delegate/Student to attend keynotes, workshops, and network with global peers.
           </p>
 
