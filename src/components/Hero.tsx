@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
 import wileyLogo from "../../assets/images/wiley.png";
 import yorkLogo from "../../assets/images/york.jpg";
+import scopusLogo from "../../assets/images/scopus.png";
 import CircularText from "./ui/CircularText";
 import { AuroraText } from "./ui/AuroraText";
 
@@ -26,6 +27,22 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       id="home"
       className="relative min-h-screen pt-32 pb-8 md:pt-40 md:pb-12 flex flex-col justify-between overflow-hidden"
     >
+      {/* Announcement Banner */}
+      <div className="absolute top-[80px] md:top-[96px] left-0 w-full bg-slate-100/90 border-y border-slate-200 py-2.5 overflow-hidden backdrop-blur-md shadow-sm z-40">
+        <div className="flex w-max animate-marquee items-center gap-12 px-4">
+           {[...Array(4)].map((_, i) => (
+             <div key={i} className="flex items-center gap-12 whitespace-nowrap">
+               <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publication Partner</span>
+               <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
+               <span className="text-slate-300">|</span>
+               <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexing Partner</span>
+               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
+               <span className="text-slate-300">|</span>
+             </div>
+           ))}
+        </div>
+      </div>
+
       {/* Dynamic Background Elements */}
       <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/10 w-120 h-120 bg-amber-400/5 rounded-full blur-3xl -z-10 pointer-events-none" />
@@ -47,6 +64,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         </div>
 
 
+
         {/* Event Name */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,16 +80,16 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
-          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center gap-1"
+          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center"
           id="hero-title"
         >
-          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre">
+          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
             International Conference on <span className="font-bold">AI-Driven</span> Innovation
           </span>
-          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal -mb-2" style={{ fontFamily: '"Mr Bedfort", cursive' }}>
+          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal -mt-4 -mb-3 z-0" style={{ fontFamily: '"Mr Bedfort", cursive' }}>
             in
           </span>
-          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre -mt-2">
+          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
             Engineering and Technology
           </span>
         </motion.h1>
@@ -119,10 +137,10 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl w-full border border-slate-100 bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-sm mb-16"
+          className="grid grid-cols-2 gap-6 max-w-2xl w-full border border-slate-100 bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-sm mb-16"
           id="hero-quick-facts"
         >
-          <div className="flex items-center gap-3.5 pl-2 md:border-r border-slate-100">
+          <div className="flex items-center gap-3.5 pl-2 border-r border-slate-100">
             <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
               <Calendar className="w-5 h-5" />
             </div>
@@ -136,7 +154,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5 pl-2 md:pl-4 md:border-r border-slate-100">
+          <div className="flex items-center gap-3.5 pl-2 md:pl-4">
             <div className="w-10 h-10 rounded-lg bg-amber-400/10 flex items-center justify-center text-amber-500 flex-shrink-0">
               <Globe2 className="w-5 h-5" />
             </div>
@@ -146,20 +164,6 @@ export default function Hero({ onRegisterClick }: HeroProps) {
               </span>
               <span className="text-sm font-semibold text-brand-dark">
                 Hybrid Mode
-              </span>
-            </div>
-          </div>
-
-          <div className="col-span-2 md:col-span-1 flex items-center gap-3.5 pl-2 md:pl-4 justify-center md:justify-start">
-            <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-600 flex-shrink-0">
-              <FileText className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-400 font-semibold">
-                Proceedings
-              </span>
-              <span className="text-sm font-semibold text-brand-dark">
-                Indexed in Wiley / Scopus
               </span>
             </div>
           </div>
@@ -181,6 +185,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           </div>
         </motion.div>
       </div>
+
     </section>
   );
 }

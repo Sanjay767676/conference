@@ -1,3 +1,5 @@
+import wileyLogo from "../assets/images/wiley.png";
+import scopusLogo from "../assets/images/scopus.png";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
