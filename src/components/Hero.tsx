@@ -43,11 +43,15 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         <div className="flex w-max animate-marquee items-center gap-12 px-4">
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 whitespace-nowrap">
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publication Partner</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publishing Partner</span>
               <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
               <span className="text-slate-300">|</span>
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexing Partner</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexed via</span>
               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
+              <span className="text-slate-300">|</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">November 20<sup>th</sup> - 21<sup>st</sup> 2026</span>
+              <span className="text-slate-300">|</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">SNS College Of Technology</span>
               <span className="text-slate-300">|</span>
             </div>
           ))}
@@ -94,53 +98,22 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center px-4"
           id="hero-title"
         >
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
-            International Conference on <span className="font-bold">AI-Driven</span> Innovation
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10">
+            International Conference on AI-Driven Innovation
           </span>
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre py-1 md:py-2 z-0">
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold py-1 md:py-2 z-0">
             in
           </span>
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre z-10">
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10">
             Engineering and Technology
+          </span>
+
+          <span className="block text-sm sm:text-base md:text-lg lg:text-xl font-libre font-light mt-4 text-brand-dark z-10">
+            November 20<sup>th</sup> to 21<sup>st</sup> 2026 (Hybrid Mode)
           </span>
         </motion.h1>
 
-        {/* Highlighted quick badges */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="flex flex-row justify-between items-center max-w-2xl w-full bg-[#fdf08a] p-4 sm:p-6 rounded-2xl shadow-sm mb-12"
-          id="hero-quick-facts"
-        >
-          <div className="flex flex-1 items-center gap-3.5 pl-2 border-r border-white/60">
-            <div className="w-10 h-10 rounded-lg bg-white/40 flex items-center justify-center text-primary flex-shrink-0">
-              <Calendar className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-500 font-semibold">
-                When
-              </span>
-              <span className="text-sm sm:text-base font-semibold text-brand-dark">
-                Nov 20-21, 2026
-              </span>
-            </div>
-          </div>
 
-          <div className="flex flex-1 items-center gap-3.5 pl-4 sm:pl-8">
-            <div className="w-10 h-10 rounded-lg bg-white/40 flex items-center justify-center text-amber-500 flex-shrink-0">
-              <Globe2 className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-[10px] uppercase tracking-wider font-mono text-slate-500 font-semibold">
-                Format
-              </span>
-              <span className="text-sm sm:text-base font-semibold text-brand-dark">
-                Hybrid Mode
-              </span>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Subtext */}
         <motion.p
