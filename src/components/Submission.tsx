@@ -104,7 +104,7 @@ export default function Submission() {
                 <h3 className="text-2xl font-bold text-slate-900">Where to Submit</h3>
               </div>
               <p className="text-slate-600 mb-4 font-medium text-left">
-                Through CMT.
+                <a href="https://cmt3.research.microsoft.com/ICAIDIET2026" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold transition-colors">Through CMT.</a>
               </p>
               <p className="text-slate-600 mb-4 text-sm text-left">
                 All submissions will be handled electronically via the Microsoft CMT platform once the portal is open.

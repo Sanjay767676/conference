@@ -139,9 +139,9 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="mt-8 md:mt-16 mb-6 text-5xl sm:text-7xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2"
+          className="mt-12 md:mt-16 mb-6 text-4xl sm:text-6xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2 text-center w-full"
         >
-          <AuroraText className="inline-block font-bold" speed={2}>ICAIDIET'26</AuroraText>
+          <AuroraText className="inline-block font-bold break-words" speed={2}>ICAIDIET'26</AuroraText>
         </motion.div>
 
         {/* Hero Headline */}
@@ -149,48 +149,48 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
-          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center px-4"
+          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center px-2 w-full"
           id="hero-title"
         >
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10">
+          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 text-center w-full">
             International Conference on AI-Driven Innovation
           </span>
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 mt-1 md:mt-2">
+          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 mt-1 md:mt-2 text-center w-full">
             in Engineering and Technology
           </span>
           
-          <span className="block text-base sm:text-lg md:text-xl font-libre font-bold mt-8 mb-6 z-0">
+          <span className="block text-base sm:text-lg md:text-xl font-libre font-bold mt-6 sm:mt-8 mb-4 sm:mb-6 z-0">
             On
           </span>
           
-          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold text-brand-dark z-10">
+          <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold text-brand-dark z-10 text-center">
             November 20<sup>th</sup> & 21<sup>st</sup> 2026
           </span>
-          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-light mt-2 text-brand-dark z-10">
+          <span className="block text-sm sm:text-lg md:text-xl lg:text-2xl font-libre font-light mt-2 text-brand-dark z-10 text-center">
             (Hybrid Mode)
           </span>
-          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold mt-4 text-brand-dark z-10">
+          <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold mt-4 text-brand-dark z-10 text-center">
             SNS - AI Campus
           </span>
-          <div className="flex gap-4 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-white/20 shadow-sm">
-            <div className="flex flex-col items-center min-w-[60px]">
+          <div className="flex gap-2 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-3 sm:p-4 rounded-2xl border border-white/20 shadow-sm w-full max-w-[90vw] sm:max-w-none justify-center overflow-hidden">
+            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
               <AnimatedNumber value={timeLeft.days.toString()} />
-              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Days</span>
+              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Days</span>
             </div>
-            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-5">:</span>
-            <div className="flex flex-col items-center min-w-[60px]">
+            <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
+            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
               <AnimatedNumber value={timeLeft.hours.toString().padStart(2, '0')} />
-              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Hours</span>
+              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Hours</span>
             </div>
-            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-5">:</span>
-            <div className="flex flex-col items-center min-w-[60px]">
+            <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
+            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
               <AnimatedNumber value={timeLeft.minutes.toString().padStart(2, '0')} />
-              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Mins</span>
+              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Mins</span>
             </div>
-            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-5">:</span>
-            <div className="flex flex-col items-center min-w-[60px]">
+            <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
+            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
               <AnimatedNumber value={timeLeft.seconds.toString().padStart(2, '0')} />
-              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Secs</span>
+              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Secs</span>
             </div>
           </div>
         </motion.h1>

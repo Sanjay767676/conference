@@ -251,7 +251,7 @@ export default function Committee() {
                   <p className="text-sm text-slate-600">Professor & Additional Dean, Head of School (School of Computing and Artificial Intelligence),<br />Lovely Professional University, Punjab.</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900">Jyoti Singhai</p>
+                  <p className="font-semibold text-slate-900">Dr. Jyoti Singhai</p>
                   <p className="text-sm text-slate-600">Professor, MANIT<br />Bhopal, Madhya Pradesh, India.</p>
                 </li>
                 <li>
