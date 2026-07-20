@@ -133,6 +133,17 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   )}
                 </Link>
               </li>
+
+              <li className="relative">
+                <a 
+                  href="https://snsct.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="relative text-sm font-medium transition-colors py-2 text-brand-dark hover:opacity-80"
+                >
+                  SNSCT
+                </a>
+              </li>
             </ul>
 
             <div className="h-4 w-px bg-slate-200" />
@@ -202,6 +213,17 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     }`}>
                     Paper Submission
                   </Link>
+                </li>
+                <li className="pt-2">
+                  <a 
+                    href="https://snsct.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onClick={() => setIsOpen(false)} 
+                    className="block px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                  >
+                    SNSCT
+                  </a>
                 </li>
               </ul>
 

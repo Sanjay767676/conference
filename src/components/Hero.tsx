@@ -155,21 +155,21 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10">
             International Conference on AI-Driven Innovation
           </span>
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold py-1 md:py-2 z-0">
-          </span>
-          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10">
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 mt-1 md:mt-2">
             in Engineering and Technology
           </span>
-          <span className="block text-base sm:text-lg md:text-xl font-libre font-bold py-4 md:py-6 z-0">
+          
+          <span className="block text-base sm:text-lg md:text-xl font-libre font-bold mt-8 mb-6 z-0">
             On
           </span>
-          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-bold mt-4 text-brand-dark z-10">
+          
+          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold text-brand-dark z-10">
             November 20<sup>th</sup> & 21<sup>st</sup> 2026
           </span>
-          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-light mt-4 text-brand-dark z-10">
+          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-light mt-2 text-brand-dark z-10">
             (Hybrid Mode)
           </span>
-          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-bold mt-4 text-brand-dark z-10">
+          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold mt-4 text-brand-dark z-10">
             SNS - AI Campus
           </span>
           <div className="flex gap-4 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-white/20 shadow-sm">

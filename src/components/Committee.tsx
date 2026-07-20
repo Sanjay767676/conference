@@ -26,15 +26,15 @@ export default function Committee() {
                 <li>
                   <p className="text-sm text-slate-600">Deiva Thiru</p>
                   <p className="font-semibold text-slate-900">Dr.S.N. Subbramanian</p>
-                  <p className="text-sm text-slate-600">Founder Chairman, SNS Institutions.</p>
+                  <p className="text-sm text-slate-600">Founder Chairman, SNS Group.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.S. Rajalakshmi</p>
-                  <p className="text-sm text-slate-600">Correspondent, SNS Institutions.</p>
+                  <p className="text-sm text-slate-600">Correspondent, SNS Group.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.S. Nalin</p>
-                  <p className="text-sm text-slate-600">Secretary / Trustee, SNS Group</p>
+                  <p className="text-sm text-slate-600">Secretary / Trustee, SNS Group.</p>
                 </li>
               </ul>
             </div>
@@ -231,12 +231,16 @@ export default function Committee() {
                   <p className="text-sm text-slate-600">Assistant Professor, CSE,<br />IIT, Varanasi.</p>
                 </li>
                 <li>
+                  <p className="font-semibold text-slate-900">Dr. Shihabudheen M. Maliyekkal</p>
+                  <p className="text-sm text-slate-600">Professor, Civil & Environmental Engineering,<br />IIT, Tirupati.</p>
+                </li>
+                <li>
                   <p className="font-semibold text-slate-900">Dr. S. Jaya Nirmala</p>
                   <p className="text-sm text-slate-600">Associate Professor, CSE,<br />NIT, Trichy.</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900">Dr. Shihabudheen M. Maliyekkal</p>
-                  <p className="text-sm text-slate-600">Professor, Civil & Environmental Engineering,<br />IIT, Tirupati.</p>
+                  <p className="font-semibold text-slate-900">Dr. S.SEENUVASAMURTHI</p>
+                  <p className="text-sm text-slate-600">Principal,<br />Sri Lakshmi Narayana College of Engineering, Puducherry.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Prof. Hemant Ingale</p>
