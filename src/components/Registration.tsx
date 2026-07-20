@@ -17,7 +17,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="pricing-header">
           <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
-            Registration & Fees
+            Fees
           </div>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
             Flexible Pricing Options

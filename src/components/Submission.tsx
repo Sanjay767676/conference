@@ -6,9 +6,6 @@ export default function Submission() {
     <section id="submission" className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-xl mb-4">
-            <Upload className="w-8 h-8 text-primary" />
-          </div>
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
             Paper Submission
           </h2>

@@ -1,37 +1,29 @@
-import wileyLogo from "../assets/images/wiley.png";
-import scopusLogo from "../assets/images/scopus.png";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Tracks from "./components/Tracks";
-import Timeline from "./components/Timeline";
-import Committee from "./components/Committee";
-import Submission from "./components/Submission";
-import Registration from "./components/Registration";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react"
+import HomePage from "./pages/HomePage";
+import PaperSubmissionPage from "./pages/PaperSubmissionPage";
+import { Analytics } from "@vercel/analytics/react";
+
 export default function App() {
   return (
-    <div className="relative min-h-screen selection:bg-primary selection:text-white bg-transparent">
-      {/* Dynamic Navigation Header */}
-      <div className="relative z-50">
-        <Header onRegisterClick={() => alert("Registration Opening Soon")} />
+    <Router>
+      <div className="relative min-h-screen selection:bg-primary selection:text-white bg-transparent">
+        {/* Dynamic Navigation Header */}
+        <div className="relative z-50">
+          <Header onRegisterClick={() => alert("Registration Opening Soon")} />
+        </div>
+
+        {/* Main Routes */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/paper-submission" element={<PaperSubmissionPage />} />
+        </Routes>
+
+        {/* Footer */}
+        <Footer />
+        <Analytics />
       </div>
-
-      {/* Main Sections */}
-      <main className="relative z-10">
-        <Hero onRegisterClick={() => alert("Registration Opening Soon")} />
-        <About />
-        <Tracks />
-        <Committee />
-        <Submission />
-        <Timeline />
-        <Registration onRegisterClick={() => alert("Registration Opening Soon")} />
-      </main>
-
-      {/* Footer */}
-      <Footer />
-      <Analytics />
-    </div>
+    </Router>
   );
 }

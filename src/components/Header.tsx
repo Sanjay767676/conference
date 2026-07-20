@@ -1,23 +1,28 @@
 import { useState, useEffect, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import snsctLogo from "../../assets/images/SNSCT.png";
 import snsdtLogo from "../../assets/SNS-DT Logo.png";
+
 interface HeaderProps {
   onRegisterClick: () => void;
 }
 
 export default function Header({ onRegisterClick }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
+      if (location.pathname !== "/") return;
 
-      // Simple scroll spy
-      const sections = ["home", "about", "tracks", "committee", "submission", "timeline", "pricing"];
+      const sections = ["home", "about", "tracks", "committee"];
       const scrollPosition = window.scrollY + 120;
 
       for (const section of sections) {
@@ -35,35 +40,44 @@ export default function Header({ onRegisterClick }: HeaderProps) {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   const navLinks = [
-    { name: "Home", href: "#home", id: "home" },
-    { name: "About", href: "#about", id: "about" },
-    { name: "Tracks", href: "#tracks", id: "tracks" },
-    { name: "Committee", href: "#committee", id: "committee" },
-    { name: "Submission", href: "#submission", id: "submission" },
-    { name: "Timeline", href: "#timeline", id: "timeline" },
-    { name: "Fee", href: "#pricing", id: "pricing" },
+    { name: "Home", href: "/#home", id: "home" },
+    { name: "About", href: "/#about", id: "about" },
+    { name: "Tracks", href: "/#tracks", id: "tracks" },
+    { name: "Committee", href: "/#committee", id: "committee" },
   ];
 
   const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
     setIsOpen(false);
-    const target = document.querySelector(href);
-    if (target) {
-      const offsetTop = (target as HTMLElement).offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
+    setIsDropdownOpen(false);
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const hash = href.substring(2);
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => {
+          const target = document.getElementById(hash);
+          if (target) {
+            const offsetTop = target.offsetTop - 80;
+            window.scrollTo({ top: offsetTop, behavior: "smooth" });
+          }
+        }, 100);
+      } else {
+        const target = document.getElementById(hash);
+        if (target) {
+          const offsetTop = target.offsetTop - 80;
+          window.scrollTo({ top: offsetTop, behavior: "smooth" });
+        }
+      }
     }
   };
 
   return (
     <header
       id="header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || location.pathname !== "/"
           ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100 py-3"
           : "bg-transparent py-5"
         }`}
@@ -72,11 +86,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="flex items-center gap-4">
+            <Link to="/#home" onClick={(e) => handleLinkClick(e, "/#home")} className="flex items-center gap-4">
               <img src={snsctLogo} alt="SNSCT Logo" className="h-10 md:h-12 w-auto object-contain" />
               <div className="w-px h-8 md:h-10 bg-slate-300" />
               <img src={snsdtLogo} alt="SNS-DT Logo" className="h-10 md:h-12 w-auto object-contain" />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -87,13 +101,13 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`relative text-sm font-medium transition-colors py-2 ${activeSection === link.id
+                    className={`relative text-sm font-medium transition-colors py-2 ${activeSection === link.id && location.pathname === "/"
                         ? "text-brand-dark font-semibold"
                         : "text-brand-dark hover:opacity-80"
                       }`}
                   >
                     {link.name}
-                    {activeSection === link.id && (
+                    {activeSection === link.id && location.pathname === "/" && (
                       <motion.div
                         layoutId="activeUnderline"
                         className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-dark rounded-full"
@@ -103,6 +117,22 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   </a>
                 </li>
               ))}
+
+              <li className="relative">
+                <Link to="/paper-submission" className={`relative text-sm font-medium transition-colors py-2 ${location.pathname === "/paper-submission"
+                    ? "text-brand-dark font-semibold"
+                    : "text-brand-dark hover:opacity-80"
+                  }`}>
+                  Paper Submission
+                  {location.pathname === "/paper-submission" && (
+                    <motion.div
+                      layoutId="activeUnderline"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-dark rounded-full"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              </li>
             </ul>
 
             <div className="h-4 w-px bg-slate-200" />
@@ -155,7 +185,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     <a
                       href={link.href}
                       onClick={(e) => handleLinkClick(e, link.href)}
-                      className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${activeSection === link.id
+                      className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${activeSection === link.id && location.pathname === "/"
                           ? "bg-primary-light text-primary font-semibold"
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                         }`}
@@ -164,6 +194,15 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     </a>
                   </li>
                 ))}
+                
+                <li className="pt-2">
+                  <Link to="/paper-submission" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${location.pathname === "/paper-submission"
+                      ? "bg-primary-light text-primary font-semibold"
+                      : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                    }`}>
+                    Paper Submission
+                  </Link>
+                </li>
               </ul>
 
               <div className="pt-4 border-t border-slate-100">

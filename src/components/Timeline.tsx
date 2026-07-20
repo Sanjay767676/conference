@@ -10,8 +10,8 @@ export default function Timeline() {
     let normalizedDate = dateStr;
     if (dateStr.includes("-")) {
       const parts = dateStr.split("-");
-      const monthAndStartDay = parts[0]; 
-      const yearPart = dateStr.substring(dateStr.length - 4); 
+      const monthAndStartDay = parts[0];
+      const yearPart = dateStr.substring(dateStr.length - 4);
       normalizedDate = `${monthAndStartDay}, ${yearPart}`;
     }
     // Remove ordinal suffixes for standard JS Date parsing
@@ -25,7 +25,7 @@ export default function Timeline() {
   const eventsWithState = TIMELINE_EVENTS.map(event => {
     const eventDate = parseEventDate(event.date);
     const isPast = currentDate > eventDate;
-    
+
     let isActive = false;
     if (!isPast && !foundNextEvent) {
       isActive = true;
@@ -39,17 +39,16 @@ export default function Timeline() {
     <section id="timeline" className="py-16 bg-transparent relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
+
           {/* Left Column (35% / 4 cols) - Header & Static Badge */}
           <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-28" id="timeline-header-col">
             <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
-              Deadlines & Dates
             </div>
-            
+
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
               Submission Timeline
             </h2>
-            
+
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
               Please keep track of these important milestones to ensure your manuscripts, review responses, and delegate registrations are processed in time.
             </p>
@@ -77,13 +76,12 @@ export default function Timeline() {
                     className="relative pb-10 last:pb-0"
                   >
                     {/* Circle Node Indicator */}
-                    <div className={`absolute -left-[25px] md:-left-[33px] top-1.5 w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all ${
-                      event.isPast 
-                        ? "border-rose-500 bg-rose-500 scale-110" 
-                        : event.isActive 
-                          ? "border-primary bg-white ring-4 ring-primary/30 scale-125 animate-pulse" 
+                    <div className={`absolute -left-[25px] md:-left-[33px] top-1.5 w-4 h-4 rounded-full border-2 flex items-center justify-center transition-all ${event.isPast
+                        ? "border-rose-500 bg-rose-500 scale-110"
+                        : event.isActive
+                          ? "border-primary bg-white ring-4 ring-primary/30 scale-125 animate-pulse"
                           : "border-slate-300 bg-white"
-                    }`}>
+                      }`}>
                       {event.isPast && (
                         <div className="w-1.5 h-1.5 bg-white rounded-full" />
                       )}
@@ -116,7 +114,7 @@ export default function Timeline() {
                       <div className="flex items-center gap-2 md:self-center bg-white px-4 py-2.5 rounded-xl border border-slate-100 flex-shrink-0 shadow-sm">
                         <Clock className={`w-4 h-4 ${event.isActive ? "text-primary animate-pulse" : "text-slate-400"}`} />
                         <span className={`text-xs font-mono font-semibold ${event.isActive ? "text-primary" : "text-brand-dark"}`}>
-                          {event.date.split(/(st|nd|rd|th)/i).map((part, index) => 
+                          {event.date.split(/(st|nd|rd|th)/i).map((part, index) =>
                             part.toLowerCase().match(/^(st|nd|rd|th)$/) ? (
                               <sup key={index} className="text-[0.8em] -top-[0.2em] relative">{part.toLowerCase()}</sup>
                             ) : part
