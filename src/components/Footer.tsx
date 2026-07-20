@@ -25,24 +25,23 @@ export default function Footer() {
                 icaidiet26@gmail.com
               </a>
             </div>
-
-            <div className="text-xs text-[#F4F9FF]/70 mt-1">
-              Developed & Maintained By{" "}
-              <a
-                href="https://www.aptimarksolutions.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#F4F9FF] hover:text-primary transition-colors underline underline-offset-2"
-              >
-                Aptimark Solutions
-              </a>
-            </div>
           </div>
 
         </div>
 
-        <div className="border-t border-slate-800 mt-5 pt-5 text-center text-[10px] text-[#F4F9FF] opacity-70">
-          <p>© 2026 <span className="font-gambetta tracking-wide">ICAIDIET'26</span> Conference. All rights reserved.</p>
+        <div className="border-t border-slate-800 mt-5 pt-5 flex flex-col md:flex-row justify-between items-center gap-3 text-[#F4F9FF] opacity-70">
+          <p className="text-[10px] sm:text-xs">© 2026 <span className="font-gambetta tracking-wide">ICAIDIET'26</span> Conference. All rights reserved.</p>
+          <p className="text-[10px]">
+            Developed & Maintained By{" "}
+            <a
+              href="https://www.aptimarksolutions.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#F4F9FF] hover:text-primary transition-colors underline underline-offset-2"
+            >
+              Aptimark Solutions
+            </a>
+          </p>
         </div>
       </div>
     </footer>

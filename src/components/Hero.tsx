@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
-import wileyLogo from "../../assets/images/wiley.png";
+import wileyLogo from "../../assets/images/WILEY(BLACK).png";
 import yorkLogo from "../../assets/images/york.jpg";
 import scopusLogo from "../../assets/images/scopus.png";
 import snsctLogo from "../../assets/images/SNSCT.png";
@@ -100,23 +100,23 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       className="relative min-h-screen pt-32 pb-8 md:pt-40 md:pb-12 flex flex-col justify-between overflow-hidden"
     >
       {/* Announcement Banner */}
-      <div className="absolute top-[80px] md:top-[96px] left-0 w-full bg-slate-100/90 border-y border-slate-200 py-2.5 overflow-hidden backdrop-blur-md shadow-sm z-40">
+      <div className="absolute top-[80px] md:top-[96px] left-0 w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden z-40">
         <div className="flex w-max animate-marquee items-center gap-12 px-4">
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 whitespace-nowrap">
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publishing Partner</span>
+              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Publishing Partner</span>
               <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
-              <span className="text-slate-300">|</span>
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexed In</span>
+              <span className="text-[#FFFFFF]">|</span>
+              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Indexed In</span>
               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
-              <span className="text-slate-300">|</span>
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">November 20<sup className="lowercase">th</sup> - 21<sup className="lowercase">st</sup> 2026</span>
-              <span className="text-slate-300">|</span>
+              <span className="text-[#FFFFFF]">|</span>
+              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">November 20<sup className="lowercase">th</sup> - 21<sup className="lowercase">st</sup> 2026</span>
+              <span className="text-[#FFFFFF]">|</span>
               <div className="flex items-center gap-2">
                 <img src={snsctLogo} alt="SNSCT" className="h-6 md:h-8 object-contain" />
-                <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">SNS College Of Technology</span>
+                <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">SNS College Of Technology</span>
               </div>
-              <span className="text-slate-300">|</span>
+              <span className="text-[#FFFFFF]">|</span>
             </div>
           ))}
         </div>
