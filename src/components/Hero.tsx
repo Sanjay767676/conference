@@ -84,21 +84,10 @@ export default function Hero({ onRegisterClick }: HeroProps) {
     }
   };
 
-  const handleScrollToSubmission = () => {
-    const target = document.querySelector("#submission");
-    if (target) {
-      const offsetTop = (target as HTMLElement).offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-32 pb-8 md:pt-40 md:pb-12 flex flex-col justify-between overflow-hidden"
+      className="relative pt-32 pb-16 md:pt-48 md:pb-20 flex flex-col justify-between overflow-hidden"
     >
       {/* Announcement Banner */}
       <div className="absolute top-[80px] md:top-[96px] left-0 w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden z-40">
@@ -111,7 +100,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
               <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Indexed In</span>
               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
               <span className="text-[#FFFFFF]">|</span>
-              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">November 20<sup className="lowercase">th</sup> - 21<sup className="lowercase">st</sup> 2026</span>
+              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">November 20<sup className="lowercase">th</sup> & 21<sup className="lowercase">st</sup> 2026</span>
               <span className="text-[#FFFFFF]">|</span>
               <div className="flex items-center gap-2">
                 <img src={snsctLogo} alt="SNSCT" className="h-6 md:h-8 object-contain" />
@@ -130,7 +119,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       {/* Grid Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a05_1px,transparent_1px),linear-gradient(to_bottom,#0f172a05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-0 pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow flex flex-col justify-center items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
         {/* Main Badge */}
 
         {/* Circular Text Decoration */}
@@ -167,17 +156,21 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             International Conference on AI-Driven Innovation
           </span>
           <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold py-1 md:py-2 z-0">
-            in
           </span>
           <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10">
-            Engineering and Technology
+            in Engineering and Technology
           </span>
-
-          <span className="block text-sm sm:text-base md:text-lg lg:text-xl font-libre font-light mt-4 text-brand-dark z-10">
-            November 20<sup>th</sup> to 21<sup>st</sup> 2026 (Hybrid Mode)
+          <span className="block text-base sm:text-lg md:text-xl font-libre font-bold py-4 md:py-6 z-0">
+            On
           </span>
-          <span className="block text-sm sm:text-base md:text-lg lg:text-xl font-libre font-bold mt-4 text-brand-dark z-10">
-            Organized by SNS College of Tecnology - AI Campus
+          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-bold mt-4 text-brand-dark z-10">
+            November 20<sup>th</sup> & 21<sup>st</sup> 2026
+          </span>
+          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-light mt-4 text-brand-dark z-10">
+            (Hybrid Mode)
+          </span>
+          <span className="block text-base sm:text-lg md:text-xl lg:text-2xl font-libre font-bold mt-4 text-brand-dark z-10">
+            SNS - AI Campus
           </span>
           <div className="flex gap-4 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-white/20 shadow-sm">
             <div className="flex flex-col items-center min-w-[60px]">
@@ -213,32 +206,6 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           id="hero-description"
         >
         </motion.p>
-
-        {/* CTAs */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 w-full px-4 sm:px-8 md:w-auto mb-16 mx-auto"
-          id="hero-actions"
-        >
-          <button
-            onClick={onRegisterClick}
-            className="w-full md:w-auto px-8 py-4 bg-brand-dark text-white font-semibold rounded-xl text-sm hover:bg-opacity-95 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-slate-900/15 flex items-center justify-center gap-2 group"
-          >
-            Register Now
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </button>
-
-          <button
-            onClick={handleScrollToSubmission}
-            className="w-full md:w-auto px-8 py-4 bg-white text-slate-700 hover:text-brand-dark font-semibold rounded-xl text-sm border border-slate-200 hover:border-slate-300 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm flex items-center justify-center gap-2 group"
-          >
-            <FileText className="w-4 h-4 text-slate-400 group-hover:text-slate-600 transition-colors" />
-            Submission Guidelines
-          </button>
-        </motion.div>
-
 
 
         {/* Publication & Academic Partners */}
