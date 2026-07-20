@@ -63,7 +63,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-1",
     title: "Paper Submission Deadline",
-    date: "October 16TH, 2026",
+    date: "September 21ST, 2026",
     description: "Strictly enforced final date for original research submissions.",
     isCompleted: false
   },
@@ -117,7 +117,6 @@ export const PRICING_TIERS: PricingTier[] = [
       "Early Bird (With Scopus proceedings): ₹10,000",
       "Late Fee (Conference alone): ₹2,500",
       "Late Fee (With Scopus proceedings): ₹11,000",
-      "Official presentation certificate"
     ]
   },
   {
@@ -128,10 +127,10 @@ export const PRICING_TIERS: PricingTier[] = [
     priceInternational: "$350 - $400",
     priceNational: "-",
     features: [
-      "Early Bird: $350",
-      "Late Fee: $400",
-      "Scopus-indexed conference book proceedings",
-      "Official presentation certificate"
+      "Early Bird (Conference alone): $350",
+      "Early Bird (With Scopus proceedings): $400",
+      "Late Fee (Conference alone): $400",
+      "Late Fee (With Scopus proceedings): $500",
     ]
   },
   {
@@ -142,9 +141,10 @@ export const PRICING_TIERS: PricingTier[] = [
     priceInternational: "-",
     priceNational: "₹11,000 - ₹12,000",
     features: [
-      "Early Bird: ₹11,000",
-      "Late Fee: ₹12,000",
-      "Official participation certificate"
+      "Early Bird (Conference alone): ₹2,500",
+      "Early Bird (With Scopus proceedings): ₹12,000",
+      "Late Fee (Conference alone): ₹3,000",
+      "Late Fee (With Scopus proceedings): ₹13,000",
     ]
   },
   {

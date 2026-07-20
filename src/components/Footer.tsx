@@ -1,4 +1,4 @@
-import { Mail, MapPin, FileText } from "lucide-react";
+import { Mail, MapPin, FileText, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -23,6 +23,12 @@ export default function Footer() {
               <Mail className="w-4 h-4 text-primary shrink-0" />
               <a href="mailto:icaidiet26@gmail.com" className="text-xs">
                 icaidiet26@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-2 text-[#F4F9FF] hover:text-white transition-colors">
+              <Phone className="w-4 h-4 text-primary shrink-0" />
+              <a href="tel:+918903444955" className="text-xs">
+                +91-8903444955
               </a>
             </div>
           </div>

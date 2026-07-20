@@ -46,13 +46,23 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                     </p>
 
                     {/* Features list */}
-                    <ul className="space-y-3 pt-6 border-t border-slate-50">
-                      {tier.features.map((feat, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-xs text-slate-600 leading-relaxed">
-                          <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
-                          <span>{feat}</span>
-                        </li>
-                      ))}
+                    <ul className="space-y-3 pt-6 border-t border-slate-50 w-full">
+                      {tier.features.map((feat, idx) => {
+                        const parts = feat.split(':');
+                        return (
+                          <li key={idx} className="flex items-start gap-2 text-xs text-slate-600 leading-relaxed w-full">
+                            <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                            {parts.length === 2 ? (
+                              <div className="flex justify-between w-full gap-2">
+                                <span>{parts[0]}:</span>
+                                <span className="font-semibold text-right whitespace-nowrap">{parts[1]}</span>
+                              </div>
+                            ) : (
+                              <span>{feat}</span>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 </div>
@@ -80,13 +90,23 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
                     </p>
 
                     {/* Features list */}
-                    <ul className="space-y-3 pt-6 border-t border-slate-50">
-                      {tier.features.map((feat, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-xs text-slate-600 leading-relaxed">
-                          <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
-                          <span>{feat}</span>
-                        </li>
-                      ))}
+                    <ul className="space-y-3 pt-6 border-t border-slate-50 w-full">
+                      {tier.features.map((feat, idx) => {
+                        const parts = feat.split(':');
+                        return (
+                          <li key={idx} className="flex items-start gap-2 text-xs text-slate-600 leading-relaxed w-full">
+                            <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
+                            {parts.length === 2 ? (
+                              <div className="flex justify-between w-full gap-2">
+                                <span>{parts[0]}:</span>
+                                <span className="font-semibold text-right whitespace-nowrap">{parts[1]}</span>
+                              </div>
+                            ) : (
+                              <span>{feat}</span>
+                            )}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 </div>

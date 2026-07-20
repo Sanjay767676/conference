@@ -3,7 +3,7 @@ import { Users } from 'lucide-react';
 
 export default function Committee() {
   return (
-    <section id="committee" className="py-16 bg-transparent">
+    <section id="committee" className="pt-4 pb-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-xl mb-4">
@@ -245,6 +245,10 @@ export default function Committee() {
                 <li>
                   <p className="font-semibold text-slate-900">Prof. Hemant Ingale</p>
                   <p className="text-sm text-slate-600">Dean (Academics),<br />Godavari College of Engineering, Jalgaon, Maharashtra.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. Arun Malik</p>
+                  <p className="text-sm text-slate-600">Professor & Additional Dean, Head of School (School of Computing and Artificial Intelligence),<br />Lovely Professional University, Punjab.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. M.Shanmugakumar</p>
