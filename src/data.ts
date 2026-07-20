@@ -48,7 +48,7 @@ export const CONFERENCE_TRACKS: ConferenceTrack[] = [
     title: "Robotics, Automation & Smart Industry",
     description: "Autonomous Robots, Robotics Vision, Motion Planning, Smart Manufacturing (Industry 4.0), and Digital Twins.",
     iconName: "Bot",
-    details: ["Autonomous Robots", "Robotics Vision", "Smart Manufacturing", "Digital Twins"]
+    details: ["Autonomous Robots", "Robotics Vision", "Smart Manufacturing", "3D Printing", "Digital Twins"]
   },
   {
     id: "track-8",
