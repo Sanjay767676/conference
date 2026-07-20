@@ -19,7 +19,7 @@ export default function PaperSubmissionPage() {
       <Timeline />
       
       {/* 3. Registration Fees & Registration */}
-      <Registration onRegisterClick={() => alert("Registration Opening Soon")} />
+      <Registration onRegisterClick={() => window.open("https://cmt3.research.microsoft.com/ICAIDIET2026", "_blank")} />
 
       {/* Back to Home Button */}
       <Link

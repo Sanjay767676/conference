@@ -43,7 +43,7 @@ function ScrollToTop() {
 export default function HomePage() {
   return (
     <main className="relative z-10">
-      <Hero onRegisterClick={() => alert("Registration Opening Soon")} />
+      <Hero onRegisterClick={() => window.open("https://cmt3.research.microsoft.com/ICAIDIET2026", "_blank")} />
       <About />
       <Tracks />
       <Committee />
