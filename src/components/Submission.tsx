@@ -17,52 +17,69 @@ export default function Submission() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Author Guidelines */}
-          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start text-left p-6">
+        <div className="mb-12">
+          {/* Author Submission Guidelines */}
+          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+            <div className="w-full flex flex-col items-start text-left p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-bold text-slate-900">Author Guidelines</h3>
+                <h3 className="text-2xl font-bold text-slate-900">Author Submission Guidelines</h3>
               </div>
-              <ul className="space-y-3 text-slate-600">
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">Submissions must be original and should not have been published previously or be under consideration for publication while being evaluated for this conference.</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">The manuscript should be written in English.</span>
-                </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">Paper length must not exceed 8 pages, including figures, tables, and references.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+              
+              <p className="text-slate-700 mb-6 font-medium">
+                Authors are invited to submit original, unpublished, and high-quality research papers that are not under consideration for publication elsewhere. All submissions must strictly adhere to the following guidelines in line with Wiley publication standards and indexing requirements:
+              </p>
 
-          {/* Submission Guidelines */}
-          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start text-left p-6">
-              <div className="flex items-center gap-3 mb-6">
-                <Upload className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-bold text-slate-900">Submission Guidelines</h3>
-              </div>
-              <ul className="space-y-3 text-slate-600">
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">All papers must be submitted electronically in PDF format.</span>
+              <ul className="space-y-4 text-slate-600">
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Manuscripts must be prepared using the official conference template and written in formal academic English.</span>
                 </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">Follow the standard WILEY conference template for paper formatting.</span>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">The paper length must be 10–14 pages, including references, figures, and tables.</span>
                 </li>
-                <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
-                  <span className="text-left">Ensure a double-blind review process by removing author names and affiliations from the initial manuscript.</span>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Formatting should follow: Times New Roman, 12 pt font, single line spacing, with properly structured sections.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">All figures, tables, and illustrations must be of high resolution (minimum 300 dpi) and appropriately captioned.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">References must follow a numeric citation style [1], [2], [3]… and be properly formatted.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">The overall similarity index must be below 15%, with no significant overlap from a single source.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Submissions must represent original scholarly work. Plagiarism, duplicate submission, or unethical practices will lead to rejection.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Manuscripts must comply with publisher screening, peer-review standards, and editorial policies.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Papers not conforming to formatting and ethical requirements will be desk rejected without review.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Upon acceptance, authors must complete registration and payment within the stipulated timeline for inclusion in the proceedings.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Final acceptance and publication are subject to publisher quality checks and indexing criteria; inclusion in indexed databases (e.g., Scopus) depends on meeting all required standards.</span>
                 </li>
               </ul>
+              
+              <p className="text-slate-700 mt-6 font-medium italic border-l-4 border-primary pl-4 py-1">
+                Authors are strongly advised to carefully review these guidelines and ensure full compliance to facilitate smooth review and publication processing.
+              </p>
             </div>
           </div>
         </div>

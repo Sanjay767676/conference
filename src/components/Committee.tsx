@@ -10,7 +10,7 @@ export default function Committee() {
             <Users className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-            Organizing Committee
+            Committee
           </h2>
           <p className="text-lg text-brand-dark max-w-2xl mx-auto">
             Meet the dedicated individuals organizing <span className="font-gambetta tracking-wide font-semibold text-brand-dark">ICAIDIET'26</span>.
@@ -65,16 +65,12 @@ export default function Committee() {
                   <p className="font-semibold text-slate-900">Dr. P. Vivekanandan</p>
                   <p className="text-sm text-slate-600">VP-Academics, SNS College of Technology.</p>
                 </li>
-                <li>
-                  <p className="font-semibold text-slate-900">Dr. L. M. Nithya</p>
-                  <p className="text-sm text-slate-600">Head IQAC, SNS College of Technology.</p>
-                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-8 items-start">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 items-start">
           {/* Convenors */}
           <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
@@ -98,6 +94,39 @@ export default function Committee() {
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Organizing Secretaries</h3>
               <ul className="space-y-4">
                 <li>
+                  <p className="font-semibold text-slate-900">Dr. L.M.Nithya</p>
+                  <p className="text-sm text-slate-600">Dean (CSE&IT) & IQAC Head</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. P. Sumathi</p>
+                  <p className="text-sm text-slate-600">III Year Cluster Head(CS)</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. B. Anuradha</p>
+                  <p className="text-sm text-slate-600">II Year Cluster Head(CS)</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. K. Periyakaruppan</p>
+                  <p className="text-sm text-slate-600">I Year Cluster Head(CS)</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. S. Sundararajan</p>
+                  <p className="text-sm text-slate-600">HoD-MCA & COE</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. R. Rajasekaran</p>
+                  <p className="text-sm text-slate-600">IQAC Co-ordinator</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Joint Organizing Secretaries */}
+          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+            <div className="w-full flex flex-col items-start p-8 text-left">
+              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Joint Organizing Secretaries</h3>
+              <ul className="space-y-4">
+                <li>
                   <p className="font-semibold text-slate-900">Dr. S. Narayanan</p>
                   <p className="text-sm text-slate-600">HoD, IV IT, AIML-CT.</p>
                 </li>
@@ -113,10 +142,10 @@ export default function Committee() {
             </div>
           </div>
 
-          {/* Co-ordinators */}
+          {/* Technical Co-ordinators */}
           <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Co-ordinators</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Technical Co-ordinators</h3>
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Mr. K. Karthikeyan</p>
@@ -149,6 +178,14 @@ export default function Committee() {
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Advisory Committee</h3>
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. Uma Perumal</p>
+                  <p className="text-sm text-slate-600">Assistant Professor, College of Engineering and Computer Science,<br />Jazan University, Saudi Arabia</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900">Dr. Arokiaraj David</p>
+                  <p className="text-sm text-slate-600">Associate Professor,<br />SBS Swiss Business School, RAK Campus, UAE</p>
+                </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
                   <p className="text-sm text-slate-600">Professor,<br />Yorkville University, Canada</p>

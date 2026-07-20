@@ -1,8 +1,10 @@
-import { motion } from "motion/react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
 import wileyLogo from "../../assets/images/wiley.png";
 import yorkLogo from "../../assets/images/york.jpg";
 import scopusLogo from "../../assets/images/scopus.png";
+import snsctLogo from "../../assets/images/SNSCT.png";
 import CircularText from "./ui/CircularText";
 import { AuroraText } from "./ui/AuroraText";
 
@@ -10,7 +12,66 @@ interface HeroProps {
   onRegisterClick: () => void;
 }
 
+function AnimatedDigit({ digit }: { digit: string }) {
+  return (
+    <div className="relative w-[0.6em] h-10 overflow-hidden inline-flex justify-center items-center">
+      <AnimatePresence mode="popLayout">
+        <motion.span
+          key={digit}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="absolute"
+        >
+          {digit}
+        </motion.span>
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function AnimatedNumber({ value }: { value: string }) {
+  return (
+    <div className="flex text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark tabular-nums">
+      {value.split('').map((digit, index) => (
+        <AnimatedDigit key={index} digit={digit} />
+      ))}
+    </div>
+  );
+}
+
 export default function Hero({ onRegisterClick }: HeroProps) {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date("November 20, 2026 00:00:00").getTime();
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        return;
+      }
+
+      setTimeLeft({
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000)
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const handleScrollToTimeline = () => {
     const target = document.querySelector("#timeline");
     if (target) {
@@ -46,12 +107,15 @@ export default function Hero({ onRegisterClick }: HeroProps) {
               <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Publishing Partner</span>
               <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
               <span className="text-slate-300">|</span>
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexed via</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">Indexed In</span>
               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
               <span className="text-slate-300">|</span>
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">November 20<sup>th</sup> - 21<sup>st</sup> 2026</span>
+              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">November 20<sup className="lowercase">th</sup> - 21<sup className="lowercase">st</sup> 2026</span>
               <span className="text-slate-300">|</span>
-              <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">SNS College Of Technology</span>
+              <div className="flex items-center gap-2">
+                <img src={snsctLogo} alt="SNSCT" className="h-6 md:h-8 object-contain" />
+                <span className="text-slate-800 font-bold uppercase tracking-widest text-[11px] md:text-xs">SNS College Of Technology</span>
+              </div>
               <span className="text-slate-300">|</span>
             </div>
           ))}
@@ -111,6 +175,27 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           <span className="block text-sm sm:text-base md:text-lg lg:text-xl font-libre font-light mt-4 text-brand-dark z-10">
             November 20<sup>th</sup> to 21<sup>st</sup> 2026 (Hybrid Mode)
           </span>
+          <div className="flex gap-4 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-white/20 shadow-sm">
+            <div className="flex flex-col items-center min-w-[60px]">
+              <AnimatedNumber value={timeLeft.days.toString()} />
+              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Days</span>
+            </div>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-5">:</span>
+            <div className="flex flex-col items-center min-w-[60px]">
+              <AnimatedNumber value={timeLeft.hours.toString().padStart(2, '0')} />
+              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Hours</span>
+            </div>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-5">:</span>
+            <div className="flex flex-col items-center min-w-[60px]">
+              <AnimatedNumber value={timeLeft.minutes.toString().padStart(2, '0')} />
+              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Mins</span>
+            </div>
+            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-5">:</span>
+            <div className="flex flex-col items-center min-w-[60px]">
+              <AnimatedNumber value={timeLeft.seconds.toString().padStart(2, '0')} />
+              <span className="text-xs sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Secs</span>
+            </div>
+          </div>
         </motion.h1>
 
 
