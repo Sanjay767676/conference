@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, FileText, Globe2, Calendar } from "lucide-react";
-import wileyLogo from "../../assets/images/WILEY(BLACK).png";
+import wileyLogo from "../../assets/images/wiley.png";
+import wileyLogoBlack from "../../assets/images/WILEY(BLACK).png";
 import yorkLogo from "../../assets/images/york.jpg";
 import scopusLogo from "../../assets/images/scopus.png";
 import snsctLogo from "../../assets/images/SNSCT.png";
@@ -105,7 +106,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 whitespace-nowrap">
               <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Publishing Partner</span>
-              <img src={wileyLogo} alt="Wiley" className="h-6 md:h-7 object-contain" />
+              <img src={wileyLogoBlack} alt="Wiley" className="h-6 md:h-7 object-contain" />
               <span className="text-[#FFFFFF]">|</span>
               <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Indexed In</span>
               <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
@@ -149,7 +150,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="mb-6 text-5xl sm:text-7xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2"
+          className="mt-8 md:mt-16 mb-6 text-5xl sm:text-7xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2"
         >
           <AuroraText className="inline-block font-bold" speed={2}>ICAIDIET'26</AuroraText>
         </motion.div>
@@ -174,6 +175,9 @@ export default function Hero({ onRegisterClick }: HeroProps) {
 
           <span className="block text-sm sm:text-base md:text-lg lg:text-xl font-libre font-light mt-4 text-brand-dark z-10">
             November 20<sup>th</sup> to 21<sup>st</sup> 2026 (Hybrid Mode)
+          </span>
+          <span className="block text-sm sm:text-base md:text-lg lg:text-xl font-libre font-bold mt-4 text-brand-dark z-10">
+            Organized by SNS College of Tecnology - AI Campus
           </span>
           <div className="flex gap-4 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-white/20 shadow-sm">
             <div className="flex flex-col items-center min-w-[60px]">
@@ -248,7 +252,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             Publication & Academic Partners
           </span>
           <div className="flex flex-wrap items-center justify-center gap-16 md:gap-24">
-            <img src={wileyLogo} alt="Wiley" className="h-12 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+            <img src={wileyLogo} alt="Wiley" className="h-16 md:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300" />
             <img src={yorkLogo} alt="Yorkville University" className="h-12 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
           </div>
         </motion.div>

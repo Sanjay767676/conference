@@ -101,7 +101,20 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
 
         </div>
 
-
+        {/* Registration CTA */}
+        <div className="flex flex-col items-center justify-center mt-12 bg-[#fdf08a] p-8 rounded-2xl shadow-sm text-center max-w-4xl mx-auto">
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">Ready to Register?</h3>
+          <p className="text-slate-700 mb-8 max-w-2xl mx-auto">
+            Once you have reviewed the guidelines and fees, you can proceed with your registration.
+          </p>
+          <button
+            onClick={onRegisterClick}
+            className="px-8 py-4 bg-brand-dark text-white font-semibold rounded-xl text-lg hover:bg-opacity-95 transform hover:-translate-y-0.5 transition-all duration-200 shadow-md flex items-center justify-center gap-2 group"
+          >
+            Registration
+            <CreditCard className="w-5 h-5 group-hover:scale-110 transition-transform" />
+          </button>
+        </div>
 
       </div>
     </section>

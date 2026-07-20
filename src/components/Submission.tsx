@@ -22,7 +22,7 @@ export default function Submission() {
                 <FileText className="w-6 h-6 text-primary" />
                 <h3 className="text-2xl font-bold text-slate-900">Author Submission Guidelines</h3>
               </div>
-              
+
               <p className="text-slate-700 mb-6 font-medium">
                 Authors are invited to submit original, unpublished, and high-quality research papers that are not under consideration for publication elsewhere. All submissions must strictly adhere to the following guidelines in line with Wiley publication standards and indexing requirements:
               </p>
@@ -73,7 +73,7 @@ export default function Submission() {
                   <span className="text-left leading-relaxed">Final acceptance and publication are subject to publisher quality checks and indexing criteria; inclusion in indexed databases (e.g., Scopus) depends on meeting all required standards.</span>
                 </li>
               </ul>
-              
+
               <p className="text-slate-700 mt-6 font-medium italic border-l-4 border-primary pl-4 py-1">
                 Authors are strongly advised to carefully review these guidelines and ensure full compliance to facilitate smooth review and publication processing.
               </p>
@@ -104,17 +104,11 @@ export default function Submission() {
                 <h3 className="text-2xl font-bold text-slate-900">Where to Submit</h3>
               </div>
               <p className="text-slate-600 mb-4 font-medium text-left">
-                CMT submission link will be coming shortly.
+                Through CMT.
               </p>
               <p className="text-slate-600 mb-4 text-sm text-left">
                 All submissions will be handled electronically via the Microsoft CMT platform once the portal is open.
               </p>
-              <button
-                disabled
-                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-slate-400 cursor-not-allowed w-full sm:w-auto mt-auto"
-              >
-                Portal Opening Soon
-              </button>
             </div>
           </div>
 
