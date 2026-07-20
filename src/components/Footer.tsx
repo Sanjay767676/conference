@@ -25,17 +25,7 @@ export default function Footer() {
                 icaidiet26@gmail.com
               </a>
             </div>
-            <div className="flex items-center gap-2 text-[#F4F9FF] hover:text-white transition-colors">
-              <FileText className="w-4 h-4 text-primary shrink-0" />
-              <a
-                href="https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs underline underline-offset-2 opacity-90 hover:opacity-100"
-              >
-                Wiley Format Template
-              </a>
-            </div>
+
             <div className="text-xs text-[#F4F9FF]/70 mt-1">
               Developed & Maintained By{" "}
               <a

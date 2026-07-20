@@ -12,7 +12,7 @@ interface HeroProps {
   onRegisterClick: () => void;
 }
 
-function AnimatedDigit({ digit }: { digit: string }) {
+function AnimatedDigit({ digit }: { digit: string; key?: string | number }) {
   return (
     <div className="relative w-[0.6em] h-10 overflow-hidden inline-flex justify-center items-center">
       <AnimatePresence mode="popLayout">
