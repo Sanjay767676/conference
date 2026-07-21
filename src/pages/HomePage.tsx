@@ -3,7 +3,6 @@ import { ArrowUp } from "lucide-react";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Tracks from "../components/Tracks";
-import Committee from "../components/Committee";
 
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +45,6 @@ export default function HomePage() {
       <Hero onRegisterClick={() => window.open("https://cmt3.research.microsoft.com/ICAIDIET2026", "_blank")} />
       <About />
       <Tracks />
-      <Committee />
       <ScrollToTop />
     </main>
   );
