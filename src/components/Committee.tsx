@@ -149,23 +149,23 @@ export default function Committee() {
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Mr. K. Karthikeyan</p>
-                  <p className="text-sm text-slate-600">AP, CSE</p>
+                  <p className="text-sm text-slate-600">AP | CSE</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Ms. M. Saranya</p>
-                  <p className="text-sm text-slate-600">AP, CSE</p>
+                  <p className="text-sm text-slate-600">AP | CSE</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Ms. N. Vijayalakshmi</p>
-                  <p className="text-sm text-slate-600">AP, CSE</p>
+                  <p className="text-sm text-slate-600">AP | CSE</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Ms. G. Swathi</p>
-                  <p className="text-sm text-slate-600">AP, CSE</p>
+                  <p className="text-sm text-slate-600">AP | CSE</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Ms. R. Nirmala</p>
-                  <p className="text-sm text-slate-600">AP, CSE</p>
+                  <p className="text-sm text-slate-600">AP | CSE</p>
                 </li>
               </ul>
             </div>
