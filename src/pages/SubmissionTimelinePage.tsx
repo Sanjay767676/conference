@@ -1,19 +1,17 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
-import Submission from "../components/Submission";
+import Timeline from "../components/Timeline";
 
-export default function PaperSubmissionPage() {
+export default function SubmissionTimelinePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <main className="relative z-10 pt-24 min-h-screen space-y-8 pb-16">
-      {/* 1. Guidelines */}
-      <Submission />
+      <Timeline />
 
-      {/* Back to Home Button */}
       <Link
         to="/"
         className="fixed bottom-6 right-6 z-50 flex items-center gap-2 p-3 bg-primary text-white rounded-xl shadow-lg hover:bg-primary-dark transition-colors duration-300 group"

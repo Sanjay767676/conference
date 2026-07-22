@@ -5,6 +5,9 @@ import HomePage from "./pages/HomePage";
 import PaperSubmissionPage from "./pages/PaperSubmissionPage";
 import AdvisoryCommitteePage from "./pages/AdvisoryCommitteePage";
 import OrganizingCommitteePage from "./pages/OrganizingCommitteePage";
+import RegistrationFeePage from "./pages/RegistrationFeePage";
+import SubmissionTimelinePage from "./pages/SubmissionTimelinePage";
+import PublicationPage from "./pages/PublicationPage";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
@@ -20,6 +23,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/paper-submission" element={<PaperSubmissionPage />} />
+          <Route path="/registration-fee" element={<RegistrationFeePage />} />
+          <Route path="/submission-timeline" element={<SubmissionTimelinePage />} />
+          <Route path="/publication" element={<PublicationPage />} />
           <Route path="/advisory-committee" element={<AdvisoryCommitteePage />} />
           <Route path="/organizing-committee" element={<OrganizingCommitteePage />} />
         </Routes>
