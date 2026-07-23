@@ -158,15 +158,15 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 mt-1 md:mt-2 text-center w-full">
             in Engineering and Technology
           </span>
-          
+
           <span className="block text-base sm:text-lg md:text-xl font-libre font-bold mt-6 sm:mt-8 mb-4 sm:mb-6 z-0">
             On
           </span>
-          
+
           <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold text-brand-dark z-10 text-center">
-            November 20<sup>th</sup> & 21<sup>st</sup> 2026
+            20<sup>th</sup> & 21<sup>st</sup> November 2026
           </span>
-          <span className="block text-sm sm:text-lg md:text-xl lg:text-2xl font-libre font-light mt-2 text-brand-dark z-10 text-center">
+          <span className="block text-sm sm:text-sm md:text-sm lg:text-xl font-libre font-light mt-2 text-brand-dark z-10 text-center">
             (Hybrid Mode)
           </span>
           <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold mt-4 text-brand-dark z-10 text-center">
