@@ -214,7 +214,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                           }`}
                       >
-                        Guidelines
+                        Paper Submission Guidelines
                       </Link>
                       <Link
                         to="/submission-timeline"
@@ -244,7 +244,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                           }`}
                       >
-                        Publication
+                        Publication Details
                       </Link>
                     </motion.div>
                   )}
@@ -400,7 +400,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                               }`}
                           >
-                            Guidelines
+                            Paper Submission Guidelines
                           </Link>
                           <Link
                             to="/submission-timeline"
@@ -439,7 +439,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                               }`}
                           >
-                            Publication
+                            Publication Details
                           </Link>
                         </div>
                       </motion.div>
