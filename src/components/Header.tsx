@@ -186,7 +186,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     : "text-brand-dark hover:opacity-80"
                     }`}
                 >
-                  Submission
+                  For Authors
                   <ChevronDown className={`w-4 h-4 transition-transform ${isSubmissionDropdownOpen ? "rotate-180" : ""}`} />
                   {['/paper-submission', '/registration-fee', '/submission-timeline', '/publication'].includes(location.pathname) && (
                     <motion.div
@@ -377,7 +377,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     onClick={() => setIsSubmissionDropdownOpen(!isSubmissionDropdownOpen)}
                     className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                   >
-                    Submission
+                    For Authors
                     <ChevronDown className={`w-5 h-5 transition-transform ${isSubmissionDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   <AnimatePresence>
