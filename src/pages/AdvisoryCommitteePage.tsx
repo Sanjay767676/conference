@@ -17,7 +17,7 @@ export default function AdvisoryCommitteePage() {
         </div>
 
         <div className="grid md:grid-cols-1 gap-8 items-start">
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Advisory Committee</h3>
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">

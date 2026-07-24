@@ -16,7 +16,7 @@ export default function Submission() {
 
         <div className="mb-12">
           {/* Author Submission Guidelines */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
@@ -83,7 +83,7 @@ export default function Submission() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Where to Submit */}
-          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full h-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <LinkIcon className="w-6 h-6 text-primary" />
@@ -99,7 +99,7 @@ export default function Submission() {
           </div>
 
           {/* How to Submit */}
-          <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full h-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />

@@ -18,7 +18,7 @@ export default function OrganizingCommitteePage() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-8 items-start">
           {/* Chief Patrons */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Chief Patrons</h3>
               <ul className="space-y-4">
@@ -40,7 +40,7 @@ export default function OrganizingCommitteePage() {
           </div>
 
           {/* Patrons */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Patrons</h3>
               <ul className="space-y-4">
@@ -71,7 +71,7 @@ export default function OrganizingCommitteePage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 items-start">
           {/* Convenors */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Convenors</h3>
               <ul className="space-y-4">
@@ -88,7 +88,7 @@ export default function OrganizingCommitteePage() {
           </div>
 
           {/* Organizing Secretaries */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Organizing Secretaries</h3>
               <ul className="space-y-4">
@@ -121,7 +121,7 @@ export default function OrganizingCommitteePage() {
           </div>
 
           {/* Joint Organizing Secretaries */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Joint Organizing Secretaries</h3>
               <ul className="space-y-4">
@@ -144,7 +144,7 @@ export default function OrganizingCommitteePage() {
 
         <div className="w-full mb-8 items-start">
           {/* Technical Co-ordinators */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Technical Co-ordinators</h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-6 w-full">

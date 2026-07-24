@@ -19,7 +19,7 @@ export default function Committee() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-8 items-start">
           {/* Chief Patrons */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Chief Patrons</h3>
               <ul className="space-y-4">
@@ -41,7 +41,7 @@ export default function Committee() {
           </div>
 
           {/* Patrons */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Patrons</h3>
               <ul className="space-y-4">
@@ -72,7 +72,7 @@ export default function Committee() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 items-start">
           {/* Convenors */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Convenors</h3>
               <ul className="space-y-4">
@@ -89,7 +89,7 @@ export default function Committee() {
           </div>
 
           {/* Organizing Secretaries */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Organizing Secretaries</h3>
               <ul className="space-y-4">
@@ -122,7 +122,7 @@ export default function Committee() {
           </div>
 
           {/* Joint Organizing Secretaries */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Joint Organizing Secretaries</h3>
               <ul className="space-y-4">
@@ -143,7 +143,7 @@ export default function Committee() {
           </div>
 
           {/* Technical Co-ordinators */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Technical Co-ordinators</h3>
               <ul className="space-y-4">
@@ -174,7 +174,7 @@ export default function Committee() {
 
         <div className="grid md:grid-cols-1 gap-8 items-start">
           {/* Advisory Committee */}
-          <div className="w-full bg-[#fdf08a] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start p-8 text-left">
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Advisory Committee</h3>
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">

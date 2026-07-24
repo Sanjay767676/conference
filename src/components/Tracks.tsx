@@ -38,7 +38,7 @@ export default function Tracks() {
 
             return (
               <div key={track.id} className="h-full">
-                <div className="w-full h-full bg-[#fdf08a] rounded-2xl shadow-sm transition-transform hover:-translate-y-1">
+                <div className="w-full h-full bg-[#ffbf00] rounded-2xl shadow-sm transition-transform hover:-translate-y-1">
                   <motion.div
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
