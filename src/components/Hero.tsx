@@ -95,10 +95,10 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           {[...Array(4)].map((_, i) => (
             <div key={i} className="flex items-center gap-12 whitespace-nowrap">
               <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Publishing Partner</span>
-              <img src={wileyLogoBlack} alt="Wiley" className="h-6 md:h-7 object-contain" />
+              <img src={wileyLogoBlack} alt="Wiley" className="h-10 md:h-12 object-contain" />
               <span className="text-[#FFFFFF]">|</span>
               <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Indexed In</span>
-              <img src={scopusLogo} alt="Scopus" className="h-6 md:h-7 object-contain" />
+              <img src={scopusLogo} alt="Scopus" className="h-10 md:h-12 object-contain" />
               <span className="text-[#FFFFFF]">|</span>
               <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">November 20<sup className="lowercase">th</sup> & 21<sup className="lowercase">st</sup> 2026</span>
               <span className="text-[#FFFFFF]">|</span>

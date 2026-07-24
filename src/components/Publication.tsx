@@ -1,4 +1,6 @@
 import { BookOpen } from 'lucide-react';
+import wileyLogo from '../../assets/images/wiley.png';
+import scopusLogo from '../../assets/images/scopus.png';
 
 export default function Publication() {
   return (
@@ -20,6 +22,17 @@ export default function Publication() {
               <p className="text-slate-700 font-medium text-lg text-left leading-relaxed">
                 All the accepted and presented papers will be published as Scopus-indexed conference proceedings. Assigned ISBN and DOI (as per publisher norms).
               </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mt-8 border-t border-slate-900/10 pt-8">
+                <div className="flex flex-col items-center justify-center bg-white/50 rounded-xl p-6">
+                  <h4 className="text-lg font-bold text-slate-900 mb-4 text-center uppercase tracking-wide">Publication Partner</h4>
+                  <img src={wileyLogo} alt="Wiley" className="h-16 object-contain mix-blend-multiply" />
+                </div>
+                <div className="flex flex-col items-center justify-center bg-white/50 rounded-xl p-6">
+                  <h4 className="text-lg font-bold text-slate-900 mb-4 text-center uppercase tracking-wide">Indexed In</h4>
+                  <img src={scopusLogo} alt="Scopus" className="h-16 object-contain mix-blend-multiply" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
