@@ -170,7 +170,7 @@ export default function OrganizingCommitteePage() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Ruthuraraj</p>
-                  <p className="text-sm text-slate-600">Dept. of MECH</p>
+                  <p className="text-sm text-slate-600">Dept. of AIDS</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Saranya</p>

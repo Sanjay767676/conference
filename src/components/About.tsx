@@ -54,7 +54,7 @@ export default function About() {
                         <item.icon className="w-5 h-5" />
                       </div>
                       <h4 className="font-semibold text-base text-brand-dark mb-2 text-left">{item.title}</h4>
-                      <p className="text-slate-600 text-sm leading-relaxed text-left">{item.desc}</p>
+                      <p className="text-slate-950 font-medium text-sm leading-relaxed text-left">{item.desc}</p>
                     </div>
                   </div>
                 </div>
