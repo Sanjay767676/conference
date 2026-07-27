@@ -18,12 +18,12 @@ export default function Tracks() {
   return (
     <section id="tracks" className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16" id="tracks-header">
 
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
-            Conference Tracks
+            Call For Papers
           </h2>
           <p className="text-lg text-brand-dark max-w-2xl mx-auto">
             <span className="font-gambetta tracking-wide font-semibold text-brand-dark">ICAIDIET'26</span> welcomes original research papers, reviews, and case study submissions covering technical frameworks and foundational theory across eight core tracks.
@@ -48,18 +48,17 @@ export default function Tracks() {
                   >
                     {/* Core Details */}
                     <div className="flex flex-col items-start gap-4">
-                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${
-                        isSelected || isHovered 
-                          ? "bg-primary text-white" 
+                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${isSelected || isHovered
+                          ? "bg-primary text-white"
                           : "bg-primary-light text-primary"
-                      }`}>
+                        }`}>
                         {renderIcon(track.iconName)}
                       </div>
-                      
+
                       <h3 className="text-lg font-semibold text-brand-dark group-hover:text-primary transition-colors">
                         {track.title}
                       </h3>
-                      
+
                       <p className="text-sm text-slate-500 leading-relaxed text-left">
                         {track.description}
                       </p>
@@ -69,9 +68,8 @@ export default function Tracks() {
                     <div className="mt-2 pt-4 border-t border-slate-100">
                       <div className="flex items-center justify-between text-xs font-semibold text-primary">
                         <span>{isSelected ? "Hide Topics" : "View Sub-topics"}</span>
-                        <Icons.ChevronRight className={`w-4 h-4 transition-transform duration-300 ${
-                          isSelected ? "rotate-90 text-primary" : "text-slate-400 group-hover:text-primary"
-                        }`} />
+                        <Icons.ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isSelected ? "rotate-90 text-primary" : "text-slate-400 group-hover:text-primary"
+                          }`} />
                       </div>
 
                       <AnimatePresence>

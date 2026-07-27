@@ -46,7 +46,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
   const navLinks = [
     { name: "Home", href: "/#home", id: "home" },
     { name: "About", href: "/#about", id: "about" },
-    { name: "Tracks", href: "/#tracks", id: "tracks" },
+    { name: "Call For Papers ", href: "/#tracks", id: "tracks" },
   ];
 
   const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -130,7 +130,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     : "text-brand-dark hover:opacity-80"
                     }`}
                 >
-                  Committee
+                  Committees
                   <ChevronDown className={`w-4 h-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`} />
                   {location.pathname.includes("committee") && (
                     <motion.div
@@ -158,7 +158,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                           }`}
                       >
-                        Organizing-committee
+                        Organizing-committees
                       </Link>
                       <Link
                         to="/advisory-committee"
@@ -168,7 +168,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                           }`}
                       >
-                        Advisory-committee
+                        Advisory-committees
                       </Link>
                     </motion.div>
                   )}
@@ -224,7 +224,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                           : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                           }`}
                       >
-                        Submission Timeline
+                        Important Dates
                       </Link>
                       <Link
                         to="/registration-fee"
@@ -328,7 +328,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                   >
-                    Committee
+                    Committees
                     <ChevronDown className={`w-5 h-5 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   <AnimatePresence>
@@ -351,7 +351,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                               }`}
                           >
-                            Advisory Committee
+                            Advisory Committees
                           </Link>
                           <Link
                             to="/organizing-committee"
@@ -364,7 +364,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                               }`}
                           >
-                            Organizing Committee
+                            Organizing Committees
                           </Link>
                         </div>
                       </motion.div>
@@ -413,7 +413,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
                               }`}
                           >
-                            Submission Timeline
+                            Important Dates
                           </Link>
                           <Link
                             to="/registration-fee"

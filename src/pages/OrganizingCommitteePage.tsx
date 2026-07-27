@@ -149,40 +149,40 @@ export default function OrganizingCommitteePage() {
               <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Technical Co-ordinators</h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-6 w-full">
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Mr. K. Karthikeyan</p>
-                  <p className="text-sm text-slate-600">AP/CSE</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. K. Karthikeyan</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. M. Saranya</p>
-                  <p className="text-sm text-slate-600">AP/CSE</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. M. Saranya</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. N. Vijayalakshmi</p>
-                  <p className="text-sm text-slate-600">AP/CSE</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. N. Vijayalakshmi</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. G. Swathi</p>
-                  <p className="text-sm text-slate-600">AP/CSE</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. G. Swathi</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. R. Nirmala</p>
-                  <p className="text-sm text-slate-600">AP/CSE</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Nirmala</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Mr. R. Ruthuraraj</p>
-                  <p className="text-sm text-slate-600">AP/MECH</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Ruthuraraj</p>
+                  <p className="text-sm text-slate-600">Dept. of MECH</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. R. Saranya</p>
-                  <p className="text-sm text-slate-600">AP/ECE</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Saranya</p>
+                  <p className="text-sm text-slate-600">Dept. of ECE</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. C. Parkavi</p>
-                  <p className="text-sm text-slate-600">AP/AIML</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. C. Parkavi</p>
+                  <p className="text-sm text-slate-600">Dept. of AIML</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Ms. K. Ranjani</p>
-                  <p className="text-sm text-slate-600">AP/CSE-IoT</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. K. Ranjani</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE-IoT</p>
                 </li>
               </ul>
             </div>
