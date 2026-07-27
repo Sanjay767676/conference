@@ -25,23 +25,23 @@ export default function About() {
     <section id="about" className="py-16 bg-transparent overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
-          
+
           {/* Text Details */}
           <div className="flex flex-col items-center" id="about-info-col">
             <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
               About The Conference
             </div>
-            
+
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4" id="about-title">
               Bridging Global Research with Next-Gen Intelligence
             </h2>
-            
+
             <p className="text-brand-dark text-base sm:text-lg leading-relaxed mb-6 max-w-3xl">
-              The International Conference on <strong>AI-Driven Innovation in Engineering and Technology (<span className="font-gambetta tracking-wide">ICAIDIET'26</span>)</strong> is the premier global forum for sharing pioneering breakthroughs at the intersection of neural networks, cyber-physical architectures, and distributed systems.
+              The International Conference on <strong>AI-Driven Innovation in Engineering and Technology (<span className="font-gambetta tracking-wide">ICAIDIET'26</span>)</strong> is a global platform that brings together researchers, academicians, industry experts, and innovators to explore the latest advancements in Artificial Intelligence and emerging technologies
             </p>
-            
+
             <p className="text-brand-dark text-sm sm:text-base leading-relaxed mb-10 max-w-3xl">
-              We bring together world-class researchers, academic professors, and leading industry engineers to discuss deep learning, edge systems, smart grids, and computer vision. Our agenda includes curated peer presentations, keynotes, and high-energy developer panels designed to fast-track research collaboration.
+              The conference promotes innovation, collaboration, and knowledge sharing through keynote sessions, technical paper presentations, and expert discussions. Hosted by SNS College of Technology in collaboration with Yorkville University, Canada, ICAIDIET'26 aims to inspire research excellence and foster intelligent, sustainable solutions for real-world challenges.
             </p>
 
             {/* Structured benefits */}
