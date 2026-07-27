@@ -17,9 +17,9 @@ export default function Partners() {
             <p className="text-slate-700 text-sm md:text-base mb-10 max-w-2xl leading-relaxed">
               <span className="font-gambetta font-semibold">ICAIDIET'26</span> collaborates with globally recognized academic institutions to foster international research excellence.
             </p>
-            <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[480px] h-[160px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[540px] h-[200px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
               <div className="bg-white px-8 py-4 rounded-xl shadow-sm w-full h-full flex items-center justify-center">
-                <img src={yorkLogo} alt="Yorkville University" className="max-h-20 object-contain" />
+                <img src={yorkLogo} alt="Yorkville University" className="max-h-28 object-contain" />
               </div>
             </div>
           </div>
@@ -32,9 +32,9 @@ export default function Partners() {
             <p className="text-slate-700 text-sm md:text-base mb-10 max-w-2xl leading-relaxed">
               Accepted papers will be published with international visibility through our official publishing partner.
             </p>
-            <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[480px] h-[160px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[540px] h-[200px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
               <div className="bg-white px-8 py-4 rounded-xl shadow-sm w-full h-full flex items-center justify-center">
-                <img src={wileyLogo} alt="Wiley" className="max-h-14 object-contain" />
+                <img src={wileyLogo} alt="Wiley" className="max-h-24 object-contain" />
               </div>
             </div>
           </div>
@@ -47,9 +47,9 @@ export default function Partners() {
             <p className="text-slate-700 text-sm md:text-base mb-10 max-w-2xl leading-relaxed">
               Conference proceedings are indexed to maximize citation impact and academic reach.
             </p>
-            <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[480px] h-[160px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[540px] h-[200px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
               <div className="bg-white px-8 py-4 rounded-xl shadow-sm w-full h-full flex items-center justify-center">
-                <img src={scopusLogo} alt="Scopus" className="max-h-12 object-contain" />
+                <img src={scopusLogo} alt="Scopus" className="max-h-20 object-contain" />
               </div>
             </div>
           </div>
