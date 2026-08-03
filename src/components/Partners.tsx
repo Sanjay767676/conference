@@ -1,5 +1,5 @@
 import wileyLogo from '../../assets/images/wiley.png';
-import scopusLogo from '../../assets/images/scopus.png';
+import scopusLogo from '../../assets/images/scopusblack.png';
 import yorkLogo from '../../assets/images/york.jpg';
 
 export default function Partners() {
@@ -7,7 +7,7 @@ export default function Partners() {
     <section id="partners" className="py-20 bg-transparent">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-20">
-          
+
           {/* Academic Partner */}
           <div className="text-center w-full flex flex-col items-center">
             <span className="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-[0.2em] mb-4">IN ASSOCIATION WITH</span>
@@ -34,7 +34,7 @@ export default function Partners() {
             </p>
             <div className="bg-[#ffbf00] rounded-[24px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-900/10 p-6 flex items-center justify-center w-full max-w-[540px] h-[200px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
               <div className="bg-white px-8 py-4 rounded-xl shadow-sm w-full h-full flex items-center justify-center">
-                <img src={wileyLogo} alt="Wiley" className="max-h-24 object-contain" />
+                <img src={wileyLogo} alt="Wiley" className="max-h-40 object-contain" />
               </div>
             </div>
           </div>

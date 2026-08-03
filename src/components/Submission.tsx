@@ -70,6 +70,10 @@ export default function Submission() {
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Authors are requested to submit the Plagiarism Report of their paper as a supplementary paper.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
                   <span className="text-left leading-relaxed">Final acceptance and publication are subject to publisher quality checks and indexing criteria; inclusion in indexed databases (e.g., Scopus) depends on meeting all required standards.</span>
                 </li>
               </ul>
