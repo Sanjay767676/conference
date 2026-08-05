@@ -4,7 +4,7 @@ import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import snsctLogo from "../../assets/images/SNSCT.png";
 import snsdtLogo from "../../assets/SNS-DT Logo.png";
-import brochureImg from "../../assets/images/icaidiet26_ brochure.png";
+import brochureImg from "../../brochure.png";
 
 interface HeaderProps {
   onRegisterClick: () => void;
