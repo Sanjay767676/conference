@@ -46,7 +46,7 @@ export default function Publication() {
               </div>
 
               <a
-                href="https://cmt3.research.microsoft.com/"
+                href="https://cmt3.research.microsoft.com/ICAIDIET2026"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transform hover:-translate-y-0.5 transition-all duration-200 shadow-sm"

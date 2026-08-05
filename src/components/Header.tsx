@@ -4,6 +4,7 @@ import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import snsctLogo from "../../assets/images/SNSCT.png";
 import snsdtLogo from "../../assets/SNS-DT Logo.png";
+import brochureImg from "../../assets/images/icaidiet26_ brochure.png";
 
 interface HeaderProps {
   onRegisterClick: () => void;
@@ -253,6 +254,16 @@ export default function Header({ onRegisterClick }: HeaderProps) {
 
               <li className="relative">
                 <a
+                  href={brochureImg}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative text-sm font-medium transition-colors py-2 text-brand-dark hover:opacity-80"
+                >
+                  Brochure
+                </a>
+              </li>
+              <li className="relative">
+                <a
                   href="https://snsct.org/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -445,6 +456,17 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                       </motion.div>
                     )}
                   </AnimatePresence>
+                </li>
+                <li className="pt-2">
+                  <a
+                    href={brochureImg}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                  >
+                    Brochure
+                  </a>
                 </li>
                 <li className="pt-2">
                   <a
