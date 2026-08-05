@@ -4,7 +4,6 @@ import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import snsctLogo from "../../assets/images/SNSCT.png";
 import snsdtLogo from "../../assets/SNS-DT Logo.png";
-import brochureImg from "../../brochure.png";
 
 interface HeaderProps {
   onRegisterClick: () => void;
@@ -254,7 +253,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
 
               <li className="relative">
                 <a
-                  href={brochureImg}
+                  href="/brochure.png"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative text-sm font-medium transition-colors py-2 text-brand-dark hover:opacity-80"
@@ -459,7 +458,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                 </li>
                 <li className="pt-2">
                   <a
-                    href={brochureImg}
+                    href="/brochure.png"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
