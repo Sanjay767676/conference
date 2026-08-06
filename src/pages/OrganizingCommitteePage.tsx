@@ -182,7 +182,59 @@ export default function OrganizingCommitteePage() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. K. Ranjani</p>
-                  <p className="text-sm text-slate-600">Dept. of CSE-IoT</p>
+                  <p className="text-sm text-slate-600">Dept. of IoT</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. Dr. C. Udhaya Shankar</p>
+                  <p className="text-sm text-slate-600">Dept. of AIDS</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. S. Kasthuri</p>
+                  <p className="text-sm text-slate-600">Dept. of AIDS</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. K. S. Mohan</p>
+                  <p className="text-sm text-slate-600">Dept. of IT</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. S. Divya</p>
+                  <p className="text-sm text-slate-600">Dept. of AIML</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. S. Haribabu</p>
+                  <p className="text-sm text-slate-600">Dept. of CSD</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. V. Indu Nair</p>
+                  <p className="text-sm text-slate-600">Dept. of AIDS</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. G. Gokul Kannan</p>
+                  <p className="text-sm text-slate-600">Dept. of AIDS</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Sivagami</p>
+                  <p className="text-sm text-slate-600">Dept. of IT</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. B. Balamurali</p>
+                  <p className="text-sm text-slate-600">Dept. of AIML</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. K. Kalaivani</p>
+                  <p className="text-sm text-slate-600">Dept. of CST</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. RajiniGanth</p>
+                  <p className="text-sm text-slate-600">Dept. of CST</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. S. Deepa</p>
+                  <p className="text-sm text-slate-600">Dept. of CSE</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Karan</p>
+                  <p className="text-sm text-slate-600">Dept. of CST</p>
                 </li>
               </ul>
             </div>
