@@ -24,44 +24,43 @@ export default function AdvisoryCommitteePage() {
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
                   <p className="text-sm text-slate-600">Professor , </p>
-                  <p className="text-sm text-slate-600">Yorkville University,<br /> Canada.</p>
+                  <p className="text-sm text-slate-600">Yorkville University, Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Arokiaraj David</p>
                   <p className="text-sm text-slate-600">Associate Professor,</p>
-                  <p className="text-sm text-slate-600">SBS Swiss Business School,<br />UAE.</p>
+                  <p className="text-sm text-slate-600">SBS Swiss Business School, UAE.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.A.Johnson Santhosh</p>
                   <p className="text-sm text-slate-600">Associate Professor,</p>
-                  <p className="text-sm text-slate-600">Jimma University,<br />Ethiopia.</p>
+                  <p className="text-sm text-slate-600">Jimma University, Ethiopia.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Amit Kohli</p>
                   <p className="text-sm text-slate-600">Associate Professor,</p>
-                  <p className="text-sm text-slate-600">University Canada West,<br />Canada.</p>
+                  <p className="text-sm text-slate-600">University Canada West, Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A.SAAHIRA BANU</p>
-                  <p className="text-sm text-slate-600">Assistant Professor,</p>
-                  <p className="text-sm text-slate-600">Dept. of Computer Science, Jazan University,</p>
-                  <p className="text-sm text-slate-600">Saudi Arabia.</p>
+                  <p className="text-sm text-slate-600">Assistant Professor, Dept. of Computer Science , </p>
+                  <p className="text-sm text-slate-600">Jazan University, Saudi Arabia. </p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Moovarkku Mudhalvan</p>
-                  <p className="text-sm text-slate-600">Senior Software Development Manager, <br />Oracle , Japan.</p>
+                  <p className="text-sm text-slate-600">Senior Software Development Manager, <br />Oracle, Japan.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Anand Kumaravel</p>
-                  <p className="text-sm text-slate-600">Software Development Manager, Amazon,<br />Texas , United States.</p>
+                  <p className="text-sm text-slate-600">Software Development Manager, <br /> Amazon, Texas, United States.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Kathirvel Nallappan</p>
-                  <p className="text-sm text-slate-600">Senior Optical Systems Engineer,<br /> Zhone Technologies Inc , Canada.</p>
+                  <p className="text-sm text-slate-600">Senior Optical Systems Engineer,<br /> Zhone Technologies Inc, Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. S.SEENUVASAMURTHI</p>
-                  <p className="text-sm text-slate-600">Principal, <br /> Sri Lakshmi Narayana College of Engineering,<br />Puducherry,India.</p>
+                  <p className="text-sm text-slate-600">Principal, <br /> Sri Lakshmi Narayana College of Engineering,<br />Puducherry, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Prof. Hemant Ingale</p>
@@ -108,6 +107,7 @@ export default function AdvisoryCommitteePage() {
                   <p className="text-sm text-slate-600">Assistant Professor, <br /> IIT Patna,<br />Bihar, India</p>
                 </li>
                 <li>
+
                   <p className="font-semibold text-slate-900">Dr.Ajay Pratap</p>
                   <p className="text-sm text-slate-600">Assistant Professor, CSE, <br /> IIT Varanasi,<br />Uttar Pradesh, India</p>
                 </li>
@@ -117,7 +117,7 @@ export default function AdvisoryCommitteePage() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Partha Pratim Gogoi</p>
-                  <p className="text-sm text-slate-600">Technical Lead,<br /> Nokia Solutions,<br />Delhi, India</p>
+                  <p className="text-sm text-slate-600">Technical Lead,<br /> Nokia Solutions,Delhi, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.M.Santhoshkumar</p>
