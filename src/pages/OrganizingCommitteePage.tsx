@@ -232,10 +232,7 @@ export default function OrganizingCommitteePage() {
                   <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. S. Deepa</p>
                   <p className="text-sm text-slate-600">Dept. of CSE</p>
                 </li>
-                <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. R. Karan</p>
-                  <p className="text-sm text-slate-600">Dept. of CST</p>
-                </li>
+
               </ul>
             </div>
           </div>

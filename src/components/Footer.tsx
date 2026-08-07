@@ -31,6 +31,12 @@ export default function Footer() {
                 +91-8903444955
               </a>
             </div>
+            <div className="flex items-center gap-2 text-[#F4F9FF] hover:text-white transition-colors">
+              <Phone className="w-4 h-4 text-primary shrink-0" />
+              <a href="tel:+919952230456" className="text-xs">
+                +91-9952230456
+              </a>
+            </div>
           </div>
 
         </div>
