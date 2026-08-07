@@ -27,6 +27,11 @@ export default function AdvisoryCommitteePage() {
                   <p className="text-sm text-slate-600">Yorkville University, Canada.</p>
                 </li>
                 <li>
+                  <p className="font-semibold text-slate-900">Dr. Amit Kohli</p>
+                  <p className="text-sm text-slate-600">Associate Professor,</p>
+                  <p className="text-sm text-slate-600">University Canada West, Canada.</p>
+                </li>
+                <li>
                   <p className="font-semibold text-slate-900">Dr. Arokiaraj David</p>
                   <p className="text-sm text-slate-600">Associate Professor,</p>
                   <p className="text-sm text-slate-600">SBS Swiss Business School, UAE.</p>
@@ -35,11 +40,6 @@ export default function AdvisoryCommitteePage() {
                   <p className="font-semibold text-slate-900">Dr.A.Johnson Santhosh</p>
                   <p className="text-sm text-slate-600">Associate Professor,</p>
                   <p className="text-sm text-slate-600">Jimma University, Ethiopia.</p>
-                </li>
-                <li>
-                  <p className="font-semibold text-slate-900">Dr. Amit Kohli</p>
-                  <p className="text-sm text-slate-600">Associate Professor,</p>
-                  <p className="text-sm text-slate-600">University Canada West, Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A.SAAHIRA BANU</p>
@@ -100,16 +100,16 @@ export default function AdvisoryCommitteePage() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. S. Jaya Nirmala</p>
-                  <p className="text-sm text-slate-600">Associate Professor, CSE,<br /> NIT Trichy,<br />Tamil Nadu, India.</p>
+                  <p className="text-sm text-slate-600">Associate Professor, CSE,<br /> NIT Trichy,Tamil Nadu, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Abhinoy Singh </p>
-                  <p className="text-sm text-slate-600">Assistant Professor, <br /> IIT Patna,<br />Bihar, India</p>
+                  <p className="text-sm text-slate-600">Assistant Professor, <br /> IIT Patna, Bihar, India</p>
                 </li>
                 <li>
 
                   <p className="font-semibold text-slate-900">Dr.Ajay Pratap</p>
-                  <p className="text-sm text-slate-600">Assistant Professor, CSE, <br /> IIT Varanasi,<br />Uttar Pradesh, India</p>
+                  <p className="text-sm text-slate-600">Assistant Professor, CSE, <br /> IIT Varanasi, Uttar Pradesh, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. M.Shanmugakumar</p>
