@@ -263,7 +263,7 @@ export default function Header({ onRegisterClick }: HeaderProps) {
               </li>
               <li className="relative">
                 <a
-                  href="https://snsct.org/"
+                  href="https://snsct.org/old/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative text-sm font-medium transition-colors py-2 text-brand-dark hover:opacity-80"
