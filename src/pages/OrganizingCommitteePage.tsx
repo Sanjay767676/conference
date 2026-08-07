@@ -185,7 +185,7 @@ export default function OrganizingCommitteePage() {
                   <p className="text-sm text-slate-600">Dept. of IoT</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. Dr. C. Udhaya Shankar</p>
+                  <p className="font-semibold text-slate-900 whitespace-nowrap">Prof. C. Udhaya Shankar</p>
                   <p className="text-sm text-slate-600">Dept. of AIDS</p>
                 </li>
                 <li>
