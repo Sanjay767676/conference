@@ -59,8 +59,8 @@ export default function AdvisoryCommitteePage() {
                   <p className="text-sm text-slate-600">Senior Optical Systems Engineer,<br /> Zhone Technologies Inc, Canada.</p>
                 </li>
                 <li>
-                  <p className="font-semibold text-slate-900">Dr. S.SEENUVASAMURTHI</p>
-                  <p className="text-sm text-slate-600">Principal, <br /> Sri Lakshmi Narayana College of Engineering,<br />Puducherry, India.</p>
+                  <p className="font-semibold text-slate-900">Dr.Hitesh Shrimali</p>
+                  <p className="text-sm text-slate-600">Professor, <br />IIT Mandi, Himachal Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Prof. Hemant Ingale</p>
@@ -83,20 +83,24 @@ export default function AdvisoryCommitteePage() {
                   <p className="text-sm text-slate-600">Professor, CSE, <br />JAIN University,<br />Bengaluru, Karnataka, India.</p>
                 </li>
                 <li>
+                  <p className="font-semibold text-slate-900">Dr. S.SEENUVASAMURTHI</p>
+                  <p className="text-sm text-slate-600">Principal, <br /> Sri Lakshmi Narayana College of Engineering,<br />Puducherry, India.</p>
+                </li>
+                <li>
                   <p className="font-semibold text-slate-900">Dr.Hitesh Shrimali</p>
-                  <p className="text-sm text-slate-600">Professor, <br />IIT Mandi,<br />Himachal Pradesh, India.</p>
+                  <p className="text-sm text-slate-600">Professor, <br />IIT Mandi, Himachal Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Shihabudheen M. Maliyekkal</p>
-                  <p className="text-sm text-slate-600">Professor, <br />IIT Tirupati,<br />Andhra Pradesh, India.</p>
+                  <p className="text-sm text-slate-600">Professor, <br />IIT Tirupati, Andhra Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Jyoti Singhai</p>
-                  <p className="text-sm text-slate-600">Professor, <br />MANIT Bhopal,<br />Madhya Pradesh, India.</p>
+                  <p className="text-sm text-slate-600">Professor, CSE, <br />MANIT Bhopal, Madhya Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sudip Roy</p>
-                  <p className="text-sm text-slate-600">Associate Professor, CSE, <br />IIT Roorkee,<br />Uttarakhand, India.</p>
+                  <p className="text-sm text-slate-600">Associate Professor, CSE, <br />IIT Roorkee, Uttarakhand, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. S. Jaya Nirmala</p>
