@@ -1,0 +1,15 @@
+{
+  "profiles": [
+    {
+      "name": "api",
+      "context": "",
+      "namespace": "default",
+      "resource": "svc/api",
+      "localPort": 8080,
+      "remotePort": 80,
+      "localAddress": "127.0.0.1",
+      "autoStart": false,
+      "autoReconnect": true
+    }
+  ]
+}

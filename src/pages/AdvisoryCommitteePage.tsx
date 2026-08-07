@@ -23,103 +23,109 @@ export default function AdvisoryCommitteePage() {
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
-                  <p className="text-sm text-slate-600">Professor, Yorkville University,<br />Canada</p>
+                  <p className="text-sm text-slate-600">Professor , </p>
+                  <p className="text-sm text-slate-600">Yorkville University,<br /> Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Arokiaraj David</p>
-                  <p className="text-sm text-slate-600">Associate Professor, SBS Swiss Business School,<br />RAK Campus,<br />UAE</p>
+                  <p className="text-sm text-slate-600">Associate Professor,</p>
+                  <p className="text-sm text-slate-600">SBS Swiss Business School,<br />UAE.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.A.Johnson Santhosh</p>
-                  <p className="text-sm text-slate-600">Associate Professor, Dept. of Mechanical Engineering, Jimma University,<br />Ethiopia</p>
+                  <p className="text-sm text-slate-600">Associate Professor,</p>
+                  <p className="text-sm text-slate-600">Jimma University,<br />Ethiopia.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Amit Kohli</p>
-                  <p className="text-sm text-slate-600">Associate Professor, University Canada West,<br />Canada</p>
+                  <p className="text-sm text-slate-600">Associate Professor,</p>
+                  <p className="text-sm text-slate-600">University Canada West,<br />Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A.SAAHIRA BANU</p>
-                  <p className="text-sm text-slate-600">Assistant Professor, Dept. of Computer Science, Jazan University,<br />Saudi Arabia</p>
+                  <p className="text-sm text-slate-600">Assistant Professor,</p>
+                  <p className="text-sm text-slate-600">Dept. of Computer Science, Jazan University,</p>
+                  <p className="text-sm text-slate-600">Saudi Arabia.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Moovarkku Mudhalvan</p>
-                  <p className="text-sm text-slate-600">Senior Software Development Manager, Oracle,<br />Japan</p>
+                  <p className="text-sm text-slate-600">Senior Software Development Manager, <br />Oracle , Japan.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Anand Kumaravel</p>
-                  <p className="text-sm text-slate-600">Software Development Manager, Amazon,<br />Texas,<br />United States</p>
+                  <p className="text-sm text-slate-600">Software Development Manager, Amazon,<br />Texas , United States.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Kathirvel Nallappan</p>
-                  <p className="text-sm text-slate-600">Senior Optical Systems Engineer, Zhone Technologies Inc,<br />Canada</p>
+                  <p className="text-sm text-slate-600">Senior Optical Systems Engineer,<br /> Zhone Technologies Inc , Canada.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. S.SEENUVASAMURTHI</p>
-                  <p className="text-sm text-slate-600">Principal, Sri Lakshmi Narayana College of Engineering,<br />Puducherry,<br />India</p>
+                  <p className="text-sm text-slate-600">Principal, <br /> Sri Lakshmi Narayana College of Engineering,<br />Puducherry,India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Prof. Hemant Ingale</p>
-                  <p className="text-sm text-slate-600">Dean (Academics), Godavari College of Engineering,<br />Jalgaon, Maharashtra,<br />India</p>
+                  <p className="text-sm text-slate-600">Dean (Academics), <br /> Godavari College of Engineering,<br />Jalgaon, Maharashtra, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Srinivas Konda</p>
-                  <p className="text-sm text-slate-600">Professor & Dean of CSE, Kaveri University,<br />Hyderabad, Telangana,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor & Dean of CSE, <br />Kaveri University,<br />Hyderabad, Telangana, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Arun Malik</p>
-                  <p className="text-sm text-slate-600">Professor & Additional Dean, Lovely Professional University,<br />Punjab,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor & Additional Dean, <br />Lovely Professional University,<br />Punjab, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A. Bhuvaneswari </p>
-                  <p className="text-sm text-slate-600">Professor, IT, Adhiparasakthi Engineering College,<br />Chengalpattu, Tamil Nadu,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor, IT<br /> Adhiparasakthi Engineering College,<br />Chengalpattu, Tamil Nadu, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Somasekar J </p>
-                  <p className="text-sm text-slate-600">Professor, CSE, JAIN University,<br />Bengaluru, Karnataka,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor, CSE, <br />JAIN University,<br />Bengaluru, Karnataka, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Hitesh Shrimali</p>
-                  <p className="text-sm text-slate-600">Professor, IIT Mandi,<br />Himachal Pradesh,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor, <br />IIT Mandi,<br />Himachal Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Shihabudheen M. Maliyekkal</p>
-                  <p className="text-sm text-slate-600">Professor, IIT Tirupati,<br />Andhra Pradesh,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor, <br />IIT Tirupati,<br />Andhra Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Jyoti Singhai</p>
-                  <p className="text-sm text-slate-600">Professor, MANIT Bhopal,<br />Madhya Pradesh,<br />India</p>
+                  <p className="text-sm text-slate-600">Professor, <br />MANIT Bhopal,<br />Madhya Pradesh, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sudip Roy</p>
-                  <p className="text-sm text-slate-600">Associate Professor, CSE, IIT Roorkee,<br />Uttarakhand,<br />India</p>
+                  <p className="text-sm text-slate-600">Associate Professor, CSE, <br />IIT Roorkee,<br />Uttarakhand, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. S. Jaya Nirmala</p>
-                  <p className="text-sm text-slate-600">Associate Professor, CSE, NIT Trichy,<br />Tamil Nadu,<br />India</p>
+                  <p className="text-sm text-slate-600">Associate Professor, CSE,<br /> NIT Trichy,<br />Tamil Nadu, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Abhinoy Singh </p>
-                  <p className="text-sm text-slate-600">Assistant Professor, IIT Patna,<br />Bihar,<br />India</p>
+                  <p className="text-sm text-slate-600">Assistant Professor, <br /> IIT Patna,<br />Bihar, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Ajay Pratap</p>
-                  <p className="text-sm text-slate-600">Assistant Professor, CSE, IIT Varanasi,<br />Uttar Pradesh,<br />India</p>
+                  <p className="text-sm text-slate-600">Assistant Professor, CSE, <br /> IIT Varanasi,<br />Uttar Pradesh, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. M.Shanmugakumar</p>
-                  <p className="text-sm text-slate-600">Founder and CEO, MATIC,<br />Chennai, Tamil Nadu,<br />India</p>
+                  <p className="text-sm text-slate-600">Founder and CEO, MATIC,<br />Chennai, Tamil Nadu, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Partha Pratim Gogoi</p>
-                  <p className="text-sm text-slate-600">Technical Lead, Nokia Solutions,<br />Delhi,<br />India</p>
+                  <p className="text-sm text-slate-600">Technical Lead,<br /> Nokia Solutions,<br />Delhi, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr.M.Santhoshkumar</p>
-                  <p className="text-sm text-slate-600">Senoir Research Engineer, CEWiT IITM,<br />Chennai, Tamil Nadu,<br />India</p>
+                  <p className="text-sm text-slate-600">Senoir Research Engineer, CEWiT IITM,<br />Chennai, Tamil Nadu, India</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Meena Ramanathan</p>
-                  <p className="text-sm text-slate-600">Configuration Management, Qualcomm,<br />Bengaluru, Karnataka,<br />India</p>
+                  <p className="text-sm text-slate-600">Configuration Management, Qualcomm,<br />Bengaluru, Karnataka,India</p>
                 </li>
               </ul>
             </div>
