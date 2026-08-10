@@ -14,25 +14,24 @@ export default function Publication() {
         <div className="bg-[#ffbf00] rounded-2xl shadow-sm border border-slate-900/10 overflow-hidden hover:-translate-y-1 transition-all duration-300">
           <div className="flex flex-col md:flex-row">
             {/* Left side with logo */}
-            <div className="md:w-1/3 bg-black/5 flex items-center justify-center p-12 border-b md:border-b-0 md:border-r border-slate-900/10">
-              <div className="bg-white p-6 rounded-xl shadow-sm w-full max-w-[200px] flex items-center justify-center">
-                <img src={wileyLogo} alt="Wiley" className="w-full h-auto object-contain" />
+            <div className="md:w-1/3 bg-black/5 flex flex-col items-center justify-center p-8 md:p-12 border-b md:border-b-0 md:border-r border-slate-900/10">
+              <div className="w-full max-w-[220px] flex flex-col items-start">
+                <div className="flex items-center gap-2 mb-5 relative -top-8 -left-9">
+                  <BookOpen className="w-4 h-4 text-brand-dark shrink-0" />
+                  <span className="text-xs sm:text-sm font-bold text-brand-dark uppercase tracking-wider whitespace-nowrap">
+                    Publication Partner
+                  </span>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm w-full flex items-center justify-center">
+                  <img src={wileyLogo} alt="Wiley" className="w-full h-auto object-contain" />
+                </div>
               </div>
             </div>
 
             {/* Right side with content */}
-            <div className="md:w-2/3 p-8 md:p-10">
-              <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="w-4 h-4 text-brand-dark" />
-                <span className="text-sm font-bold text-brand-dark uppercase tracking-wider">
-                  Publication Partner
-                </span>
-              </div>
-
-              <h3 className="text-3xl font-bold text-brand-dark mb-4">WILEY</h3>
-
+            <div className="md:w-2/3 p-8 md:p-10 flex flex-col justify-center">
               <p className="text-brand-dark/80 text-lg font-medium leading-relaxed mb-6">
-                All accepted and presented papers will be published as Scopus-indexed conference proceedings (Wiley) with assigned ISBN and DOI, as per publisher norms.
+                All accepted and presented papers will be published as Scopus-indexed conference proceedings with assigned ISBN and DOI, as per publisher norms.
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
