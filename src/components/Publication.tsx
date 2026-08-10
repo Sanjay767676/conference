@@ -28,11 +28,11 @@ export default function Publication() {
                   Publication Partner
                 </span>
               </div>
-              
+
               <h3 className="text-3xl font-bold text-brand-dark mb-4">WILEY</h3>
-              
+
               <p className="text-brand-dark/80 text-lg font-medium leading-relaxed mb-6">
-                All registered and accepted papers will be considered for publication in the upcoming Conference Book Proceedings.
+                All accepted and presented papers will be published as Scopus-indexed conference proceedings (Wiley) with assigned ISBN and DOI, as per publisher norms.
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
@@ -40,9 +40,6 @@ export default function Publication() {
                   <CheckCircle2 className="w-4 h-4 text-slate-900" />
                   <span className="text-sm font-semibold text-slate-950">Scopus Indexed</span>
                 </div>
-                <span className="text-sm font-medium text-slate-800">
-                  High-Impact publication opportunity
-                </span>
               </div>
 
               <a
