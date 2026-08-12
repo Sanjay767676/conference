@@ -23,7 +23,7 @@ export default function AdvisoryCommitteePage() {
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
-                  <p className="text-sm text-slate-600">Professor , </p>
+                  <p className="text-sm text-slate-600">Associate Professor, </p>
                   <p className="text-sm text-slate-600">Yorkville University, Canada.</p>
                 </li>
                 <li>
