@@ -31,7 +31,7 @@ export default function Publication() {
             {/* Right side with content */}
             <div className="md:w-2/3 p-8 md:p-10 flex flex-col justify-center">
               <p className="text-brand-dark/80 text-lg font-medium leading-relaxed mb-6">
-                All accepted and presented papers will be published as Scopus-indexed conference proceedings with assigned ISBN and DOI, as per publisher norms.
+                All accepted and presented papers will be published as Scopus-indexed conference Book proceedings with assigned ISBN and DOI, as per publisher norms.
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
