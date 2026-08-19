@@ -1,4 +1,4 @@
-import { FileText, Upload, CheckCircle2, Link as LinkIcon, ArrowRight, BookOpen } from 'lucide-react';
+import { FileText, Upload, CheckCircle2, Link as LinkIcon, ArrowRight, BookOpen, Download, Ban } from 'lucide-react';
 
 
 export default function Submission() {
@@ -16,7 +16,7 @@ export default function Submission() {
 
         <div className="mb-12">
           {/* Author Submission Guidelines */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm mb-8">
             <div className="w-full flex flex-col items-start text-left p-6 sm:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
@@ -81,6 +81,78 @@ export default function Submission() {
               <p className="text-slate-950 mt-6 font-semibold italic border-l-4 border-primary pl-4 py-1">
                 Authors are strongly advised to carefully review these guidelines and ensure full compliance to facilitate smooth review and publication processing.
               </p>
+            </div>
+          </div>
+
+          {/* Manuscript Prep */}
+          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
+            <div className="w-full flex flex-col items-start text-left p-6 sm:p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <BookOpen className="w-6 h-6 text-brand-dark" />
+                <h3 className="text-2xl font-bold text-slate-900">Manuscript Prep</h3>
+              </div>
+
+              <div className="flex flex-wrap gap-4 mb-8">
+                <a 
+                  href="/Conference_paper_Template.docx" 
+                  download
+                  className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
+                >
+                  <Download className="w-5 h-5" />
+                  Word Template
+                </a>
+                <a 
+                  href="/Wiley_LaTeX_Template.pdf" 
+                  download
+                  className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
+                >
+                  <Download className="w-5 h-5" />
+                  LaTeX Template
+                </a>
+              </div>
+
+              <ul className="space-y-4 text-slate-950 font-medium mb-8">
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Manuscripts must be prepared using the specific Journal Template without page numbers or running heads.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Content created through generative AI tools is strictly prohibited and will not be reviewed.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Figures must be high resolution (300 dpi+) and tables must be text-based (not images).</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Do not use academic titles (e.g., Dr., Prof.) or positions in author affiliations.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Include full address, affiliation, and email for all authors.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">Clearly specify one corresponding author for proofreading.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
+                  <span className="text-left leading-relaxed">References must strictly follow the template style (Author, Title, Journal, Volume, Issue, Year).</span>
+                </li>
+              </ul>
+
+              <div className="w-full bg-red-100 border border-red-200 rounded-xl p-5">
+                <div className="flex gap-3">
+                  <Ban className="w-6 h-6 text-red-600 shrink-0" />
+                  <div>
+                    <h4 className="text-red-800 font-bold mb-1">Strict AI Policy</h4>
+                    <p className="text-red-700 font-semibold text-sm">
+                      Content created through generative AI tools is strictly prohibited and will not be reviewed.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
