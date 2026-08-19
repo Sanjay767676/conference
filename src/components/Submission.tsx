@@ -93,16 +93,16 @@ export default function Submission() {
               </div>
 
               <div className="flex flex-wrap gap-4 mb-8">
-                <a 
-                  href="/Conference_paper_Template.docx" 
+                <a
+                  href="/Conference_paper_Template.docx"
                   download
                   className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
                 >
                   <Download className="w-5 h-5" />
                   Word Template
                 </a>
-                <a 
-                  href="/Wiley_LaTeX_Template.pdf" 
+                <a
+                  href="/Wiley_LaTeX_Template.pdf"
                   download
                   className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition-colors"
                 >
@@ -141,18 +141,10 @@ export default function Submission() {
                   <span className="text-left leading-relaxed">References must strictly follow the template style (Author, Title, Journal, Volume, Issue, Year).</span>
                 </li>
               </ul>
-
-              <div className="w-full bg-red-100 border border-red-200 rounded-xl p-5">
-                <div className="flex gap-3">
-                  <Ban className="w-6 h-6 text-red-600 shrink-0" />
-                  <div>
-                    <h4 className="text-red-800 font-bold mb-1">Strict AI Policy</h4>
-                    <p className="text-red-700 font-semibold text-sm">
-                      Content created through generative AI tools is strictly prohibited and will not be reviewed.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-slate-950 mt-6 font-semibold italic border-l-4 border-primary pl-4 py-1">
+                <h4 className="text-red-800 font-bold mb-1">Strict AI Policy</h4>
+                Content created through generative AI tools is strictly prohibited and will not be reviewed.
+              </p>
             </div>
           </div>
         </div>
