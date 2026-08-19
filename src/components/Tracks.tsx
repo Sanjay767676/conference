@@ -49,8 +49,8 @@ export default function Tracks() {
                     {/* Core Details */}
                     <div className="flex flex-col items-start gap-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${isSelected || isHovered
-                          ? "bg-primary text-white"
-                          : "bg-primary-light text-primary"
+                        ? "bg-primary text-white"
+                        : "bg-primary-light text-primary"
                         }`}>
                         {renderIcon(track.iconName)}
                       </div>
@@ -65,32 +65,7 @@ export default function Tracks() {
                     </div>
 
                     {/* Sub-topics list */}
-                    <div className="mt-2 pt-4 border-t border-slate-900/10">
-                      <div className="flex items-center justify-between text-xs font-semibold text-primary">
-                        <span>{isSelected ? "Hide Topics" : "View Sub-topics"}</span>
-                        <Icons.ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isSelected ? "rotate-90 text-primary" : "text-slate-500 group-hover:text-primary"
-                          }`} />
-                      </div>
 
-                      <AnimatePresence>
-                        {isSelected && (
-                          <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="overflow-hidden mt-3 space-y-2 text-left"
-                          >
-                            {track.details.map((detail, dIdx) => (
-                              <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-900 font-medium text-left">
-                                <Icons.Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
-                                <span>{detail}</span>
-                              </div>
-                            ))}
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
                   </motion.div>
                 </div>
               </div>
