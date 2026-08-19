@@ -59,9 +59,11 @@ export default function Tracks() {
                         {track.title}
                       </h3>
 
-                      <p className="text-sm text-slate-950 font-medium leading-relaxed text-left">
-                        {track.description}
-                      </p>
+                      <ul className="text-sm text-slate-950 font-medium leading-relaxed text-left list-disc pl-5 space-y-1">
+                        {track.details?.map((detail, i) => (
+                          <li key={i}>{detail}</li>
+                        ))}
+                      </ul>
                     </div>
 
                     {/* Sub-topics list */}

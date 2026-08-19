@@ -1,3 +1,4 @@
+import ShinyText from './ShinyText';
 import { Users } from 'lucide-react';
 
 
@@ -19,12 +20,16 @@ export default function Committee() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-8 items-start">
           {/* Chief Patrons */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Chief Patrons</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Chief Patrons" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="space-y-4">
                 <li>
-                  <p className="text-sm text-slate-600">Deiva Thiru</p>
+                  <p className="text-sm text-slate-600 font-medium">Deiva Thiru</p>
                   <p className="font-semibold text-slate-900">Dr.S.N. Subbramanian</p>
                   <p className="text-sm text-slate-600">Founder Chairman, SNS Group.</p>
                 </li>
@@ -41,9 +46,13 @@ export default function Committee() {
           </div>
 
           {/* Patrons */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Patrons</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Patrons" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Dr. V. P. Arunachalam</p>
@@ -72,9 +81,13 @@ export default function Committee() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 items-start">
           {/* Convenors */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Convenors</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Convenors" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Dr. R. Sudhakaran</p>
@@ -89,9 +102,13 @@ export default function Committee() {
           </div>
 
           {/* Organizing Secretaries */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Organizing Secretaries</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Organizing Secretaries" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Dr. L.M.Nithya</p>
@@ -122,9 +139,13 @@ export default function Committee() {
           </div>
 
           {/* Joint Organizing Secretaries */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Joint Organizing Secretaries</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Joint Organizing Secretaries" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Dr. S. Narayanan</p>
@@ -143,9 +164,13 @@ export default function Committee() {
           </div>
 
           {/* Technical Co-ordinators */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Technical Co-ordinators</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Technical Co-ordinators" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="space-y-4">
                 <li>
                   <p className="font-semibold text-slate-900">Mr. K. Karthikeyan</p>
@@ -174,9 +199,13 @@ export default function Committee() {
 
         <div className="grid md:grid-cols-1 gap-8 items-start">
           {/* Advisory Committee */}
-          <div className="w-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start p-8 text-left">
-              <h3 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 w-full">Advisory Committee</h3>
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Advisory Committee" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] p-8 text-left flex-1">
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Uma Perumal</p>

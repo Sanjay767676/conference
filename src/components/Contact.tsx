@@ -38,11 +38,9 @@ export default function Contact() {
                 <h4 className="text-lg font-bold text-slate-800 mb-1">Contact</h4>
                 <div className="flex flex-col gap-1">
                   <a href="tel:+918903444955" className="text-slate-800 mt-1 font-medium">
-                    Convenor
                     Dr. M. Sudha - +91-8903444955
                   </a>
                   <a href="tel:+918428260671" className="text-slate-800 mt-1 font-medium">
-                    Technical Co-ordinator
                     Prof. G. Swathi - +91-8428260671
                   </a>
                 </div>

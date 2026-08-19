@@ -6,6 +6,7 @@ export const CONFERENCE_TRACKS: ConferenceTrack[] = [
     title: "Artificial Intelligence & Intelligent Systems",
     description: "Generative AI, Large Language Models, Multimodal Architectures, Reinforcement Learning, Explainable AI, and Computational Optimization.",
     iconName: "BrainCircuit",
+    details: ["Generative AI & LLMs", "Multimodal Architectures", "Reinforcement Learning", "Explainable AI", "Computational Optimization"]
   },
   {
     id: "track-2",
