@@ -34,7 +34,7 @@ export default function Submission() {
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />
-                  <span className="text-left leading-relaxed">The paper length must be 10–14 pages, including references, figures, and tables.</span>
+                  <span className="text-left leading-relaxed">Papers are strictly limited to 12 pages (including title, references, figures, and tables).</span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle2 className="w-5 h-5 text-green-700 shrink-0 mt-0.5" />

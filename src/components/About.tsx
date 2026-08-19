@@ -28,11 +28,11 @@ export default function About() {
 
           {/* Text Details */}
           <div className="flex flex-col items-center" id="about-info-col">
-            <div className="text-brand-dark font-bold text-sm md:text-base uppercase tracking-wider mb-4">
-              About The Conference
+            <div className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight">
+              <span className="font-gambetta tracking-wide font-bold text-brand-dark">About The Conference</span>
             </div>
 
-            <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4" id="about-title">
+            <h2 className="font-display font-semibold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4" id="about-title">
               Bridging Global Research with Next-Gen Intelligence
             </h2>
 

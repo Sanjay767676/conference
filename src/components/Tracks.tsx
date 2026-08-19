@@ -23,7 +23,7 @@ export default function Tracks() {
         <div className="text-center max-w-3xl mx-auto mb-16" id="tracks-header">
 
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-brand-dark tracking-tight leading-tight mb-4">
-            Call For Papers
+            <span className="font-gambetta tracking-wide font-bold text-brand-dark">Call For Papers</span>
           </h2>
           <p className="text-lg text-brand-dark max-w-2xl mx-auto">
             <span className="font-gambetta tracking-wide font-semibold text-brand-dark">ICAIDIET'26</span> welcomes original research papers, reviews, and case study submissions covering technical frameworks and foundational theory across eight core tracks.

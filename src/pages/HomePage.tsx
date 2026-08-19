@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Tracks from "../components/Tracks";
 import Partners from "../components/Partners";
+import Contact from "../components/Contact";
 
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,6 +48,7 @@ export default function HomePage() {
       <About />
       <Partners />
       <Tracks />
+      <Contact />
       <ScrollToTop />
     </main>
   );
