@@ -112,9 +112,7 @@ export default function Registration({ onRegisterClick }: RegistrationProps) {
               ))}
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

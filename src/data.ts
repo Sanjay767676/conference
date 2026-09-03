@@ -6,7 +6,7 @@ export const CONFERENCE_TRACKS: ConferenceTrack[] = [
     title: "Artificial Intelligence & Intelligent Systems",
     description: "Generative AI, Large Language Models, Multimodal Architectures, Reinforcement Learning, Explainable AI, and Computational Optimization.",
     iconName: "BrainCircuit",
-    details: ["Generative AI & LLMs", "Multimodal Architectures", "Reinforcement Learning", "Explainable AI", "Computational Optimization"]
+    details: ["Generative AI & LLMs", "Multimodal Architectures", "Reinforcement Learning", "Explainable & Trustworthy AI"]
   },
   {
     id: "track-2",
@@ -63,7 +63,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-1",
     title: "Paper Submission Deadline",
-    date: "September 21ST, 2026",
+    date: "September 15TH, 2026",
     description: "Strictly enforced final date for original research submissions.",
     isCompleted: false
   },
@@ -77,14 +77,14 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-3",
     title: "Early Bird Registration",
-    date: "October 22ND, 2026",
+    date: "October 23RD, 2026",
     description: "Deadline to avail the discounted registration rates.",
     isCompleted: false
   },
   {
     id: "time-4",
     title: "Late Registration",
-    date: "October 23RD-28TH, 2026",
+    date: "October 24TH-28TH, 2026",
     description: "Standard late registration period.",
     isCompleted: false
   },
