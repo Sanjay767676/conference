@@ -44,7 +44,7 @@ function ScrollToTop() {
 export default function HomePage() {
   return (
     <main className="relative z-10">
-      <Hero onRegisterClick={() => window.open("https://cmt3.research.microsoft.com/ICAIDIET2026", "_blank")} />
+      <Hero onRegisterClick={() => window.open("https://user.icaidiet26.tech/", "_blank")} />
       <About />
       <Partners />
       <Tracks />

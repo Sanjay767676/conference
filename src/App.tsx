@@ -16,7 +16,7 @@ export default function App() {
       <div className="relative min-h-screen selection:bg-primary selection:text-white bg-transparent">
         {/* Dynamic Navigation Header */}
         <div className="relative z-50">
-          <Header onRegisterClick={() => window.open("https://cmt3.research.microsoft.com/ICAIDIET2026", "_blank")} />
+          <Header onRegisterClick={() => window.open("https://user.icaidiet26.tech/", "_blank")} />
         </div>
 
         {/* Main Routes */}

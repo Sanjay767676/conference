@@ -149,7 +149,7 @@ export default function Submission() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {/* Where to Submit */}
           <div className="w-full h-full bg-[#ffbf00] rounded-2xl shadow-sm">
             <div className="w-full flex flex-col items-start text-left p-6">
@@ -158,38 +158,11 @@ export default function Submission() {
                 <h3 className="text-2xl font-bold text-slate-900">Where to Submit</h3>
               </div>
               <p className="text-slate-950 mb-4 font-semibold text-left">
-                <a href="https://cmt3.research.microsoft.com/ICAIDIET2026" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold transition-colors">Through CMT.</a>
+                <a href="https://user.icaidiet26.tech/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold transition-colors">Through our registration portal.</a>
               </p>
               <p className="text-slate-950 mb-4 text-sm font-medium text-left">
-                All submissions will be handled electronically via the Microsoft CMT platform once the portal is open.
+                All submissions will be handled electronically via the ICAIDIET'26 portal once it is open.
               </p>
-            </div>
-          </div>
-
-          {/* How to Submit */}
-          <div className="w-full h-full bg-[#ffbf00] rounded-2xl shadow-sm">
-            <div className="w-full flex flex-col items-start text-left p-6">
-              <div className="flex items-center gap-3 mb-6">
-                <FileText className="w-6 h-6 text-brand-dark" />
-                <h3 className="text-2xl font-bold text-slate-900">How to Submit</h3>
-              </div>
-              <p className="text-slate-950 mb-4 font-semibold text-left">
-                You will need to have a CMT account before you try to submit your paper.
-              </p>
-              <ul className="space-y-4 text-slate-950 font-medium">
-                <li className="flex gap-2">
-                  <ArrowRight className="w-5 h-5 text-brand-dark shrink-0" />
-                  <a href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold text-left">
-                    Click here for instructions on how to create a CMT account
-                  </a>
-                </li>
-                <li className="flex gap-2">
-                  <ArrowRight className="w-5 h-5 text-brand-dark shrink-0" />
-                  <a href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold text-left">
-                    Click here for instructions on how to submit a paper
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

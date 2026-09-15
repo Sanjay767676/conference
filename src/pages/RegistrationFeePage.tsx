@@ -10,7 +10,7 @@ export default function RegistrationFeePage() {
 
   return (
     <main className="relative z-10 pt-24 min-h-screen space-y-8 pb-16">
-      <Registration onRegisterClick={() => window.open("https://cmt3.research.microsoft.com/ICAIDIET2026", "_blank")} />
+      <Registration onRegisterClick={() => window.open("https://user.icaidiet26.tech/", "_blank")} />
 
       <Link
         to="/"
