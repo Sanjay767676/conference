@@ -63,7 +63,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-1",
     title: "Paper Submission Deadline",
-    date: "September 21ST, 2026",
+    date: "September 30TH, 2026",
     description: "Strictly enforced final date for original research submissions.",
     isCompleted: false
   },
