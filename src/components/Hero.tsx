@@ -89,26 +89,42 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       id="home"
       className="relative pt-32 pb-16 md:pt-48 md:pb-20 flex flex-col justify-between overflow-hidden"
     >
-      {/* Announcement Banner */}
-      <div className="absolute top-[80px] md:top-[96px] left-0 w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden z-40">
-        <div className="flex w-max animate-marquee items-center gap-12 px-4">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="flex items-center gap-12 whitespace-nowrap">
-              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Publishing Partner</span>
-              <img src={wileyLogoBlack} alt="Wiley" className="h-10 md:h-12 object-contain" />
-              <span className="text-[#FFFFFF]">|</span>
-              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Indexed In</span>
-              <img src={scopusLogo} alt="Scopus" className="h-10 md:h-12 object-contain" />
-              <span className="text-[#FFFFFF]">|</span>
-              <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">November 20<sup className="lowercase">th</sup> & 21<sup className="lowercase">st</sup> 2026</span>
-              <span className="text-[#FFFFFF]">|</span>
-              <div className="flex items-center gap-2">
-                <img src={snsctLogo} alt="SNSCT" className="h-6 md:h-8 object-contain" />
-                <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">SNS College Of Technology</span>
+      {/* Announcement Banners */}
+      <div className="absolute top-[80px] md:top-[96px] left-0 w-full z-40 flex flex-col">
+        <div className="w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden">
+          <div className="flex w-max animate-marquee items-center gap-12 px-4">
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="flex items-center gap-12 whitespace-nowrap">
+                <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Publishing Partner</span>
+                <img src={wileyLogoBlack} alt="Wiley" className="h-10 md:h-12 object-contain" />
+                <span className="text-[#FFFFFF]">|</span>
+                <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">Indexed In</span>
+                <img src={scopusLogo} alt="Scopus" className="h-10 md:h-12 object-contain" />
+                <span className="text-[#FFFFFF]">|</span>
+                <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">November 20<sup className="lowercase">th</sup> & 21<sup className="lowercase">st</sup> 2026</span>
+                <span className="text-[#FFFFFF]">|</span>
+                <div className="flex items-center gap-2">
+                  <img src={snsctLogo} alt="SNSCT" className="h-6 md:h-8 object-contain" />
+                  <span className="text-[#FFFFFF] font-times font-semi-bold uppercase tracking-widest text-[16px] md:text-xs[6px]">SNS College Of Technology</span>
+                </div>
+                <span className="text-[#FFFFFF]">|</span>
               </div>
-              <span className="text-[#FFFFFF]">|</span>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* Deadline Extension Banner */}
+        <div className="w-full bg-red-600 border-y border-red-700 py-2.5 overflow-hidden">
+          <div className="flex w-max animate-marquee items-center gap-12 px-4">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="flex items-center gap-12 whitespace-nowrap">
+                <span className="text-[#FFFFFF] font-times font-semibold uppercase tracking-widest text-[16px] tracking-[0.2em]">
+                  Submission Deadline Extended Till September 30<sup className="lowercase">th</sup>
+                </span>
+                <span className="text-[#FFFFFF]">|</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -123,7 +139,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         {/* Main Badge */}
 
         {/* Circular Text Decoration */}
-        <div className="hidden lg:flex absolute -right-[180px] top-[10px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
+        <div className="hidden lg:flex absolute -right-[180px] top-[40px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
           <CircularText
             text="ICAIDIET'26*CONFERENCE*"
             onHover="speedUp"
