@@ -78,19 +78,22 @@ export default function Header({ onRegisterClick }: HeaderProps) {
   return (
     <header
       id="header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex flex-col ${isScrolled || location.pathname !== "/"
-        ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100"
-        : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex flex-col ${
+        isScrolled || location.pathname !== "/" || isOpen
+          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100"
+          : "bg-transparent"
+      }`}
     >
-      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 ${isScrolled || location.pathname !== "/" ? "py-3" : "py-5"}`}>
-        <div className="flex items-center justify-between">
+      <div className={`w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 ${
+        isScrolled || location.pathname !== "/" ? "py-2.5 sm:py-3" : "py-3 sm:py-5"
+      }`}>
+        <div className="flex items-center justify-between w-full gap-2">
           {/* Logo */}
-          <div className="flex items-center shrink-0">
-            <Link to="/#home" onClick={(e) => handleLinkClick(e, "/#home")} className="flex items-center gap-2 sm:gap-4">
-              <img src={snsctLogo} alt="SNSCT Logo" className="h-8 sm:h-10 md:h-12 w-auto object-contain" />
-              <div className="w-px h-6 sm:h-8 md:h-10 bg-slate-300" />
-              <img src={snsdtLogo} alt="SNS-DT Logo" className="h-8 sm:h-10 md:h-12 w-auto object-contain" />
+          <div className="flex items-center shrink-0 min-w-0">
+            <Link to="/#home" onClick={(e) => handleLinkClick(e, "/#home")} className="flex items-center gap-2 sm:gap-3 md:gap-4">
+              <img src={snsctLogo} alt="SNSCT Logo" className="h-7 sm:h-9 md:h-12 w-auto object-contain shrink-0" />
+              <div className="w-px h-5 sm:h-7 md:h-9 bg-slate-300 shrink-0" />
+              <img src={snsdtLogo} alt="SNS-DT Logo" className="h-7 sm:h-9 md:h-12 w-auto object-contain shrink-0" />
             </Link>
           </div>
 
@@ -102,10 +105,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`relative text-sm font-medium transition-colors py-2 ${activeSection === link.id && location.pathname === "/"
-                      ? "text-brand-dark font-semibold"
-                      : "text-brand-dark hover:opacity-80"
-                      }`}
+                    className={`relative text-sm font-medium transition-colors py-2 ${
+                      activeSection === link.id && location.pathname === "/"
+                        ? "text-brand-dark font-semibold"
+                        : "text-brand-dark hover:opacity-80"
+                    }`}
                   >
                     {link.name}
                     {activeSection === link.id && location.pathname === "/" && (
@@ -125,10 +129,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 <button
-                  className={`flex items-center gap-1 relative text-sm font-medium transition-colors py-2 ${location.pathname.includes("committee")
-                    ? "text-brand-dark font-semibold"
-                    : "text-brand-dark hover:opacity-80"
-                    }`}
+                  className={`flex items-center gap-1 relative text-sm font-medium transition-colors py-2 ${
+                    location.pathname.includes("committee")
+                      ? "text-brand-dark font-semibold"
+                      : "text-brand-dark hover:opacity-80"
+                  }`}
                 >
                   Committees
                   <ChevronDown className={`w-4 h-4 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`} />
@@ -153,22 +158,24 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                       <Link
                         to="/organizing-committee"
                         onClick={() => setIsDropdownOpen(false)}
-                        className={`block px-4 py-2 text-sm transition-colors ${location.pathname === "/organizing-committee"
-                          ? "bg-primary-light text-primary font-semibold"
-                          : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                          }`}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          location.pathname === "/organizing-committee"
+                            ? "bg-primary-light text-primary font-semibold"
+                            : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                        }`}
                       >
-                        Organizing-committees
+                        Organizing Committees
                       </Link>
                       <Link
                         to="/advisory-committee"
                         onClick={() => setIsDropdownOpen(false)}
-                        className={`block px-4 py-2 text-sm transition-colors ${location.pathname === "/advisory-committee"
-                          ? "bg-primary-light text-primary font-semibold"
-                          : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                          }`}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          location.pathname === "/advisory-committee"
+                            ? "bg-primary-light text-primary font-semibold"
+                            : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                        }`}
                       >
-                        Advisory-committees
+                        Advisory Committees
                       </Link>
                     </motion.div>
                   )}
@@ -181,10 +188,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                 onMouseLeave={() => setIsSubmissionDropdownOpen(false)}
               >
                 <button
-                  className={`flex items-center gap-1 relative text-sm font-medium transition-colors py-2 ${['/paper-submission', '/registration-fee', '/submission-timeline', '/publication'].includes(location.pathname)
-                    ? "text-brand-dark font-semibold"
-                    : "text-brand-dark hover:opacity-80"
-                    }`}
+                  className={`flex items-center gap-1 relative text-sm font-medium transition-colors py-2 ${
+                    ['/paper-submission', '/registration-fee', '/submission-timeline', '/publication'].includes(location.pathname)
+                      ? "text-brand-dark font-semibold"
+                      : "text-brand-dark hover:opacity-80"
+                  }`}
                 >
                   For Authors
                   <ChevronDown className={`w-4 h-4 transition-transform ${isSubmissionDropdownOpen ? "rotate-180" : ""}`} />
@@ -209,40 +217,44 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                       <Link
                         to="/paper-submission"
                         onClick={() => setIsSubmissionDropdownOpen(false)}
-                        className={`block px-4 py-2 text-sm transition-colors ${location.pathname === "/paper-submission"
-                          ? "bg-primary-light text-primary font-semibold"
-                          : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                          }`}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          location.pathname === "/paper-submission"
+                            ? "bg-primary-light text-primary font-semibold"
+                            : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                        }`}
                       >
                         Paper Submission Guidelines
                       </Link>
                       <Link
                         to="/submission-timeline"
                         onClick={() => setIsSubmissionDropdownOpen(false)}
-                        className={`block px-4 py-2 text-sm transition-colors ${location.pathname === "/submission-timeline"
-                          ? "bg-primary-light text-primary font-semibold"
-                          : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                          }`}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          location.pathname === "/submission-timeline"
+                            ? "bg-primary-light text-primary font-semibold"
+                            : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                        }`}
                       >
                         Important Dates
                       </Link>
                       <Link
                         to="/registration-fee"
                         onClick={() => setIsSubmissionDropdownOpen(false)}
-                        className={`block px-4 py-2 text-sm transition-colors ${location.pathname === "/registration-fee"
-                          ? "bg-primary-light text-primary font-semibold"
-                          : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                          }`}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          location.pathname === "/registration-fee"
+                            ? "bg-primary-light text-primary font-semibold"
+                            : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                        }`}
                       >
                         Registration Fee
                       </Link>
                       <Link
                         to="/publication"
                         onClick={() => setIsSubmissionDropdownOpen(false)}
-                        className={`block px-4 py-2 text-sm transition-colors ${location.pathname === "/publication"
-                          ? "bg-primary-light text-primary font-semibold"
-                          : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                          }`}
+                        className={`block px-4 py-2 text-sm transition-colors ${
+                          location.pathname === "/publication"
+                            ? "bg-primary-light text-primary font-semibold"
+                            : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                        }`}
                       >
                         Publication Details
                       </Link>
@@ -286,17 +298,17 @@ export default function Header({ onRegisterClick }: HeaderProps) {
           </nav>
 
           {/* Mobile Menu Toggle */}
-          <div className="flex items-center gap-2 sm:gap-4 lg:hidden shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 lg:hidden shrink-0">
             <button
               onClick={onRegisterClick}
-              className="px-2 py-1.5 sm:px-4 sm:py-2 bg-brand-dark text-white font-semibold rounded-lg text-[10px] sm:text-xs hover:bg-opacity-90 transition-all duration-200"
+              className="px-3 py-1.5 sm:px-4 sm:py-2 bg-brand-dark text-white font-semibold rounded-lg text-xs sm:text-sm hover:bg-opacity-90 active:scale-95 transition-all duration-150 shadow-sm"
             >
               Register
             </button>
             <button
               id="mobile-menu-toggle"
               onClick={() => setIsOpen(!isOpen)}
-              className="p-1 sm:p-2 text-slate-600 hover:text-brand-dark hover:bg-slate-50 rounded-lg transition-colors"
+              className="p-1.5 sm:p-2 text-slate-700 hover:text-brand-dark hover:bg-slate-100 rounded-lg transition-colors active:scale-95"
               aria-label="Toggle Menu"
             >
               {isOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
@@ -313,20 +325,21 @@ export default function Header({ onRegisterClick }: HeaderProps) {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden border-t border-slate-100 bg-white/95 backdrop-blur-md"
+            className="lg:hidden border-t border-slate-100 bg-white/98 backdrop-blur-md shadow-xl overflow-hidden"
             id="mobile-drawer"
           >
-            <div className="px-4 py-6 space-y-4">
-              <ul className="space-y-3">
+            <div className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto px-4 py-4 space-y-3">
+              <ul className="space-y-1.5">
                 {navLinks.map((link) => (
                   <li key={link.id}>
                     <a
                       href={link.href}
                       onClick={(e) => handleLinkClick(e, link.href)}
-                      className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${activeSection === link.id && location.pathname === "/"
-                        ? "bg-primary-light text-primary font-semibold"
-                        : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                        }`}
+                      className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                        activeSection === link.id && location.pathname === "/"
+                          ? "bg-primary/10 text-primary font-semibold"
+                          : "text-slate-700 hover:bg-slate-50 hover:text-brand-dark"
+                      }`}
                     >
                       {link.name}
                     </a>
@@ -336,10 +349,10 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                 <li>
                   <button
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                    className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors text-slate-700 hover:bg-slate-50 hover:text-brand-dark"
                   >
-                    Committees
-                    <ChevronDown className={`w-5 h-5 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`} />
+                    <span>Committees</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? "rotate-180 text-primary" : "text-slate-400"}`} />
                   </button>
                   <AnimatePresence>
                     {isDropdownOpen && (
@@ -347,34 +360,37 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.15 }}
                         className="overflow-hidden"
                       >
-                        <div className="pl-4 py-2 space-y-2">
-                          <Link
-                            to="/advisory-committee"
-                            onClick={() => {
-                              setIsOpen(false);
-                              setIsDropdownOpen(false);
-                            }}
-                            className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === "/advisory-committee"
-                              ? "bg-primary-light text-primary font-semibold"
-                              : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                              }`}
-                          >
-                            Advisory Committees
-                          </Link>
+                        <div className="pl-3 ml-3 border-l-2 border-slate-200 py-1 space-y-1 my-1">
                           <Link
                             to="/organizing-committee"
                             onClick={() => {
                               setIsOpen(false);
                               setIsDropdownOpen(false);
                             }}
-                            className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === "/organizing-committee"
-                              ? "bg-primary-light text-primary font-semibold"
-                              : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                              }`}
+                            className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                              location.pathname === "/organizing-committee"
+                                ? "bg-primary/10 text-primary font-semibold"
+                                : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                            }`}
                           >
                             Organizing Committees
+                          </Link>
+                          <Link
+                            to="/advisory-committee"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setIsDropdownOpen(false);
+                            }}
+                            className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                              location.pathname === "/advisory-committee"
+                                ? "bg-primary/10 text-primary font-semibold"
+                                : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                            }`}
+                          >
+                            Advisory Committees
                           </Link>
                         </div>
                       </motion.div>
@@ -385,10 +401,10 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                 <li>
                   <button
                     onClick={() => setIsSubmissionDropdownOpen(!isSubmissionDropdownOpen)}
-                    className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                    className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors text-slate-700 hover:bg-slate-50 hover:text-brand-dark"
                   >
-                    For Authors
-                    <ChevronDown className={`w-5 h-5 transition-transform ${isSubmissionDropdownOpen ? "rotate-180" : ""}`} />
+                    <span>For Authors</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isSubmissionDropdownOpen ? "rotate-180 text-primary" : "text-slate-400"}`} />
                   </button>
                   <AnimatePresence>
                     {isSubmissionDropdownOpen && (
@@ -396,19 +412,21 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.15 }}
                         className="overflow-hidden"
                       >
-                        <div className="pl-4 py-2 space-y-2">
+                        <div className="pl-3 ml-3 border-l-2 border-slate-200 py-1 space-y-1 my-1">
                           <Link
                             to="/paper-submission"
                             onClick={() => {
                               setIsOpen(false);
                               setIsSubmissionDropdownOpen(false);
                             }}
-                            className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === "/paper-submission"
-                              ? "bg-primary-light text-primary font-semibold"
-                              : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                              }`}
+                            className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                              location.pathname === "/paper-submission"
+                                ? "bg-primary/10 text-primary font-semibold"
+                                : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                            }`}
                           >
                             Paper Submission Guidelines
                           </Link>
@@ -418,10 +436,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               setIsOpen(false);
                               setIsSubmissionDropdownOpen(false);
                             }}
-                            className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === "/submission-timeline"
-                              ? "bg-primary-light text-primary font-semibold"
-                              : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                              }`}
+                            className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                              location.pathname === "/submission-timeline"
+                                ? "bg-primary/10 text-primary font-semibold"
+                                : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                            }`}
                           >
                             Important Dates
                           </Link>
@@ -431,10 +450,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               setIsOpen(false);
                               setIsSubmissionDropdownOpen(false);
                             }}
-                            className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === "/registration-fee"
-                              ? "bg-primary-light text-primary font-semibold"
-                              : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                              }`}
+                            className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                              location.pathname === "/registration-fee"
+                                ? "bg-primary/10 text-primary font-semibold"
+                                : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                            }`}
                           >
                             Registration Fee
                           </Link>
@@ -444,10 +464,11 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                               setIsOpen(false);
                               setIsSubmissionDropdownOpen(false);
                             }}
-                            className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === "/publication"
-                              ? "bg-primary-light text-primary font-semibold"
-                              : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
-                              }`}
+                            className={`block px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                              location.pathname === "/publication"
+                                ? "bg-primary/10 text-primary font-semibold"
+                                : "text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                            }`}
                           >
                             Publication Details
                           </Link>
@@ -456,38 +477,39 @@ export default function Header({ onRegisterClick }: HeaderProps) {
                     )}
                   </AnimatePresence>
                 </li>
-                <li className="pt-2">
+
+                <li>
                   <a
                     href="/brochure.png"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                    className="block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors text-slate-700 hover:bg-slate-50 hover:text-brand-dark"
                   >
                     Brochure
                   </a>
                 </li>
-                <li className="pt-2">
+                <li>
                   <a
                     href="https://snsct.org/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
-                    className="block px-3 py-2 rounded-lg text-base font-medium transition-colors text-slate-600 hover:bg-slate-50 hover:text-brand-dark"
+                    className="block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors text-slate-700 hover:bg-slate-50 hover:text-brand-dark"
                   >
                     SNSCT
                   </a>
                 </li>
               </ul>
 
-              <div className="pt-4 border-t border-slate-100">
+              <div className="pt-3 border-t border-slate-100">
                 <button
                   id="mobile-drawer-cta"
                   onClick={() => {
                     setIsOpen(false);
                     onRegisterClick();
                   }}
-                  className="w-full flex items-center justify-center gap-2 py-3 bg-primary text-white font-semibold rounded-xl text-sm shadow-md hover:bg-primary-dark transition-colors"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 bg-primary text-white font-semibold rounded-xl text-sm shadow-md hover:bg-primary-dark transition-colors active:scale-98"
                 >
                   Register for <span className="font-gambetta tracking-wide">ICAIDIET'26</span>
                   <ArrowRight className="w-4 h-4" />

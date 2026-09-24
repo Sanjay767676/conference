@@ -87,10 +87,10 @@ export default function Hero({ onRegisterClick }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative pt-32 pb-16 md:pt-48 md:pb-20 flex flex-col justify-between overflow-hidden"
+      className="relative pt-44 pb-16 sm:pt-48 sm:pb-20 md:pt-48 flex flex-col justify-between overflow-hidden"
     >
       {/* Announcement Banners */}
-      <div className="absolute top-[80px] md:top-[96px] left-0 w-full z-40 flex flex-col">
+      <div className="absolute top-[60px] sm:top-[76px] md:top-[90px] left-0 w-full z-40 flex flex-col">
         <div className="w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden">
           <div className="flex w-max animate-marquee items-center gap-12 px-4">
             {[...Array(4)].map((_, i) => (
