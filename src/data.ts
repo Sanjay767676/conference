@@ -135,7 +135,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     id: "fee-3",
-    title: "Industry Delegates",
+    title: "Industry Delegates / Research Scholar",
     category: "attendee",
     audience: "Industry professionals presenting approved research papers",
     priceInternational: "-",
