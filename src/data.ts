@@ -70,14 +70,14 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-2",
     title: "Acceptance Notification",
-    date: "October 20TH, 2026",
+    date: "October 5TH, 2026",
     description: "Acceptance notifications and detailed reviewer feedback dispatched.",
     isCompleted: false
   },
   {
     id: "time-3",
     title: "Early Bird Registration",
-    date: "October 23RD, 2026",
+    date: "October 10TH, 2026",
     description: "Deadline to avail the discounted registration rates.",
     isCompleted: false
   },
