@@ -111,12 +111,12 @@ export const PRICING_TIERS: PricingTier[] = [
     category: "author",
     audience: "Indian authors presenting approved research papers",
     priceInternational: "-",
-    priceNational: "₹2,000 - ₹11,000",
+    priceNational: "₹2,000 - ₹12,000",
     features: [
       "Early Bird (Conference alone): ₹2,000",
       "Early Bird (With Scopus proceedings): ₹10,000",
       "Late Fee (Conference alone): ₹2,500",
-      "Late Fee (With Scopus proceedings): ₹11,000",
+      "Late Fee (With Scopus proceedings): ₹12,000",
     ]
   },
   {
