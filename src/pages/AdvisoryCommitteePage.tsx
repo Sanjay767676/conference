@@ -1,14 +1,13 @@
 import ShinyText from '../components/ShinyText';
-import { Users } from 'lucide-react';
+import sriramImg from '../../assets/images/sriramananthan.jpeg';
+import anwarImg from '../../assets/images/anwar.jpeg';
 
 export default function AdvisoryCommitteePage() {
   return (
     <main className="relative z-10 pt-24 pb-16 min-h-screen bg-transparent">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-xl mb-4">
-            <Users className="w-8 h-8 text-primary" />
-          </div>
+
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
             Advisory Committee
           </h1>
@@ -18,6 +17,30 @@ export default function AdvisoryCommitteePage() {
         </div>
 
         <div className="grid md:grid-cols-1 gap-8 items-start">
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col mb-8">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Keynote Speakers" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] bg-opacity-10 p-8 text-center flex-1">
+              <div className="grid md:grid-cols-2 gap-8 items-start justify-items-center">
+                <div className="flex flex-col items-center">
+                  <img src={sriramImg} alt="Dr. Sriram Ananthan" className="w-48 h-48 object-cover rounded-full mb-4 shadow-md border-4 border-white" />
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Sriram Ananthan</h4>
+                  <p className="text-sm text-slate-700 font-medium">Associate Professor,</p>
+                  <p className="text-sm text-slate-700">Yorkville University, Canada.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img src={anwarImg} alt="Dr. Anwar" className="w-48 h-48 object-cover object-top rounded-full mb-4 shadow-md border-4 border-white" />
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Anwar Basha H</h4>
+                  <p className="text-sm text-slate-700 font-medium">Senior Lecturer, Data Science and Information Technology</p>
+                  <p className="text-sm text-slate-700">INTI International University, Nilai, Malaysia </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col mb-8">
             <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
               <h3 className="text-xl font-bold w-full">
