@@ -24,18 +24,32 @@ export default function AdvisoryCommitteePage() {
               </h3>
             </div>
             <div className="w-full bg-[#ffbf00] bg-opacity-10 p-8 text-center flex-1">
-              <div className="grid md:grid-cols-2 gap-8 items-start justify-items-center">
-                <div className="flex flex-col items-center">
-                  <img src={sriramImg} alt="Dr. Sriram Ananthan" className="w-48 h-48 object-cover rounded-full mb-4 shadow-md border-4 border-white" />
+              <div className="grid md:grid-cols-2 gap-8 items-stretch justify-items-center">
+                <div className="flex flex-col items-center h-full">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0">
+                    <img src={sriramImg} alt="Dr. Sriram Ananthan" className="w-full h-full object-cover object-top scale-125 origin-top" />
+                  </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Sriram Ananthan</h4>
-                  <p className="text-sm text-slate-700 font-medium">Associate Professor,</p>
-                  <p className="text-sm text-slate-700">Yorkville University, Canada.</p>
+                  <div className="flex flex-col items-center h-16 justify-start">
+                    <p className="text-sm text-slate-700 font-medium text-center">Associate Professor,</p>
+                    <p className="text-sm text-slate-700 text-center">Yorkville University, Canada.</p>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-4">
+                    Sriram Ananthan is an academic leader, entrepreneur, coach, professor, and writer with a background in banking and business management. Holding a Ph.D. and MBA, he brings over 20 years of experience across academia and business. He has served as a professor at Yorkville University and Acsenda School of Management, contributing to student success, curriculum development, and AI-driven learning. He has authored and contributed to books and peer-reviewed journal articles published by reputed academic publishers, including IGI Global, Emerald, Springer, and Wiley. His interests include academic leadership, AI in education, curriculum innovation, philosophy, and mentoring young professionals, with a focus on bridging education and real-world industry practices.  
+                  </p>
                 </div>
-                <div className="flex flex-col items-center">
-                  <img src={anwarImg} alt="Dr. Anwar" className="w-48 h-48 object-cover object-top rounded-full mb-4 shadow-md border-4 border-white" />
+                <div className="flex flex-col items-center h-full">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0">
+                    <img src={anwarImg} alt="Dr. Anwar" className="w-full h-full object-cover object-top scale-125 origin-top" />
+                  </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Anwar Basha H</h4>
-                  <p className="text-sm text-slate-700 font-medium">Senior Lecturer, Data Science and Information Technology</p>
-                  <p className="text-sm text-slate-700">INTI International University, Nilai, Malaysia </p>
+                  <div className="flex flex-col items-center h-16 justify-start">
+                    <p className="text-sm text-slate-700 font-medium text-center">Senior Lecturer, Data Science and Information Technology</p>
+                    <p className="text-sm text-slate-700 text-center">INTI International University, Nilai, Malaysia </p>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-4">
+                    Dr. Anwar Basha H is a Senior Lecturer in the Faculty of Data Science and Information Technology at INTI International University, Nilai, Malaysia. He holds a Ph.D. in Computer Science and Engineering and has over 19 years of experience in teaching and the IT industry. He has published research articles in peer-reviewed international journals and presented papers at conferences in India and abroad. He has also served as a reviewer for reputed international publishers, including Springer, Elsevier, Wiley, and Taylor & Francis. His research interests include Multi-Cloud Storage, Cybersecurity, Quantum Cryptography, Edge Computing, and Big Data Analytics.
+                  </p>
                 </div>
               </div>
             </div>
