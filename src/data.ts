@@ -84,7 +84,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
   {
     id: "time-4",
     title: "Late Registration",
-    date: "October 24TH-28TH, 2026",
+    date: "October 11TH-20TH, 2026",
     description: "Standard late registration period.",
     isCompleted: false
   },
