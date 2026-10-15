@@ -87,7 +87,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative pt-44 pb-16 sm:pt-48 sm:pb-20 md:pt-48 flex flex-col justify-between overflow-hidden"
+      className="relative pt-56 pb-16 sm:pt-60 sm:pb-20 md:pt-60 flex flex-col justify-between overflow-hidden"
     >
       {/* Announcement Banners */}
       <div className="absolute top-[60px] sm:top-[76px] md:top-[90px] left-0 w-full z-40 flex flex-col">
@@ -126,6 +126,20 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             ))}
           </div>
         </div>
+
+        {/* Late Submissions Banner */}
+        <div className="w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden">
+          <div className="flex w-max animate-marquee items-center gap-12 px-4">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="flex items-center gap-12 whitespace-nowrap">
+                <span className="text-[#FFFFFF] font-times font-semibold uppercase tracking-widest text-[16px] tracking-[0.2em]">
+                  Late Submissions are Accepted
+                </span>
+                <span className="text-[#FFFFFF]">|</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Dynamic Background Elements */}
@@ -139,7 +153,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         {/* Main Badge */}
 
         {/* Circular Text Decoration */}
-        <div className="hidden lg:flex absolute -right-[180px] top-[40px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
+        <div className="hidden lg:flex absolute -right-[180px] top-[75px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
           <CircularText
             text="ICAIDIET'26*CONFERENCE*"
             onHover="speedUp"
