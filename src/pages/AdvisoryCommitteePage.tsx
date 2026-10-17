@@ -1,6 +1,10 @@
 import ShinyText from '../components/ShinyText';
 import sriramImg from '../../assets/images/sriramananthan.jpeg';
 import anwarImg from '../../assets/images/anwar.jpeg';
+import saahiraImg from '../../assets/images/Dr sahira banu.jpeg';
+import bhuvaneswariImg from '../../assets/images/Dr. A. Bhuvaneswari.jpeg';
+import srimanImg from '../../assets/images/Dr. Sriman B.jpeg';
+import hareeshImg from '../../assets/images/Hareesh  Janakiraman.jpeg';
 
 export default function AdvisoryCommitteePage() {
   return (
@@ -24,31 +28,94 @@ export default function AdvisoryCommitteePage() {
               </h3>
             </div>
             <div className="w-full bg-[#ffbf00] bg-opacity-10 p-8 text-center flex-1">
-              <div className="grid md:grid-cols-2 gap-8 items-stretch justify-items-center">
-                <div className="flex flex-col items-center h-full">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0">
-                    <img src={sriramImg} alt="Dr. Sriram Ananthan" className="w-full h-full object-cover object-top scale-125 origin-top" />
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-items-center">
+                {/* 1. Dr. Sriram Ananthan */}
+                <div className="flex flex-col items-center h-full w-full max-w-sm">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={sriramImg} alt="Dr. Sriram Ananthan" className="w-full h-full object-cover object-top scale-110" />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Sriram Ananthan</h4>
                   <div className="flex flex-col items-center h-16 justify-start">
                     <p className="text-sm text-slate-700 font-medium text-center">Associate Professor,</p>
                     <p className="text-sm text-slate-700 text-center">Yorkville University, Canada.</p>
                   </div>
-                  <p className="text-sm text-slate-600 mt-4 text-justify px-4">
-                    Sriram Ananthan is an academic leader, entrepreneur, coach, professor, and writer with a background in banking and business management. Holding a Ph.D. and MBA, he brings over 20 years of experience across academia and business. He has served as a professor at Yorkville University and Acsenda School of Management, contributing to student success, curriculum development, and AI-driven learning. He has authored and contributed to books and peer-reviewed journal articles published by reputed academic publishers, including IGI Global, Emerald, Springer, and Wiley. His interests include academic leadership, AI in education, curriculum innovation, philosophy, and mentoring young professionals, with a focus on bridging education and real-world industry practices.  
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-2">
+                    Sriram Ananthan is an academic leader, entrepreneur, coach, professor, and writer with a background in banking and business management. Holding a Ph.D. and MBA, he brings over 20 years of experience across academia and business. He has served as a professor at Yorkville University and Acsenda School of Management, contributing to student success, curriculum development, and AI-driven learning. He has authored and contributed to books and peer-reviewed journal articles published by reputed academic publishers, including IGI Global, Emerald, Springer, and Wiley.
                   </p>
                 </div>
-                <div className="flex flex-col items-center h-full">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0">
-                    <img src={anwarImg} alt="Dr. Anwar" className="w-full h-full object-cover object-top scale-125 origin-top" />
+
+                {/* 2. Dr. Anwar Basha H */}
+                <div className="flex flex-col items-center h-full w-full max-w-sm">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={anwarImg} alt="Dr. Anwar Basha H" className="w-full h-full object-cover object-top scale-110" />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Anwar Basha H</h4>
                   <div className="flex flex-col items-center h-16 justify-start">
-                    <p className="text-sm text-slate-700 font-medium text-center">Senior Lecturer, Data Science and Information Technology</p>
-                    <p className="text-sm text-slate-700 text-center">INTI International University, Nilai, Malaysia </p>
+                    <p className="text-sm text-slate-700 font-medium text-center">Senior Lecturer, Data Science &amp; IT</p>
+                    <p className="text-sm text-slate-700 text-center">INTI International University, Nilai, Malaysia</p>
                   </div>
-                  <p className="text-sm text-slate-600 mt-4 text-justify px-4">
-                    Dr. Anwar Basha H is a Senior Lecturer in the Faculty of Data Science and Information Technology at INTI International University, Nilai, Malaysia. He holds a Ph.D. in Computer Science and Engineering and has over 19 years of experience in teaching and the IT industry. He has published research articles in peer-reviewed international journals and presented papers at conferences in India and abroad. He has also served as a reviewer for reputed international publishers, including Springer, Elsevier, Wiley, and Taylor & Francis. His research interests include Multi-Cloud Storage, Cybersecurity, Quantum Cryptography, Edge Computing, and Big Data Analytics.
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-2">
+                    Dr. Anwar Basha H is a Senior Lecturer in the Faculty of Data Science and Information Technology at INTI International University, Nilai, Malaysia. He holds a Ph.D. in Computer Science and Engineering and has over 19 years of experience in teaching and the IT industry. He has published research articles in peer-reviewed international journals and presented papers at conferences globally. His research interests include Multi-Cloud Storage, Cybersecurity, Quantum Cryptography, Edge Computing, and Big Data Analytics.
+                  </p>
+                </div>
+
+                {/* 3. Dr. Saahira Banu */}
+                <div className="flex flex-col items-center h-full w-full max-w-sm">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={saahiraImg} alt="Dr. Saahira Banu" className="w-full h-full object-cover object-center scale-105" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Saahira Banu</h4>
+                  <div className="flex flex-col items-center h-16 justify-start">
+                    <p className="text-sm text-slate-700 font-medium text-center">Associate Professor &amp; Research Committee Head</p>
+                    <p className="text-sm text-slate-700 text-center">Jazan University, Saudi Arabia</p>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-2">
+                    Dr. Saahira Banu is an accomplished academician and researcher with over 20 years of experience in higher education. She serves as an Associate Professor at Jazan University, Saudi Arabia, and Research Committee Head at the Engineering and Technology Research Center, Dept. of Computer Science. She is also pursuing Postdoctoral Research at SGS, Lincoln University College, Malaysia. Her focus areas include emerging technologies, digital transformation, research funding, and international academic collaboration.
+                  </p>
+                </div>
+
+                {/* 4. Dr. A. Bhuvaneswari */}
+                <div className="flex flex-col items-center h-full w-full max-w-sm">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={bhuvaneswariImg} alt="Dr. A. Bhuvaneswari" className="w-full h-full object-cover object-top" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. A. Bhuvaneswari</h4>
+                  <div className="flex flex-col items-center h-16 justify-start">
+                    <p className="text-sm text-slate-700 font-medium text-center">Professor &amp; Head, Information Technology</p>
+                    <p className="text-sm text-slate-700 text-center">Adhiparasakthi Engineering College, Tamil Nadu, India</p>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-2">
+                    Dr. A. Bhuvaneswari is a Professor and Head of the Department of Information Technology at Adhiparasakthi Engineering College, Melmaruvathur, Tamil Nadu. Holding an M.E. and Ph.D., she has decades of pedagogical and research leadership, guiding numerous scholars and driving research initiatives in Intelligent Systems and Information Technology.
+                  </p>
+                </div>
+
+                {/* 5. Dr. Sriman B */}
+                <div className="flex flex-col items-center h-full w-full max-w-sm">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={srimanImg} alt="Dr. Sriman B" className="w-full h-full object-cover object-top" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Sriman B</h4>
+                  <div className="flex flex-col items-center h-16 justify-start">
+                    <p className="text-sm text-slate-700 font-medium text-center">Assistant Professor, CSE / IT</p>
+                    <p className="text-sm text-slate-700 text-center">Vel Tech R&amp;D Institute of Science and Technology, India</p>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-2">
+                    Dr. Sriman B is an academic researcher and Assistant Professor specializing in Computer Science and Engineering. He received his Ph.D. from SRM Institute of Science and Technology, with primary research interests in Blockchain Security, Post-Quantum Cryptography, Cyber Security, and Decentralized Finance (DeFi), authoring multiple peer-reviewed papers.
+                  </p>
+                </div>
+
+                {/* 6. Hareesh Janakiraman */}
+                <div className="flex flex-col items-center h-full w-full max-w-sm">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={hareeshImg} alt="Hareesh Janakiraman" className="w-full h-full object-cover object-center" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Hareesh Janakiraman</h4>
+                  <div className="flex flex-col items-center h-16 justify-start">
+                    <p className="text-sm text-slate-700 font-medium text-center">Director, Embedded-Guru LLC | Fulbright Specialist</p>
+                    <p className="text-sm text-slate-700 text-center">Houston, Texas, United States</p>
+                  </div>
+                  <p className="text-sm text-slate-600 mt-4 text-justify px-2">
+                    Hareesh Janakiraman brings 40 years of expertise in Microprocessors (µP), Microcontrollers (MCU), and DSPs, spanning 27 years at Texas Instruments in silicon validation, debug, design, and engineering management. Selected as a Fulbright Specialist in 2024 by the U.S. Dept. of State, he is the Director of Embedded-Guru LLC and a Distinguished Visiting / Adjunct Professor sharing industry knowledge across international universities.
                   </p>
                 </div>
               </div>
