@@ -119,21 +119,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             {[...Array(6)].map((_, i) => (
               <div key={i} className="flex items-center gap-12 whitespace-nowrap">
                 <span className="text-[#FFFFFF] font-times font-semibold uppercase tracking-widest text-[16px] tracking-[0.2em]">
-                  Submission Deadline Extended Till September 30<sup className="lowercase">th</sup>
-                </span>
-                <span className="text-[#FFFFFF]">|</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Late Submissions Banner */}
-        <div className="w-full bg-[#000000] border-y border-[#000000] py-2.5 overflow-hidden">
-          <div className="flex w-max animate-marquee items-center gap-12 px-4">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="flex items-center gap-12 whitespace-nowrap">
-                <span className="text-[#FFFFFF] font-times font-semibold uppercase tracking-widest text-[16px] tracking-[0.2em]">
-                  Late Submissions are Accepted
+                  Submission Deadline Extended Till October 25<sup className="lowercase">th</sup>
                 </span>
                 <span className="text-[#FFFFFF]">|</span>
               </div>
@@ -143,117 +129,117 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       </div>
 
       {/* Dynamic Background Elements */}
-      <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/10 w-120 h-120 bg-amber-400/5 rounded-full blur-3xl -z-10 pointer-events-none" />
+        <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/10 w-120 h-120 bg-amber-400/5 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-      {/* Grid Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a05_1px,transparent_1px),linear-gradient(to_bottom,#0f172a05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-0 pointer-events-none" />
+        {/* Grid Overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a05_1px,transparent_1px),linear-gradient(to_bottom,#0f172a05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-0 pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
-        {/* Main Badge */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
+          {/* Main Badge */}
 
-        {/* Circular Text Decoration */}
-        <div className="hidden lg:flex absolute -right-[180px] top-[75px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
-          <CircularText
-            text="ICAIDIET'26*CONFERENCE*"
-            onHover="speedUp"
-            spinDuration={20}
-            className="text-black font-bold font-gambetta tracking-wider"
-          />
+          {/* Circular Text Decoration */}
+          <div className="hidden lg:flex absolute -right-[180px] top-[75px] z-20 items-center justify-center pointer-events-auto opacity-90 hover:opacity-100 transition-opacity">
+            <CircularText
+              text="ICAIDIET'26*CONFERENCE*"
+              onHover="speedUp"
+              spinDuration={20}
+              className="text-black font-bold font-gambetta tracking-wider"
+            />
+          </div>
+
+
+
+          {/* Event Name */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.05 }}
+            className="mt-12 md:mt-16 mb-6 text-4xl sm:text-6xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2 text-center w-full"
+          >
+            <AuroraText className="inline-block font-bold break-words" speed={2}>ICAIDIET'26</AuroraText>
+          </motion.div>
+
+          {/* Hero Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
+            className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center px-2 w-full"
+            id="hero-title"
+          >
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 text-center w-full">
+              International Conference on AI-Driven Innovation
+            </span>
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 mt-1 md:mt-2 text-center w-full">
+              in Engineering and Technology
+            </span>
+
+            <span className="block text-base sm:text-lg md:text-xl font-libre font-bold mt-6 sm:mt-8 mb-4 sm:mb-6 z-0">
+              On
+            </span>
+
+            <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold text-brand-dark z-10 text-center">
+              20<sup>th</sup> & 21<sup>st</sup> November 2026
+            </span>
+            <span className="block text-sm sm:text-sm md:text-sm lg:text-xl font-libre font-light mt-2 text-brand-dark z-10 text-center">
+              (Hybrid Mode)
+            </span>
+            <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold mt-4 text-brand-dark z-10 text-center">
+              SNS - AI Campus
+            </span>
+            <div className="flex gap-2 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-3 sm:p-4 rounded-2xl border border-white/20 shadow-sm w-full max-w-[90vw] sm:max-w-none justify-center overflow-hidden">
+              <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
+                <AnimatedNumber value={timeLeft.days.toString()} />
+                <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Days</span>
+              </div>
+              <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
+              <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
+                <AnimatedNumber value={timeLeft.hours.toString().padStart(2, '0')} />
+                <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Hours</span>
+              </div>
+              <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
+              <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
+                <AnimatedNumber value={timeLeft.minutes.toString().padStart(2, '0')} />
+                <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Mins</span>
+              </div>
+              <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
+              <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
+                <AnimatedNumber value={timeLeft.seconds.toString().padStart(2, '0')} />
+                <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Secs</span>
+              </div>
+            </div>
+          </motion.h1>
+
+
+
+          {/* Subtext */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-center text-slate-600 max-w-2xl text-sm sm:text-base md:text-base leading-relaxed mb-10"
+            id="hero-description"
+          >
+          </motion.p>
+
+
+          {/* Publication & Academic Partners */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="w-full max-w-4xl flex flex-col items-center justify-center mt-4"
+          >
+            <span className="text-xs tracking-[0.15em] font-mono text-slate-500 font-semibold mb-8 uppercase text-center">
+              Publication & Academic Partners
+            </span>
+            <div className="flex flex-wrap items-center justify-center gap-16 md:gap-24">
+              <img src={wileyLogo} alt="Wiley" className="h-16 md:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+              <img src={yorkLogo} alt="Yorkville University" className="h-12 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+            </div>
+          </motion.div>
         </div>
-
-
-
-        {/* Event Name */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.05 }}
-          className="mt-12 md:mt-16 mb-6 text-4xl sm:text-6xl md:text-[6rem] lg:text-[7rem] font-gambetta font-bold tracking-tight text-brand-dark px-2 text-center w-full"
-        >
-          <AuroraText className="inline-block font-bold break-words" speed={2}>ICAIDIET'26</AuroraText>
-        </motion.div>
-
-        {/* Hero Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
-          className="font-gambetta text-center text-brand-dark leading-tight max-w-5xl mb-8 flex flex-col items-center justify-center px-2 w-full"
-          id="hero-title"
-        >
-          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 text-center w-full">
-            International Conference on AI-Driven Innovation
-          </span>
-          <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-libre font-bold z-10 mt-1 md:mt-2 text-center w-full">
-            in Engineering and Technology
-          </span>
-
-          <span className="block text-base sm:text-lg md:text-xl font-libre font-bold mt-6 sm:mt-8 mb-4 sm:mb-6 z-0">
-            On
-          </span>
-
-          <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold text-brand-dark z-10 text-center">
-            20<sup>th</sup> & 21<sup>st</sup> November 2026
-          </span>
-          <span className="block text-sm sm:text-sm md:text-sm lg:text-xl font-libre font-light mt-2 text-brand-dark z-10 text-center">
-            (Hybrid Mode)
-          </span>
-          <span className="block text-xl sm:text-xl md:text-2xl lg:text-3xl font-libre font-bold mt-4 text-brand-dark z-10 text-center">
-            SNS - AI Campus
-          </span>
-          <div className="flex gap-2 sm:gap-6 mt-8 z-10 bg-white/50 backdrop-blur-sm p-3 sm:p-4 rounded-2xl border border-white/20 shadow-sm w-full max-w-[90vw] sm:max-w-none justify-center overflow-hidden">
-            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
-              <AnimatedNumber value={timeLeft.days.toString()} />
-              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Days</span>
-            </div>
-            <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
-            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
-              <AnimatedNumber value={timeLeft.hours.toString().padStart(2, '0')} />
-              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Hours</span>
-            </div>
-            <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
-            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
-              <AnimatedNumber value={timeLeft.minutes.toString().padStart(2, '0')} />
-              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Mins</span>
-            </div>
-            <span className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-dark opacity-50 flex items-center -mt-3 sm:-mt-5">:</span>
-            <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
-              <AnimatedNumber value={timeLeft.seconds.toString().padStart(2, '0')} />
-              <span className="text-[10px] sm:text-sm text-slate-600 uppercase tracking-widest font-semibold mt-1">Secs</span>
-            </div>
-          </div>
-        </motion.h1>
-
-
-
-        {/* Subtext */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center text-slate-600 max-w-2xl text-sm sm:text-base md:text-base leading-relaxed mb-10"
-          id="hero-description"
-        >
-        </motion.p>
-
-
-        {/* Publication & Academic Partners */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="w-full max-w-4xl flex flex-col items-center justify-center mt-4"
-        >
-          <span className="text-xs tracking-[0.15em] font-mono text-slate-500 font-semibold mb-8 uppercase text-center">
-            Publication & Academic Partners
-          </span>
-          <div className="flex flex-wrap items-center justify-center gap-16 md:gap-24">
-            <img src={wileyLogo} alt="Wiley" className="h-16 md:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300" />
-            <img src={yorkLogo} alt="Yorkville University" className="h-12 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
-          </div>
-        </motion.div>
-      </div>
 
     </section >
   );
