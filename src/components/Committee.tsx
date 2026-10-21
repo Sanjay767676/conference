@@ -245,7 +245,7 @@ export default function Committee() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A. Bhuvaneswari </p>
-                  <p className="text-sm text-slate-600">Professor ,IT,<br />Adhiparasakthi Engineering College , <br /> Chengalpattu </p>
+                  <p className="text-sm text-slate-600">Vice Principal &amp; Professor,<br />Adhiparasakthi Engineering College , <br /> Chengalpattu </p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Somasekar J </p>

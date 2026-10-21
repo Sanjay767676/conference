@@ -36,9 +36,9 @@ export default function AdvisoryCommitteePage() {
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Sriram Ananthan</h4>
                   <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor</p>
+                    <p className="text-sm text-slate-800 font-semibold text-center">Professor</p>
                     <p className="text-sm text-slate-700 text-center">Yorkville University</p>
-                    <p className="text-sm text-slate-600 text-center">Canada</p>
+                    <p className="text-sm text-slate-600 text-center">Toronto, ON, Canada</p>
                   </div>
                 </div>
 
@@ -68,33 +68,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 4. Dr. A. Bhuvaneswari */}
-                <div className="flex flex-col items-center w-full max-w-sm text-center">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={bhuvaneswariImg} alt="Dr. A. Bhuvaneswari" className="w-full h-full object-cover object-top" />
-                  </div>
-                  <h4 className="text-xl font-bold text-slate-900">Dr. A. Bhuvaneswari</h4>
-                  <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Professor &amp; Head, Information Technology</p>
-                    <p className="text-sm text-slate-700 text-center">Adhiparasakthi Engineering College</p>
-                    <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
-                  </div>
-                </div>
-
-                {/* 5. Dr. Sriman B */}
-                <div className="flex flex-col items-center w-full max-w-sm text-center">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={srimanImg} alt="Dr. Sriman B" className="w-full h-full object-cover object-top" />
-                  </div>
-                  <h4 className="text-xl font-bold text-slate-900">Dr. Sriman B</h4>
-                  <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Assistant Professor, CSE / IT</p>
-                    <p className="text-sm text-slate-700 text-center">Vel Tech R&amp;D Institute of Science and Technology</p>
-                    <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
-                  </div>
-                </div>
-
-                {/* 6. Hareesh Janakiraman */}
+                {/* 4. Hareesh Janakiraman */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={hareeshImg} alt="Hareesh Janakiraman" className="w-full h-full object-cover object-center" />
@@ -104,6 +78,33 @@ export default function AdvisoryCommitteePage() {
                     <p className="text-sm text-slate-800 font-semibold text-center">Director | Fulbright Specialist</p>
                     <p className="text-sm text-slate-700 text-center">Embedded-Guru LLC</p>
                     <p className="text-sm text-slate-600 text-center">Texas, United States</p>
+                  </div>
+                </div>
+
+                {/* 5. Dr. A. Bhuvaneswari */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={bhuvaneswariImg} alt="Dr. A. Bhuvaneswari" className="w-full h-full object-cover object-top" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. A. Bhuvaneswari</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Vice Principal &amp; Professor</p>
+                    <p className="text-sm text-slate-700 text-center">Adhiparasakthi Engineering College</p>
+                    <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
+                  </div>
+                </div>
+
+                {/* 6. Dr. Sriman B */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={srimanImg} alt="Dr. Sriman B" className="w-full h-full object-cover object-top" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Sriman B</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Assistant Dean of Office Industry Relations</p>
+                    <p className="text-sm text-slate-700 text-center">Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology</p>
+                    <p className="text-sm text-slate-600 text-center">Avadi, Chennai, Tamil Nadu, India</p>
+                    <p className="text-xs text-slate-600 mt-1"><a href="mailto:srimanb@veltech.edu.in" className="hover:text-blue-600 transition-colors">srimanb@veltech.edu.in</a></p>
                   </div>
                 </div>
               </div>
@@ -120,7 +121,7 @@ export default function AdvisoryCommitteePage() {
               <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 <li>
                   <p className="font-semibold text-slate-900">Dr.Sriram Ananthan</p>
-                  <p className="text-sm text-slate-600">Associate Professor, </p>
+                  <p className="text-sm text-slate-600">Professor, </p>
                   <p className="text-sm text-slate-600">Yorkville University, Canada.</p>
                 </li>
                 <li>
@@ -173,7 +174,7 @@ export default function AdvisoryCommitteePage() {
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. A. Bhuvaneswari </p>
-                  <p className="text-sm text-slate-600">Professor, IT<br /> Adhiparasakthi Engineering College,<br />Chengalpattu, Tamil Nadu, India.</p>
+                  <p className="text-sm text-slate-600">Vice Principal &amp; Professor,<br /> Adhiparasakthi Engineering College,<br />Chengalpattu, Tamil Nadu, India.</p>
                 </li>
                 <li>
                   <p className="font-semibold text-slate-900">Dr. Somasekar J </p>
