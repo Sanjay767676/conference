@@ -4,7 +4,6 @@ import anwarImg from '../../assets/images/anwar.jpeg';
 import saahiraImg from '../../assets/images/Dr sahira banu.jpeg';
 import bhuvaneswariImg from '../../assets/images/Dr. A. Bhuvaneswari.jpeg';
 import srimanImg from '../../assets/images/Dr. Sriman B.jpeg';
-import hareeshImg from '../../assets/images/Hareesh  Janakiraman.jpeg';
 
 export default function AdvisoryCommitteePage() {
   return (
@@ -68,20 +67,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 4. Hareesh Janakiraman */}
-                <div className="flex flex-col items-center w-full max-w-sm text-center">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={hareeshImg} alt="Hareesh Janakiraman" className="w-full h-full object-cover object-center" />
-                  </div>
-                  <h4 className="text-xl font-bold text-slate-900">Hareesh Janakiraman</h4>
-                  <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Director | Fulbright Specialist</p>
-                    <p className="text-sm text-slate-700 text-center">Embedded-Guru LLC</p>
-                    <p className="text-sm text-slate-600 text-center">Texas, United States</p>
-                  </div>
-                </div>
-
-                {/* 5. Dr. A. Bhuvaneswari */}
+                {/* 4. Dr. A. Bhuvaneswari */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={bhuvaneswariImg} alt="Dr. A. Bhuvaneswari" className="w-full h-full object-cover object-top" />
@@ -94,7 +80,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 6. Dr. Sriman B */}
+                {/* 5. Dr. Sriman B */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={srimanImg} alt="Dr. Sriman B" className="w-full h-full object-cover object-top" />
