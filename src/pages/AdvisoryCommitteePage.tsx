@@ -4,6 +4,7 @@ import anwarImg from '../../assets/images/anwar.jpeg';
 import saahiraImg from '../../assets/images/Dr sahira banu.jpeg';
 import bhuvaneswariImg from '../../assets/images/Dr. A. Bhuvaneswari.jpeg';
 import srimanImg from '../../assets/images/Dr. Sriman B.jpeg';
+import paulImg from '../../assets/images/paul.jpeg';
 
 export default function AdvisoryCommitteePage() {
   return (
@@ -20,6 +21,7 @@ export default function AdvisoryCommitteePage() {
         </div>
 
         <div className="grid md:grid-cols-1 gap-8 items-start">
+          {/* Keynote Speakers */}
           <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col mb-8">
             <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
               <h3 className="text-xl font-bold w-full">
@@ -54,20 +56,32 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 3. Dr. Saahira Banu */}
+                {/* 3. Paul Sundar Singh */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={saahiraImg} alt="Dr. Saahira Banu" className="w-full h-full object-cover object-center scale-105" />
+                    <img src={paulImg} alt="Paul Sundar Singh" className="w-full h-full object-cover object-top scale-105" />
                   </div>
-                  <h4 className="text-xl font-bold text-slate-900">Dr. Saahira Banu</h4>
+                  <h4 className="text-xl font-bold text-slate-900">Paul Sundar Singh</h4>
                   <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor &amp; Research Committee Head</p>
-                    <p className="text-sm text-slate-700 text-center">Jazan University</p>
-                    <p className="text-sm text-slate-600 text-center">Saudi Arabia</p>
+                    <p className="text-sm text-slate-800 font-semibold text-center">Managing Director</p>
+                    <p className="text-sm text-slate-700 text-center">Accenture Solutions Pvt Ltd</p>
+                    <p className="text-sm text-slate-600 text-center">Industry lead for Automotive, Industrial, Aerospace &amp; Defence, Transport &amp; Logistics</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                {/* 4. Dr. A. Bhuvaneswari */}
+          {/* Session Chairs */}
+          <div className="w-full rounded-2xl shadow-sm overflow-hidden border border-slate-100 flex flex-col mb-8">
+            <div className="w-full bg-white px-8 py-5 border-b border-slate-100">
+              <h3 className="text-xl font-bold w-full">
+                <ShinyText text="Session Chairs" disabled={false} speed={2} className="text-xl font-bold w-full" color="#0f172a" shineColor="#ffffff" spread={120} direction="left" yoyo={false} pauseOnHover={false} />
+              </h3>
+            </div>
+            <div className="w-full bg-[#ffbf00] bg-opacity-10 p-8 text-center flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-items-center">
+                {/* 1. Dr. A. Bhuvaneswari */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={bhuvaneswariImg} alt="Dr. A. Bhuvaneswari" className="w-full h-full object-cover object-top" />
@@ -80,7 +94,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 5. Dr. Sriman B */}
+                {/* 2. Dr. Sriman B */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={srimanImg} alt="Dr. Sriman B" className="w-full h-full object-cover object-top" />
@@ -90,7 +104,19 @@ export default function AdvisoryCommitteePage() {
                     <p className="text-sm text-slate-800 font-semibold text-center">Assistant Dean of Office Industry Relations</p>
                     <p className="text-sm text-slate-700 text-center">Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology</p>
                     <p className="text-sm text-slate-600 text-center">Avadi, Chennai, Tamil Nadu, India</p>
-                    <p className="text-xs text-slate-600 mt-1"><a href="mailto:srimanb@veltech.edu.in" className="hover:text-blue-600 transition-colors">srimanb@veltech.edu.in</a></p>
+                  </div>
+                </div>
+
+                {/* 3. Dr. Saahira Banu */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={saahiraImg} alt="Dr. Saahira Banu" className="w-full h-full object-cover object-center scale-105" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Saahira Banu</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor &amp; Research Committee Head</p>
+                    <p className="text-sm text-slate-700 text-center">Jazan University</p>
+                    <p className="text-sm text-slate-600 text-center">Saudi Arabia</p>
                   </div>
                 </div>
               </div>
