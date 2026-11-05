@@ -50,7 +50,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Anwar Basha H</h4>
                   <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Senior Lecturer, Data Science &amp; IT</p>
+                    <p className="text-sm text-slate-800 font-semibold text-center">Faculty of Data Science and Information Technology</p>
                     <p className="text-sm text-slate-700 text-center">INTI International University</p>
                     <p className="text-sm text-slate-600 text-center">Nilai, Malaysia</p>
                   </div>
@@ -65,7 +65,7 @@ export default function AdvisoryCommitteePage() {
                   <div className="flex flex-col items-center justify-start mt-2">
                     <p className="text-sm text-slate-800 font-semibold text-center">Managing Director</p>
                     <p className="text-sm text-slate-700 text-center">Accenture Solutions Pvt Ltd</p>
-                    <p className="text-sm text-slate-600 text-center">Industry lead for Automotive, Industrial, Aerospace &amp; Defence, Transport &amp; Logistics</p>
+                    <p className="text-sm text-slate-600 text-center">Industry lead for Automotive, Industrial, Aerospace &amp; Defence, Transport &amp; Logistics , India</p>
                   </div>
                 </div>
               </div>
