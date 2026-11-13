@@ -119,7 +119,8 @@ export default function AdvisoryCommitteePage() {
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Sriman B</h4>
                   <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Assistant Dean of Office Industry Relations</p>
+                    <p className="text-sm text-slate-800 font-semibold text-center">Manager Industry Relations - Office of Industry Relations </p>
+                    <p className="text-sm text-slate-700 text-center">Department of Computer Science and Engineering</p>
                     <p className="text-sm text-slate-700 text-center">Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology</p>
                     <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
                   </div>
@@ -132,7 +133,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. N. Kumaresan</h4>
                   <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Head of Department</p>
+                    <p className="text-sm text-slate-800 font-semibold text-center">Professor & HoD</p>
                     <p className="text-sm text-slate-700 text-center">Dept of Electronics and Communication Engineering</p>
                     <p className="text-sm text-slate-600 text-center">Anna University Regional Campus Coimbatore</p>
                     <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
@@ -167,7 +168,21 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 7. Dr. S. Sridevi */}
+                {/* 7. Dr. P. Renukadevi */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={renukaImg} alt="Dr. P. Renukadevi" className="w-full h-full object-cover object-top" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. P. Renukadevi</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor</p>
+                    <p className="text-sm text-slate-700 text-center">Department of CSE (AIML)</p>
+                    <p className="text-sm text-slate-600 text-center">Jain  University (Deemed)</p>
+                    <p className="text-sm text-slate-600 text-center">Karnataka, India</p>
+                  </div>
+                </div>
+
+                {/* 8. Dr. S. Sridevi */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={srideviImg} alt="Dr. S. Sridevi" className="w-full h-full object-cover object-top" />
@@ -178,20 +193,6 @@ export default function AdvisoryCommitteePage() {
                     <p className="text-sm text-slate-700 text-center">School of Computer Science and Engineering</p>
                     <p className="text-sm text-slate-600 text-center">Vellore Institute of Technology</p>
                     <p className="text-sm text-slate-600 text-center">Tamil Nadu , India</p>
-                  </div>
-                </div>
-
-                {/* 8. Dr. P. Renukadevi */}
-                <div className="flex flex-col items-center w-full max-w-sm text-center">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={renukaImg} alt="Dr. P. Renukadevi" className="w-full h-full object-cover object-top" />
-                  </div>
-                  <h4 className="text-xl font-bold text-slate-900">Dr. P. Renukadevi</h4>
-                  <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor</p>
-                    <p className="text-sm text-slate-700 text-center">Department of CSE (AIML)</p>
-                    <p className="text-sm text-slate-600 text-center">Jain Deemed-to-be University</p>
-                    <p className="text-sm text-slate-600 text-center">Karnataka, India</p>
                   </div>
                 </div>
               </div>
