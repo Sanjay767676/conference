@@ -9,7 +9,7 @@ import ananthiImg from '../../assets/images/Ananthi.jfif';
 import srideviImg from '../../assets/images/Sridevi.jpeg';
 import palaniswamyImg from '../../assets/images/Palaniswamy.png';
 import renukaImg from '../../assets/images/renuka.jpeg';
-import kumaresanImg from '../../assets/images/kumareshan.JPG';
+import kumaresanImg from '../../assets/images/kumareshan.jpg';
 
 export default function AdvisoryCommitteePage() {
   return (
