@@ -8,6 +8,8 @@ import paulImg from '../../assets/images/paul.jpeg';
 import ananthiImg from '../../assets/images/Ananthi.jfif';
 import srideviImg from '../../assets/images/Sridevi.jpeg';
 import palaniswamyImg from '../../assets/images/Palaniswamy.png';
+import renukaImg from '../../assets/images/renuka.jpeg';
+import kumaresanImg from '../../assets/images/kumareshan.JPG';
 
 export default function AdvisoryCommitteePage() {
   return (
@@ -84,7 +86,20 @@ export default function AdvisoryCommitteePage() {
             </div>
             <div className="w-full bg-[#ffbf00] bg-opacity-10 p-8 text-center flex-1">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-items-center">
-                {/* 1. Dr. A. Bhuvaneswari */}
+                {/* 1. Dr. Saahira Banu */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={saahiraImg} alt="Dr. Saahira Banu" className="w-full h-full object-cover object-center scale-105" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. Saahira Banu</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor &amp; Research Committee Head</p>
+                    <p className="text-sm text-slate-700 text-center">Jazan University</p>
+                    <p className="text-sm text-slate-600 text-center">Saudi Arabia</p>
+                  </div>
+                </div>
+
+                {/* 2. Dr. A. Bhuvaneswari */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={bhuvaneswariImg} alt="Dr. A. Bhuvaneswari" className="w-full h-full object-cover object-top" />
@@ -97,7 +112,7 @@ export default function AdvisoryCommitteePage() {
                   </div>
                 </div>
 
-                {/* 2. Dr. Sriman B */}
+                {/* 3. Dr. Sriman B */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
                     <img src={srimanImg} alt="Dr. Sriman B" className="w-full h-full object-cover object-top" />
@@ -107,19 +122,6 @@ export default function AdvisoryCommitteePage() {
                     <p className="text-sm text-slate-800 font-semibold text-center">Assistant Dean of Office Industry Relations</p>
                     <p className="text-sm text-slate-700 text-center">Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology</p>
                     <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
-                  </div>
-                </div>
-
-                {/* 3. Dr. Saahira Banu */}
-                <div className="flex flex-col items-center w-full max-w-sm text-center">
-                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={saahiraImg} alt="Dr. Saahira Banu" className="w-full h-full object-cover object-center scale-105" />
-                  </div>
-                  <h4 className="text-xl font-bold text-slate-900">Dr. Saahira Banu</h4>
-                  <div className="flex flex-col items-center justify-start mt-2">
-                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor &amp; Research Committee Head</p>
-                    <p className="text-sm text-slate-700 text-center">Jazan University</p>
-                    <p className="text-sm text-slate-600 text-center">Saudi Arabia</p>
                   </div>
                 </div>
 
@@ -154,7 +156,7 @@ export default function AdvisoryCommitteePage() {
                 {/* 6. Dr. Palaniswamy K M */}
                 <div className="flex flex-col items-center w-full max-w-sm text-center">
                   <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
-                    <img src={palaniswamyImg} alt="Dr. Palaniswamy K M" className="w-full h-full object-cover scale-105 translate-y-1" />
+                    <img src={palaniswamyImg} alt="Dr. Palaniswamy K M" className="w-full h-full object-cover" />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900">Dr. Palaniswamy K M</h4>
                   <div className="flex flex-col items-center justify-start mt-2">
@@ -162,6 +164,34 @@ export default function AdvisoryCommitteePage() {
                     <p className="text-sm text-slate-700 text-center">Dept of Electronics and Communication Engineering</p>
                     <p className="text-sm text-slate-600 text-center">Dr. T. Thimmaiah Institute of Technology</p>
                     <p className="text-sm text-slate-600 text-center">Karnataka, India</p>
+                  </div>
+                </div>
+
+                {/* 7. Dr. P. Renukadevi */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={renukaImg} alt="Dr. P. Renukadevi" className="w-full h-full object-cover object-top" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. P. Renukadevi</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Associate Professor</p>
+                    <p className="text-sm text-slate-700 text-center">Department of CSE (AIML)</p>
+                    <p className="text-sm text-slate-600 text-center">Jain Deemed-to-be University</p>
+                    <p className="text-sm text-slate-600 text-center">Karnataka, India</p>
+                  </div>
+                </div>
+
+                {/* 8. Dr. N. Kumaresan */}
+                <div className="flex flex-col items-center w-full max-w-sm text-center">
+                  <div className="w-44 h-44 rounded-full mb-4 shadow-md border-4 border-white overflow-hidden shrink-0 bg-white">
+                    <img src={kumaresanImg} alt="Dr. N. Kumaresan" className="w-full h-full object-cover scale-125 translate-y-2" />
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900">Dr. N. Kumaresan</h4>
+                  <div className="flex flex-col items-center justify-start mt-2">
+                    <p className="text-sm text-slate-800 font-semibold text-center">Head of Department</p>
+                    <p className="text-sm text-slate-700 text-center">Dept of Electronics and Communication Engineering</p>
+                    <p className="text-sm text-slate-600 text-center">Anna University Regional Campus Coimbatore</p>
+                    <p className="text-sm text-slate-600 text-center">Tamil Nadu, India</p>
                   </div>
                 </div>
               </div>
