@@ -39,8 +39,9 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  position: fixed;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   background-color: var(--bg-color);
 }
 
@@ -49,17 +50,18 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .app-viewport {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   max-width: 500px;
   margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: var(--bg-color);
 }
 
@@ -175,16 +177,36 @@ html, body {
 .welcome-title-wrapper {
   margin-bottom: 1.25rem;
   width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   text-align: center;
 }
 
 .welcome-bold-title {
-  font-size: clamp(2.8rem, 11vw, 4.8rem);
+  font-size: clamp(1.85rem, 6.5vw, 2.75rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   color: #0b0f19;
   margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+@media (max-width: 375px) {
+  .welcome-bold-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .welcome-bold-title {
+    font-size: 1.5rem;
+  }
 }
 
 .welcome-details {

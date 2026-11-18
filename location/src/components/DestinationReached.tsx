@@ -44,15 +44,7 @@ export const DestinationReached: React.FC<DestinationReachedProps> = ({ onRestar
             <div className="step-num">1</div>
             <div>
               <strong>Registration Desk</strong>
-              <p>Located on the Ground Floor reception lobby to collect your badge, conference kit, and food coupons.</p>
-            </div>
-          </div>
-
-          <div className="guidance-step">
-            <div className="step-num">2</div>
-            <div>
-              <strong>Session Presentation Halls</strong>
-              <p>Keynote sessions and presentation tracks are hosted across Blocks A &amp; B (Floors I, II &amp; III).</p>
+              <p>Located on the Ground Floor reception lobby to mark your attendance.</p>
             </div>
           </div>
         </div>

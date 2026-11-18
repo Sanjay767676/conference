@@ -79,23 +79,7 @@ export const MapView: React.FC<MapViewProps> = ({
         }
       });
 
-      // Background glow for the route
-      map.addLayer({
-        id: 'route-line-casing',
-        type: 'line',
-        source: 'route-line',
-        layout: {
-          'line-join': 'round',
-          'line-cap': 'round'
-        },
-        paint: {
-          'line-color': '#ffbf00',
-          'line-width': 8,
-          'line-opacity': 0.8
-        }
-      });
-
-      // Main route polyline
+      // Main route polyline (clean solid / dashed line without yellow border)
       map.addLayer({
         id: 'route-line-core',
         type: 'line',
@@ -106,7 +90,7 @@ export const MapView: React.FC<MapViewProps> = ({
         },
         paint: {
           'line-color': '#0f172a',
-          'line-width': 4,
+          'line-width': 4.5,
           'line-dasharray': [2, 1]
         }
       });
