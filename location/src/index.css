@@ -1,7 +1,7 @@
 :root {
   /* Conference Theme Colors */
-  --bg-color: #ffbf00;
-  --color-slate-900: #0f172a;
+  --bg-color: #fdf08a;
+  --color-slate-900: #0b0f19;
   --color-slate-800: #1e293b;
   --color-slate-700: #334155;
   --color-slate-600: #475569;
@@ -22,7 +22,7 @@
   --radius-lg: 22px;
   --radius-full: 9999px;
 
-  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Libre Baskerville', 'Plus Jakarta Sans', Georgia, serif;
   color: var(--color-slate-900);
   background-color: var(--bg-color);
   line-height: 1.5;
@@ -68,6 +68,10 @@ html, body {
   font-family: 'Gambetta', serif;
 }
 
+.font-libre {
+  font-family: 'Libre Baskerville', Georgia, serif;
+}
+
 /* Screen Containers */
 .screen-container {
   flex: 1;
@@ -97,7 +101,7 @@ html, body {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.25);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.2);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   font-family: inherit;
 }
@@ -105,7 +109,7 @@ html, body {
 .primary-btn:hover:not(:disabled) {
   transform: translateY(-2px);
   background-color: var(--color-slate-800);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.3);
 }
 
 .primary-btn:active:not(:disabled) {
@@ -121,7 +125,8 @@ html, body {
 /* Welcome Screen */
 .welcome-screen {
   justify-content: space-between;
-  padding: 3rem 1.75rem 2.5rem;
+  padding: 2.5rem 1.5rem 2rem;
+  background-color: var(--bg-color);
 }
 
 .welcome-inner {
@@ -140,73 +145,94 @@ html, body {
   gap: 0.75rem;
 }
 
-.welcome-logo {
-  height: 52px;
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-}
-
-.welcome-tag {
-  background: var(--color-slate-900);
-  color: var(--color-gold);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.85rem;
+.welcome-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(11, 15, 25, 0.08);
+  border: 1px solid rgba(11, 15, 25, 0.15);
+  padding: 0.4rem 0.95rem;
   border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-slate-900);
 }
 
-.welcome-hero-text {
+.welcome-badge-icon {
+  color: var(--color-slate-900);
+}
+
+.welcome-hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto 0;
   width: 100%;
+  padding: 0.5rem 0;
 }
 
-.welcome-intro {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--color-slate-800);
-  margin-bottom: 0.25rem;
-  letter-spacing: -0.01em;
+.welcome-title-wrapper {
+  margin-bottom: 1.25rem;
+  width: 100%;
+  text-align: center;
 }
 
-.welcome-main-title {
-  font-size: 3.5rem;
-  font-weight: 700;
+.welcome-aurora-title {
+  font-size: clamp(2.75rem, 11vw, 4.75rem);
   line-height: 1.05;
-  letter-spacing: -0.03em;
-  color: var(--color-slate-900);
-  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
-.welcome-full-name {
-  font-size: 0.95rem;
-  line-height: 1.45;
-  font-weight: 600;
-  color: var(--color-slate-800);
-  max-width: 340px;
-  margin: 0 auto 1.5rem;
+.welcome-details {
+  text-align: center;
+  color: #0b0f19;
+  width: 100%;
+  max-width: 440px;
 }
 
-.welcome-venue-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  background: rgba(15, 23, 42, 0.08);
-  border: 1px solid rgba(15, 23, 42, 0.15);
-  padding: 0.45rem 0.95rem;
-  border-radius: var(--radius-full);
-  font-size: 0.82rem;
+.welcome-conf-title {
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
   font-weight: 700;
-  color: var(--color-slate-900);
+  line-height: 1.4;
+  color: #0b0f19;
+  margin-bottom: 1.25rem;
 }
 
-.welcome-venue-pill .venue-icon {
-  color: var(--color-slate-900);
+.welcome-conf-title span {
+  display: block;
+}
+
+.welcome-on-label {
+  font-size: clamp(0.95rem, 3.5vw, 1.15rem);
+  font-weight: 700;
+  color: #0b0f19;
+  margin-bottom: 1.15rem;
+}
+
+.welcome-dates {
+  font-size: clamp(1.15rem, 4.2vw, 1.45rem);
+  font-weight: 700;
+  color: #0b0f19;
+  margin-bottom: 0.35rem;
+}
+
+.welcome-dates sup {
+  font-size: 0.65em;
+  vertical-align: super;
+}
+
+.welcome-mode {
+  font-size: clamp(0.9rem, 3.2vw, 1rem);
+  font-weight: 400;
+  color: #1e293b;
+  margin-bottom: 1.15rem;
+}
+
+.welcome-venue-text {
+  font-size: clamp(1.2rem, 4.5vw, 1.55rem);
+  font-weight: 700;
+  color: #0b0f19;
 }
 
 .welcome-actions {

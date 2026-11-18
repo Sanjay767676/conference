@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import { ShinyText } from './ShinyText';
-import { MapPin, ArrowRight } from 'lucide-react';
+import { AuroraText } from './AuroraText';
+import { ArrowRight, Compass } from 'lucide-react';
 
 interface WelcomeScreenProps {
   onComplete: () => void;
 }
 
-const DISPLAY_DELAY_MS = 5500;
+const DISPLAY_DELAY_MS = 6000;
 
 export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onComplete }) => {
   useEffect(() => {
@@ -20,40 +20,49 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onComplete }) => {
   return (
     <div className="screen-container welcome-screen">
       <div className="welcome-inner">
-        {/* Top Branding */}
+        {/* Top small badge */}
         <div className="welcome-header-brand">
-          <img src="/SNSCT.png" alt="SNS College of Technology" className="welcome-logo" />
-          <div className="welcome-tag">Venue Navigator</div>
-        </div>
-
-        {/* Conference Title Presentation */}
-        <div className="welcome-hero-text">
-          <p className="welcome-intro font-gambetta">Welcome to</p>
-
-          <h1 className="welcome-main-title font-gambetta">
-            <ShinyText
-              text="ICAIDIET'26"
-              speed={2.2}
-              color="#0f172a"
-              shineColor="#ffffff"
-              spread={120}
-              direction="left"
-            />
-          </h1>
-
-          <p className="welcome-full-name">
-            International Conference on AI Driven Innovation in Engineering and Technology
-          </p>
-
-          <div className="welcome-venue-pill">
-            <MapPin size={15} className="venue-icon" />
-            <span>SNS College of Technology • AI Campus</span>
+          <div className="welcome-badge-pill">
+            <Compass size={14} className="welcome-badge-icon" />
+            <span>Campus Venue Navigator</span>
           </div>
         </div>
 
-        {/* Start Button */}
+        {/* Hero Conference Presentation - exact match to conference website */}
+        <div className="welcome-hero-content">
+          <div className="welcome-title-wrapper">
+            <AuroraText className="welcome-aurora-title font-gambetta font-bold" speed={2}>
+              ICAIDIET'26
+            </AuroraText>
+          </div>
+
+          <div className="welcome-details font-libre">
+            <h1 className="welcome-conf-title">
+              <span className="block">International Conference on AI-Driven Innovation</span>
+              <span className="block mt-1">in Engineering and Technology</span>
+            </h1>
+
+            <div className="welcome-on-label">
+              On
+            </div>
+
+            <div className="welcome-dates">
+              20<sup>th</sup> & 21<sup>st</sup> November 2026
+            </div>
+
+            <div className="welcome-mode">
+              (Hybrid Mode)
+            </div>
+
+            <div className="welcome-venue-text">
+              SNS - AI Campus
+            </div>
+          </div>
+        </div>
+
+        {/* Action Button */}
         <div className="welcome-actions">
-          <button className="primary-btn pulse-glow" onClick={onComplete}>
+          <button className="primary-btn" onClick={onComplete}>
             <span>Start Campus Navigation</span>
             <ArrowRight size={18} />
           </button>
