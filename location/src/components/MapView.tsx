@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import maplibregl, { Map, Marker } from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 import type { GeolocationPosition } from '../services/geolocation';
 import type { Coordinate } from '../data/coordinates';
-import { Locate, Navigation2 } from 'lucide-react';
+import { Locate, Maximize2 } from 'lucide-react';
 
 interface MapViewProps {
   currentLocation: GeolocationPosition | null;
@@ -11,161 +11,130 @@ interface MapViewProps {
   route?: Coordinate[];
 }
 
-// 100% Free OpenStreetMap raster tiles (no API key required, zero watermark)
-const FREE_MAP_STYLE: maplibregl.StyleSpecification = {
-  version: 8,
-  sources: {
-    'osm-tiles': {
-      type: 'raster',
-      tiles: [
-        'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
-      ],
-      tileSize: 256,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }
-  },
-  layers: [
-    {
-      id: 'osm-tiles-layer',
-      type: 'raster',
-      source: 'osm-tiles',
-      minzoom: 0,
-      maxzoom: 19
-    }
-  ]
-};
-
 export const MapView: React.FC<MapViewProps> = ({
   currentLocation,
   targetWaypoint,
   route = []
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<Map | null>(null);
-  const userMarkerRef = useRef<Marker | null>(null);
-  const targetMarkerRef = useRef<Marker | null>(null);
+  const mapRef = useRef<L.Map | null>(null);
+  const userMarkerRef = useRef<L.Marker | null>(null);
+  const targetMarkerRef = useRef<L.Marker | null>(null);
+  const routeLineRef = useRef<L.Polyline | null>(null);
+  const isInitialCenterDone = useRef<boolean>(false);
 
-  // Initialize MapLibre GL
+  // Initialize Leaflet Map
   useEffect(() => {
-    if (!mapContainerRef.current) return;
+    if (!mapContainerRef.current || mapRef.current) return;
 
-    const initialLng = targetWaypoint.longitude;
-    const initialLat = targetWaypoint.latitude;
-
-    const map = new maplibregl.Map({
-      container: mapContainerRef.current,
-      style: FREE_MAP_STYLE,
-      center: [initialLng, initialLat],
+    // Create Leaflet map centered at target waypoint
+    const map = L.map(mapContainerRef.current, {
+      center: [targetWaypoint.latitude, targetWaypoint.longitude],
       zoom: 17,
-      pitch: 35, // slight 3D perspective for natural navigation
-      maxZoom: 19,
-      minZoom: 13,
+      zoomControl: false,
       attributionControl: false
     });
 
-    map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+    // Add 100% free OpenStreetMap tile layer (no API key, zero watermarks)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      minZoom: 13,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
-    map.on('load', () => {
-      // Add Route Line Source
-      map.addSource('route-line', {
-        type: 'geojson',
-        data: {
-          type: 'Feature',
-          properties: {},
-          geometry: {
-            type: 'LineString',
-            coordinates: []
-          }
-        }
-      });
+    // Attribution control bottom-right
+    L.control.attribution({ position: 'bottomright', prefix: false }).addTo(map);
 
-      // Main route polyline (clean solid / dashed line without yellow border)
-      map.addLayer({
-        id: 'route-line-core',
-        type: 'line',
-        source: 'route-line',
-        layout: {
-          'line-join': 'round',
-          'line-cap': 'round'
-        },
-        paint: {
-          'line-color': '#0f172a',
-          'line-width': 4.5,
-          'line-dasharray': [2, 1]
-        }
-      });
+    // Add zoom control top-left
+    L.control.zoom({ position: 'topleft' }).addTo(map);
 
-      mapRef.current = map;
-    });
+    mapRef.current = map;
 
     return () => {
       map.remove();
       mapRef.current = null;
+      userMarkerRef.current = null;
+      targetMarkerRef.current = null;
+      routeLineRef.current = null;
     };
   }, []);
 
-  // Update Route Polyline whenever location or route changes
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
-
-    const coords: [number, number][] = [];
-
-    if (currentLocation) {
-      coords.push([currentLocation.longitude, currentLocation.latitude]);
-    }
-
-    route.forEach(wp => {
-      coords.push([wp.longitude, wp.latitude]);
-    });
-
-    const source = map.getSource('route-line') as maplibregl.GeoJSONSource | undefined;
-    if (source) {
-      source.setData({
-        type: 'Feature',
-        properties: {},
-        geometry: {
-          type: 'LineString',
-          coordinates: coords
-        }
-      });
-    }
-  }, [currentLocation, route]);
-
-  // Update Target Marker
+  // Update Route Polyline
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
 
-    if (!targetMarkerRef.current) {
-      const el = document.createElement('div');
-      el.className = 'custom-target-marker';
-      el.innerHTML = `
+    const latLngs: [number, number][] = [];
+
+    if (currentLocation) {
+      latLngs.push([currentLocation.latitude, currentLocation.longitude]);
+    }
+
+    route.forEach(wp => {
+      latLngs.push([wp.latitude, wp.longitude]);
+    });
+
+    if (routeLineRef.current) {
+      routeLineRef.current.setLatLngs(latLngs);
+    } else if (latLngs.length > 0) {
+      // Clean dark dashed polyline with NO yellow border
+      const polyline = L.polyline(latLngs, {
+        color: '#0f172a',
+        weight: 4.5,
+        dashArray: '6, 8',
+        opacity: 0.9,
+        lineCap: 'round',
+        lineJoin: 'round'
+      }).addTo(map);
+
+      routeLineRef.current = polyline;
+    }
+  }, [currentLocation, route]);
+
+  // Update Target Waypoint Marker
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    const targetIcon = L.divIcon({
+      className: 'custom-target-marker',
+      html: `
         <div class="target-pin">
           <div class="target-pin-icon">📍</div>
           <div class="target-pin-pulse"></div>
         </div>
-      `;
+      `,
+      iconSize: [32, 32],
+      iconAnchor: [16, 26],
+      popupAnchor: [0, -26]
+    });
 
-      const marker = new maplibregl.Marker({ element: el })
-        .setLngLat([targetWaypoint.longitude, targetWaypoint.latitude])
-        .setPopup(
-          new maplibregl.Popup({ offset: 25 }).setHTML(`
-            <div style="font-family: sans-serif; padding: 4px;">
-              <strong style="color: #0f172a; font-size: 13px;">${targetWaypoint.name}</strong>
-              <p style="margin: 2px 0 0; color: #475569; font-size: 11px;">Target Waypoint</p>
-            </div>
-          `)
-        )
+    if (targetMarkerRef.current) {
+      targetMarkerRef.current.setLatLng([targetWaypoint.latitude, targetWaypoint.longitude]);
+      targetMarkerRef.current.setPopupContent(`
+        <div style="font-family: sans-serif; padding: 4px;">
+          <strong style="color: #0f172a; font-size: 13px;">${targetWaypoint.name}</strong>
+          <p style="margin: 2px 0 0; color: #475569; font-size: 11px;">Target Checkpoint</p>
+        </div>
+      `);
+    } else {
+      const marker = L.marker([targetWaypoint.latitude, targetWaypoint.longitude], {
+        icon: targetIcon,
+        zIndexOffset: 500
+      })
+        .bindPopup(`
+          <div style="font-family: sans-serif; padding: 4px;">
+            <strong style="color: #0f172a; font-size: 13px;">${targetWaypoint.name}</strong>
+            <p style="margin: 2px 0 0; color: #475569; font-size: 11px;">Target Checkpoint</p>
+          </div>
+        `)
         .addTo(map);
 
       targetMarkerRef.current = marker;
-    } else {
-      targetMarkerRef.current.setLngLat([targetWaypoint.longitude, targetWaypoint.latitude]);
     }
   }, [targetWaypoint]);
 
-  // Update User Location Marker
+  // Update User Location Marker (without snapping the camera away!)
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
@@ -178,77 +147,77 @@ export const MapView: React.FC<MapViewProps> = ({
       return;
     }
 
-    if (!userMarkerRef.current) {
-      const el = document.createElement('div');
-      el.className = 'custom-user-marker';
-      el.innerHTML = `
+    const userLatLng: [number, number] = [currentLocation.latitude, currentLocation.longitude];
+
+    const userIcon = L.divIcon({
+      className: 'custom-user-marker',
+      html: `
         <div class="user-beacon">
           <div class="user-beacon-core"></div>
           <div class="user-beacon-ring"></div>
         </div>
-      `;
+      `,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -16]
+    });
 
-      const marker = new maplibregl.Marker({ element: el })
-        .setLngLat([currentLocation.longitude, currentLocation.latitude])
-        .setPopup(
-          new maplibregl.Popup({ offset: 15 }).setHTML(`
-            <div style="font-family: sans-serif; padding: 4px;">
-              <strong style="color: #0f172a; font-size: 12px;">You are here</strong>
-            </div>
-          `)
-        )
+    if (userMarkerRef.current) {
+      userMarkerRef.current.setLatLng(userLatLng);
+    } else {
+      const marker = L.marker(userLatLng, {
+        icon: userIcon,
+        zIndexOffset: 1000
+      })
+        .bindPopup(`
+          <div style="font-family: sans-serif; padding: 4px;">
+            <strong style="color: #0f172a; font-size: 12px;">You are here</strong>
+          </div>
+        `)
         .addTo(map);
 
       userMarkerRef.current = marker;
-    } else {
-      userMarkerRef.current.setLngLat([currentLocation.longitude, currentLocation.latitude]);
     }
-  }, [currentLocation]);
 
-  // Auto-fit bounds
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map) return;
-
-    if (currentLocation && targetWaypoint) {
-      const bounds = new maplibregl.LngLatBounds();
-      bounds.extend([currentLocation.longitude, currentLocation.latitude]);
-      bounds.extend([targetWaypoint.longitude, targetWaypoint.latitude]);
-
-      map.fitBounds(bounds, {
-        padding: { top: 70, bottom: 70, left: 50, right: 50 },
-        maxZoom: 18,
-        duration: 1200
-      });
-    } else if (targetWaypoint) {
-      map.flyTo({
-        center: [targetWaypoint.longitude, targetWaypoint.latitude],
-        zoom: 17,
-        duration: 1000
-      });
+    // Only auto-center on user ONCE upon initial GPS fix so map does NOT jump while walking
+    if (!isInitialCenterDone.current) {
+      isInitialCenterDone.current = true;
+      const bounds = L.latLngBounds([userLatLng, [targetWaypoint.latitude, targetWaypoint.longitude]]);
+      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 18, animate: true });
     }
   }, [currentLocation, targetWaypoint]);
 
+  // Recenter explicitly on user location
   const handleRecenter = () => {
     if (mapRef.current && currentLocation) {
-      mapRef.current.flyTo({
-        center: [currentLocation.longitude, currentLocation.latitude],
-        zoom: 18,
-        pitch: 45,
-        duration: 1000
+      mapRef.current.setView([currentLocation.latitude, currentLocation.longitude], 18, {
+        animate: true
       });
     }
   };
 
-  const handleResetNorth = () => {
-    if (mapRef.current) {
-      mapRef.current.resetNorthPitch({ duration: 600 });
+  // Fit whole route & target in view
+  const handleFitRoute = () => {
+    if (!mapRef.current) return;
+    const points: [number, number][] = [];
+    if (currentLocation) {
+      points.push([currentLocation.latitude, currentLocation.longitude]);
+    }
+    points.push([targetWaypoint.latitude, targetWaypoint.longitude]);
+    route.forEach(r => points.push([r.latitude, r.longitude]));
+
+    if (points.length > 0) {
+      mapRef.current.fitBounds(L.latLngBounds(points), {
+        padding: [60, 60],
+        maxZoom: 18,
+        animate: true
+      });
     }
   };
 
   return (
     <div className="map-wrapper">
-      <div ref={mapContainerRef} className="maplibre-container" />
+      <div ref={mapContainerRef} className="leaflet-map-container" style={{ width: '100%', height: '100%' }} />
 
       {/* Floating Map Controls */}
       <div className="map-floating-controls">
@@ -262,10 +231,10 @@ export const MapView: React.FC<MapViewProps> = ({
         </button>
         <button
           className="map-control-btn"
-          onClick={handleResetNorth}
-          title="Reset North orientation"
+          onClick={handleFitRoute}
+          title="Fit full route in view"
         >
-          <Navigation2 size={18} />
+          <Maximize2 size={18} />
         </button>
       </div>
     </div>
