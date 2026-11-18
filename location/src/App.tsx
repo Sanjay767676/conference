@@ -7,12 +7,21 @@ import { conferenceRoute } from './data/routes';
 
 type AppState =
   | 'WELCOME'
-  | 'LOCATION_PERMISSION'
   | 'NAVIGATION_STARTED'
   | 'DESTINATION_REACHED';
 
 export function App() {
   const [appState, setAppState] = useState<AppState>('WELCOME');
+  const [showPermissionModal, setShowPermissionModal] = useState(false);
+
+  const handleStart = () => {
+    setShowPermissionModal(true);
+  };
+
+  const handlePermissionGranted = () => {
+    setShowPermissionModal(false);
+    setAppState('NAVIGATION_STARTED');
+  };
 
   const handleRestart = () => {
     setAppState('NAVIGATION_STARTED');
@@ -21,12 +30,13 @@ export function App() {
   return (
     <div className="app-viewport">
       {appState === 'WELCOME' && (
-        <WelcomeScreen onComplete={() => setAppState('LOCATION_PERMISSION')} />
+        <WelcomeScreen onComplete={handleStart} />
       )}
 
-      {appState === 'LOCATION_PERMISSION' && (
+      {showPermissionModal && (
         <LocationPermission
-          onPermissionGranted={() => setAppState('NAVIGATION_STARTED')}
+          onPermissionGranted={handlePermissionGranted}
+          onClose={() => setShowPermissionModal(false)}
         />
       )}
 
